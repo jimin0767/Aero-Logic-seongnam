@@ -1,0 +1,32 @@
+# ── Raw source data (multi-GB shapefiles / DBFs / CSVs) ──────────────────────
+00_data/
+
+# ── Editor / tool session files ──────────────────────────────────────────────
+.claude/
+.playwright-mcp/
+
+# ── Jupyter auto-save checkpoints ────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs & temp ──────────────────────────────────────────────────────────────
+*.log
+*.tmp
+
+# ── Python cache ─────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── OS metadata ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Tableau sample data (not project-related) ────────────────────────────────
+03_visualization/workbook_download/Superstore.twbx
+03_visualization/workbook_download/superstore.twb
+
+# ── Development/debug scripts (contain hardcoded credentials) ────────────────
+03_visualization/test_incremental.py
+03_visualization/test_publish.py

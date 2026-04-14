@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0401.1148)' version='18.1' xmlns:user="http://www.tableausoftware.com/xml/user">
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+  </document-format-change-manifest>
+  <preferences />
+  <datasources>
+    <datasource caption="Grid Scores" inline="true" name="federated.grid01" version="18.1">
+      <connection class="federated">
+        <named-connections>
+          <named-connection caption="grid_scores" name="hyper.grid01">
+            <connection authentication="no" class="hyper" dbname="Data/Extracts/grid_scores.hyper" default-settings="yes" sslmode="" username="" />
+          </named-connection>
+        </named-connections>
+        <relation connection="hyper.grid01" name="Extract" table="[Extract].[grid_scores]" type="table" />
+      </connection>
+      <column aggregation="Avg" datatype="real" name="[lat]" role="measure" semantic-role="[Geographical].[Latitude]" type="quantitative" />
+      <column aggregation="Avg" datatype="real" name="[lon]" role="measure" semantic-role="[Geographical].[Longitude]" type="quantitative" />
+      <column aggregation="Sum" datatype="real" name="[composite_score]" role="measure" type="quantitative" />
+      <column aggregation="Count" datatype="string" name="[h3_index]" role="dimension" type="nominal" />
+      <column aggregation="Count" datatype="string" name="[ADM_NM]" role="dimension" type="nominal" />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name="Tableau" />
+  </mapsources>
+  <worksheets>
+    <worksheet name="Map">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="Grid Scores" name="federated.grid01" />
+          </datasources>
+          <mapsources>
+            <mapsource name="Tableau" />
+          </mapsources>
+          <datasource-dependencies datasource="federated.grid01">
+            <column-instance column="[lat]" derivation="Avg" name="[avg:lat:qk]" pivot="key" type="quantitative" />
+            <column-instance column="[lon]" derivation="Avg" name="[avg:lon:qk]" pivot="key" type="quantitative" />
+            <column aggregation="Avg" datatype="real" name="[lat]" role="measure" semantic-role="[Geographical].[Latitude]" type="quantitative" />
+            <column aggregation="Avg" datatype="real" name="[lon]" role="measure" semantic-role="[Geographical].[Longitude]" type="quantitative" />
+            <column aggregation="Count" datatype="string" name="[h3_index]" role="dimension" type="nominal" />
+            <column-instance column="[h3_index]" derivation="None" name="[none:h3_index:nk]" pivot="key" type="nominal" />
+          </datasource-dependencies>
+          <aggregation value="true" />
+        </view>
+        <style>
+          <style-rule element="map">
+            <format attr="washout" value="0.0" />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto" />
+            </view>
+            <mark class="Automatic" />
+          </pane>
+        </panes>
+        <rows>([federated.grid01].[none:h3_index:nk] * [federated.grid01].[avg:lat:qk])</rows>
+        <cols>[federated.grid01].[avg:lon:qk]</cols>
+      </table>
+      <simple-id uuid="{00000001-0001-0001-0001-000000000001}" />
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class="worksheet" maximized="true" name="Map">
+      <cards>
+        <edge name="left">
+          <strip size="160">
+            <card type="pages" />
+            <card type="filters" />
+            <card type="marks" />
+          </strip>
+        </edge>
+        <edge name="top">
+          <strip size="31">
+            <card type="columns" />
+          </strip>
+          <strip size="31">
+            <card type="rows" />
+          </strip>
+          <strip size="31">
+            <card type="title" />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid="{00000002-0002-0002-0002-000000000002}" />
+    </window>
+  </windows>
+</workbook>

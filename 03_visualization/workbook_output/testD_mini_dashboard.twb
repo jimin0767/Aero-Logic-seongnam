@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0401.1148)' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault /><MapboxVectorStylesAndLayers /><MarkAnimation />
+    <ObjectModelEncapsulateLegacy /><ObjectModelTableType />
+    <SchemaViewerObjectModel /><SheetIdentifierTracking />
+  </document-format-change-manifest>
+  <preferences />
+  <datasources>
+    <datasource caption='Grid Scores' inline='true' name='federated.grid01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='grid_scores' name='hyper.grid01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/grid_scores.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.grid01' name='Extract' table='[Extract].[grid_scores]' type='table' />
+      </connection>
+      <column aggregation='Avg' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+    </datasource>
+    <datasource caption='Dong Summary' inline='true' name='federated.dong01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dong_summary' name='hyper.dong01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/dong_summary.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.dong01' name='Extract' table='[Extract].[dong_summary]' type='table' />
+      </connection>
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+    </datasource>
+  </datasources>
+  <mapsources><mapsource name='Tableau' /></mapsources>
+  <worksheets>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources><datasource caption='Grid Scores' name='federated.grid01' /></datasources>
+          <mapsources><mapsource name='Tableau' /></mapsources>
+          <datasource-dependencies datasource='federated.grid01'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon]' derivation='Avg' name='[avg:lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[composite_score]' derivation='Avg' name='[avg:composite_score:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+            <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+            <column-instance column='[h3_index]' derivation='None' name='[none:h3_index:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style><style-rule element='map'><format attr='washout' value='0.0' /></style-rule></style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.grid01].[avg:composite_score:qk]' />
+              <detail column='[federated.grid01].[none:ADM_NM:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.grid01].[none:h3_index:nk] * [federated.grid01].[avg:lat:qk])</rows>
+        <cols>[federated.grid01].[avg:lon:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000001-0001-0001-0001-000000000001}' />
+    </worksheet>
+    <worksheet name='Bar'>
+      <table>
+        <view>
+          <datasources><datasource caption='Dong Summary' name='federated.dong01' /></datasources>
+          <datasource-dependencies datasource='federated.dong01'>
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+            <column-instance column='[GU_NM]' derivation='None' name='[none:GU_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+            <column-instance column='[avg_composite]' derivation='Sum' name='[sum:avg_composite:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Bar' />
+            <encodings><color column='[federated.dong01].[none:GU_NM:nk]' /></encodings>
+          </pane>
+        </panes>
+        <rows>[federated.dong01].[none:ADM_NM:nk]</rows>
+        <cols>[federated.dong01].[sum:avg_composite:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000002-0002-0002-0002-000000000002}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='2' param='horz' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' name='Map' type-v2='worksheet' w='60000' x='0' y='0' />
+            <zone h='100000' id='4' name='Bar' type-v2='worksheet' w='40000' x='0' y='0' />
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='worksheet' maximized='true' name='Map'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Bar'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>

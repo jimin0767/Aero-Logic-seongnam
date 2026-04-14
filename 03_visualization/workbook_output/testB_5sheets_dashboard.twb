@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0401.1148)' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault /><MapboxVectorStylesAndLayers /><MarkAnimation />
+    <ObjectModelEncapsulateLegacy /><ObjectModelTableType />
+    <SchemaViewerObjectModel /><SheetIdentifierTracking />
+  </document-format-change-manifest>
+  <preferences />
+  <datasources>
+    <datasource caption='Grid Scores' inline='true' name='federated.grid01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='grid_scores' name='hyper.grid01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/grid_scores.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.grid01' name='Extract' table='[Extract].[grid_scores]' type='table' />
+      </connection>
+      <column aggregation='Avg' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+    </datasource>
+    <datasource caption='Dong Summary' inline='true' name='federated.dong01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dong_summary' name='hyper.dong01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/dong_summary.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.dong01' name='Extract' table='[Extract].[dong_summary]' type='table' />
+      </connection>
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+    </datasource>
+    <datasource caption='Hourly Demand' inline='true' name='federated.demand01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hourly_demand' name='hyper.demand01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/hourly_demand.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.demand01' name='Extract' table='[Extract].[hourly_demand]' type='table' />
+      </connection>
+      <column aggregation='Sum' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_del_cnt]' role='measure' type='quantitative' />
+    </datasource>
+    <datasource caption='Mode Radar Scores' inline='true' name='federated.radar01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mode_radar_scores' name='hyper.radar01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/mode_radar_scores.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.radar01' name='Extract' table='[Extract].[mode_radar_scores]' type='table' />
+      </connection>
+      <column aggregation='Count' datatype='string' name='[metric]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[motorcycle]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[drone_robot]' role='measure' type='quantitative' />
+    </datasource>
+    <datasource caption='Final Hubs' inline='true' name='federated.hubs01' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_hubs' name='hyper.hubs01'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/final_hubs.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.hubs01' name='Extract' table='[Extract].[final_hubs]' type='table' />
+      </connection>
+      <column aggregation='Count' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[facility]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_covered]' role='measure' type='quantitative' />
+    </datasource>
+  </datasources>
+  <mapsources><mapsource name='Tableau' /></mapsources>
+  <worksheets>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources><datasource caption='Grid Scores' name='federated.grid01' /></datasources>
+          <mapsources><mapsource name='Tableau' /></mapsources>
+          <datasource-dependencies datasource='federated.grid01'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon]' derivation='Avg' name='[avg:lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[composite_score]' derivation='Avg' name='[avg:composite_score:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+            <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+            <column-instance column='[h3_index]' derivation='None' name='[none:h3_index:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style><style-rule element='map'><format attr='washout' value='0.0' /></style-rule></style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.grid01].[avg:composite_score:qk]' />
+              <detail column='[federated.grid01].[none:ADM_NM:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.grid01].[none:h3_index:nk] * [federated.grid01].[avg:lat:qk])</rows>
+        <cols>[federated.grid01].[avg:lon:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000001-0001-0001-0001-000000000001}' />
+    </worksheet>
+    <worksheet name='Bar'>
+      <table>
+        <view>
+          <datasources><datasource caption='Dong Summary' name='federated.dong01' /></datasources>
+          <datasource-dependencies datasource='federated.dong01'>
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+            <column-instance column='[GU_NM]' derivation='None' name='[none:GU_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+            <column-instance column='[avg_composite]' derivation='Sum' name='[sum:avg_composite:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Bar' />
+            <encodings><color column='[federated.dong01].[none:GU_NM:nk]' /></encodings>
+          </pane>
+        </panes>
+        <rows>[federated.dong01].[none:ADM_NM:nk]</rows>
+        <cols>[federated.dong01].[sum:avg_composite:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000002-0002-0002-0002-000000000002}' />
+    </worksheet>
+    <worksheet name='Demand'>
+      <table>
+        <view>
+          <datasources><datasource caption='Hourly Demand' name='federated.demand01' /></datasources>
+          <datasource-dependencies datasource='federated.demand01'>
+            <column aggregation='Sum' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[total_del_cnt]' role='measure' type='quantitative' />
+            <column-instance column='[total_del_cnt]' derivation='Sum' name='[sum:total_del_cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.demand01].[sum:total_del_cnt:qk]</rows>
+        <cols>[federated.demand01].[none:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000003-0003-0003-0003-000000000003}' />
+    </worksheet>
+    <worksheet name='Radar'>
+      <table>
+        <view>
+          <datasources><datasource caption='Mode Radar Scores' name='federated.radar01' /></datasources>
+          <datasource-dependencies datasource='federated.radar01'>
+            <column aggregation='Count' datatype='string' name='[metric]' role='dimension' type='nominal' />
+            <column-instance column='[metric]' derivation='None' name='[none:metric:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[motorcycle]' role='measure' type='quantitative' />
+            <column-instance column='[motorcycle]' derivation='Sum' name='[sum:motorcycle:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[drone_robot]' role='measure' type='quantitative' />
+            <column-instance column='[drone_robot]' derivation='Sum' name='[sum:drone_robot:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.radar01].[none:metric:nk]</rows>
+        <cols>([federated.radar01].[sum:motorcycle:qk] + [federated.radar01].[sum:drone_robot:qk])</cols>
+      </table>
+      <simple-id uuid='{A0000004-0004-0004-0004-000000000004}' />
+    </worksheet>
+    <worksheet name='Hubs'>
+      <table>
+        <view>
+          <datasources><datasource caption='Final Hubs' name='federated.hubs01' /></datasources>
+          <datasource-dependencies datasource='federated.hubs01'>
+            <column aggregation='Count' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+            <column-instance column='[capacity]' derivation='Sum' name='[sum:capacity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.hubs01].[none:name:nk]</rows>
+        <cols>[federated.hubs01].[sum:capacity:qk]</cols>
+      </table>
+      <simple-id uuid='{A0000005-0005-0005-0005-000000000005}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='56000' id='5' name='Map' type-v2='worksheet' w='60000' x='0' y='0' />
+          <zone h='28000' id='6' name='Bar' type-v2='worksheet' w='40000' x='60000' y='0' />
+          <zone h='28000' id='7' name='Radar' type-v2='worksheet' w='40000' x='60000' y='28000' />
+          <zone h='44000' id='8' name='Demand' type-v2='worksheet' w='50000' x='0' y='56000' />
+          <zone h='44000' id='9' name='Hubs' type-v2='worksheet' w='50000' x='50000' y='56000' />
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows>
+    <window class='worksheet' maximized='true' name='Map'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Bar'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Demand'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Radar'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Hubs'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <cards>
+        <edge name='left'><strip size='160'><card type='pages' /><card type='filters' /><card type='marks' /></strip></edge>
+        <edge name='top'>
+          <strip size='31'><card type='columns' /></strip>
+          <strip size='31'><card type='rows' /></strip>
+          <strip size='31'><card type='title' /></strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+</workbook>

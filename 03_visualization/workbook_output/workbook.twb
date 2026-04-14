@@ -1,0 +1,1180 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0401.1148)' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+  </document-format-change-manifest>
+  <preferences />
+  <datasources>
+    <datasource caption='Grid Scores' inline='true' name='federated.3dfcf3757286431b904f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='grid_scores' name='hyper.43bc6cae335d4aacacb5'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/grid_scores.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.43bc6cae335d4aacacb5' name='Extract' table='[Extract].[grid_scores]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>h3_index</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[h3_index]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>h3_index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CSV_ADMI_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CSV_ADMI_CD]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>CSV_ADMI_CD</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADM_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADM_NM]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>ADM_NM</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GU_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GU_NM]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>GU_NM</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>delivery_demand_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[delivery_demand_index]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>delivery_demand_index</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>flow_pop_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[flow_pop_index]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>flow_pop_index</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>urgency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[urgency]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>urgency</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>score_airspace</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_airspace]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>score_airspace</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>score_obstacle</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_obstacle]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>score_obstacle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>score_noise</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_noise]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>score_noise</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>score_terrain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_terrain]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>score_terrain</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>score_weather</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score_weather]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>score_weather</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>composite_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[composite_score]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>composite_score</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>terrain_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[terrain_zone]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>terrain_zone</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_slope</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_slope]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>avg_slope</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>tall_bldg_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tall_bldg_count]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>tall_bldg_count</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_bldg_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_bldg_count]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>total_bldg_count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urgency_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[urgency_level]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>urgency_level</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>composite_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[composite_level]</local-name>
+            <parent-name>[Extract].[grid_scores]</parent-name>
+            <remote-alias>composite_level</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[lat]' role='measure' type='quantitative' semantic-role='[Geographical].[Latitude]' />
+      <column aggregation='Avg' datatype='real' name='[lon]' role='measure' type='quantitative' semantic-role='[Geographical].[Longitude]' />
+      <column aggregation='Sum' datatype='integer' name='[CSV_ADMI_CD]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[delivery_demand_index]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[flow_pop_index]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[urgency]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[score_airspace]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[score_obstacle]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[score_noise]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[score_terrain]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[score_weather]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[terrain_zone]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[avg_slope]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[tall_bldg_count]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_bldg_count]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[urgency_level]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[composite_level]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+    <datasource caption='Dong Summary' inline='true' name='federated.d336ab393eeb4c6dbc80' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dong_summary' name='hyper.d9b25660822e448f8a76'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/dong_summary.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.d9b25660822e448f8a76' name='Extract' table='[Extract].[dong_summary]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ADM_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADM_NM]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>ADM_NM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GU_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GU_NM]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>GU_NM</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>n_cells</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_cells]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>n_cells</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_urgency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_urgency]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_urgency</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_composite</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_composite]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_composite</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_airspace</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_airspace]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_airspace</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_obstacle</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_obstacle]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_obstacle</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_noise</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_noise]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_noise</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_terrain</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_terrain]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_terrain</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_weather</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_weather]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>avg_weather</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>pct_feasible</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_feasible]</local-name>
+            <parent-name>[Extract].[dong_summary]</parent-name>
+            <remote-alias>pct_feasible</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[n_cells]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_urgency]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_airspace]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_obstacle]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_noise]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_terrain]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[avg_weather]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[pct_feasible]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+    <datasource caption='Hourly Demand' inline='true' name='federated.ef0e6b200d25422384b1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hourly_demand' name='hyper.6f966d21c555422e8592'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/hourly_demand.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.6f966d21c555422e8592' name='Extract' table='[Extract].[hourly_demand]' type='table' />
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>admi_cty_no</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[admi_cty_no]</local-name>
+            <parent-name>[Extract].[hourly_demand]</parent-name>
+            <remote-alias>admi_cty_no</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[Extract].[hourly_demand]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_del_amt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_del_amt]</local-name>
+            <parent-name>[Extract].[hourly_demand]</parent-name>
+            <remote-alias>total_del_amt</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_del_cnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_del_cnt]</local-name>
+            <parent-name>[Extract].[hourly_demand]</parent-name>
+            <remote-alias>total_del_cnt</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>hour_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hour_ratio]</local-name>
+            <parent-name>[Extract].[hourly_demand]</parent-name>
+            <remote-alias>hour_ratio</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[admi_cty_no]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_del_amt]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_del_cnt]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[hour_ratio]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+    <datasource caption='Mode Radar Scores' inline='true' name='federated.6ae1e38a0fd847b5be8b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mode_radar_scores' name='hyper.f01f90d18c5346c79258'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/mode_radar_scores.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.f01f90d18c5346c79258' name='Extract' table='[Extract].[mode_radar_scores]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>metric</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[metric]</local-name>
+            <parent-name>[Extract].[mode_radar_scores]</parent-name>
+            <remote-alias>metric</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>motorcycle</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[motorcycle]</local-name>
+            <parent-name>[Extract].[mode_radar_scores]</parent-name>
+            <remote-alias>motorcycle</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>drone_robot</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drone_robot]</local-name>
+            <parent-name>[Extract].[mode_radar_scores]</parent-name>
+            <remote-alias>drone_robot</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' datatype='string' name='[metric]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[motorcycle]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[drone_robot]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+    <datasource caption='Final Hubs' inline='true' name='federated.d1fdc3df1e3f4957826d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final_hubs' name='hyper.626f6e0e60b348c688da'>
+            <connection authentication='no' class='hyper' dbname='Data/Extracts/final_hubs.hyper' default-settings='yes' sslmode='' username='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='hyper.626f6e0e60b348c688da' name='Extract' table='[Extract].[final_hubs]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>facility</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[facility]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>facility</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>capacity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>capacity</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>idle_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[idle_score]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>idle_score</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>terrain_zone</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[terrain_zone]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>terrain_zone</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>avg_slope</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_slope]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>avg_slope</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>delivery_mode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[delivery_mode]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>delivery_mode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>new_covered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[new_covered]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>new_covered</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>total_covered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_covered]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>total_covered</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>coverage_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coverage_pct]</local-name>
+            <parent-name>[Extract].[final_hubs]</parent-name>
+            <remote-alias>coverage_pct</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Count' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[facility]' role='dimension' type='nominal' />
+      <column aggregation='Count' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[lat]' role='measure' type='quantitative' semantic-role='[Geographical].[Latitude]' />
+      <column aggregation='Avg' datatype='real' name='[lon]' role='measure' type='quantitative' semantic-role='[Geographical].[Longitude]' />
+      <column aggregation='Sum' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[idle_score]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[terrain_zone]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[avg_slope]' role='measure' type='quantitative' />
+      <column aggregation='Count' datatype='string' name='[delivery_mode]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[new_covered]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' name='[total_covered]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='real' name='[coverage_pct]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <column caption='공역 제한' datatype='boolean' name='[Parameter P_Airspace]' param-domain-type='list' role='measure' type='quantitative' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='OFF' />
+          <alias key='true' value='ON' />
+        </aliases>
+      </column>
+      <column caption='장애물 (고층건물)' datatype='boolean' name='[Parameter P_Obstacle]' param-domain-type='list' role='measure' type='quantitative' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='OFF' />
+          <alias key='true' value='ON' />
+        </aliases>
+      </column>
+      <column caption='소음 (주거지)' datatype='boolean' name='[Parameter P_Noise]' param-domain-type='list' role='measure' type='quantitative' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='OFF' />
+          <alias key='true' value='ON' />
+        </aliases>
+      </column>
+      <column caption='지형 (경사도)' datatype='boolean' name='[Parameter P_Terrain]' param-domain-type='list' role='measure' type='quantitative' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='OFF' />
+          <alias key='true' value='ON' />
+        </aliases>
+      </column>
+      <column caption='기상 (바람)' datatype='boolean' name='[Parameter P_Weather]' param-domain-type='list' role='measure' type='quantitative' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='OFF' />
+          <alias key='true' value='ON' />
+        </aliases>
+      </column>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='거점 적합도 지도'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Grid Scores' name='federated.3dfcf3757286431b904f' />
+            <datasource name='Parameters' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.3dfcf3757286431b904f'>
+            <column-instance column='[lat]' derivation='Avg' name='[avg:lat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lon]' derivation='Avg' name='[avg:lon:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[composite_score]' derivation='Avg' name='[avg:composite_score:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[composite_score]' role='measure' type='quantitative' />
+            <column aggregation='Count' datatype='string' name='[h3_index]' role='dimension' type='nominal' />
+            <column-instance column='[h3_index]' derivation='None' name='[none:h3_index:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+            <column-instance column='[GU_NM]' derivation='None' name='[none:GU_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[urgency]' role='measure' type='quantitative' />
+            <column-instance column='[urgency]' derivation='Avg' name='[avg:urgency:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[score_airspace]' role='measure' type='quantitative' />
+            <column-instance column='[score_airspace]' derivation='Avg' name='[avg:score_airspace:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <format attr='mark-labels-show' value='false' />
+            <format attr='mark-labels-cull' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.3dfcf3757286431b904f].[avg:composite_score:qk]' />
+              <size column='[federated.3dfcf3757286431b904f].[avg:urgency:qk]' />
+              <tooltip column='[federated.3dfcf3757286431b904f].[none:ADM_NM:nk]' />
+              <tooltip column='[federated.3dfcf3757286431b904f].[none:GU_NM:nk]' />
+              <tooltip column='[federated.3dfcf3757286431b904f].[avg:composite_score:qk]' />
+              <tooltip column='[federated.3dfcf3757286431b904f].[avg:urgency:qk]' />
+              <tooltip column='[federated.3dfcf3757286431b904f].[avg:score_airspace:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='178' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.3dfcf3757286431b904f].[none:h3_index:nk] * [federated.3dfcf3757286431b904f].[avg:lat:qk])</rows>
+        <cols>[federated.3dfcf3757286431b904f].[avg:lon:qk]</cols>
+        <color>
+          <color-palette custom='true' name='custom-sequential' ordered-type='sequential' type='ordered-sequential'>
+            <color>#d73027</color>
+            <color>#f46d43</color>
+            <color>#fdae61</color>
+            <color>#fee08b</color>
+            <color>#d9ef8b</color>
+            <color>#a6d96a</color>
+            <color>#66bd63</color>
+            <color>#1a9850</color>
+          </color-palette>
+        </color>
+      </table>
+      <simple-id uuid='{A25867D1-5CF7-4051-9A4F-D878398A4BA2}' />
+    </worksheet>
+    <worksheet name='동별 종합점수'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Dong Summary' name='federated.d336ab393eeb4c6dbc80' />
+          </datasources>
+          <datasource-dependencies datasource='federated.d336ab393eeb4c6dbc80'>
+            <column aggregation='Count' datatype='string' name='[ADM_NM]' role='dimension' type='nominal' />
+            <column-instance column='[ADM_NM]' derivation='None' name='[none:ADM_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[GU_NM]' role='dimension' type='nominal' />
+            <column-instance column='[GU_NM]' derivation='None' name='[none:GU_NM:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[avg_composite]' role='measure' type='quantitative' />
+            <column-instance column='[avg_composite]' derivation='Sum' name='[sum:avg_composite:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' value='종합 적합도 점수' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.d336ab393eeb4c6dbc80].[none:GU_NM:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.d336ab393eeb4c6dbc80].[none:ADM_NM:nk]</rows>
+        <cols>[federated.d336ab393eeb4c6dbc80].[sum:avg_composite:qk]</cols>
+        <sort class='computed-sort' column='[federated.d336ab393eeb4c6dbc80].[none:ADM_NM:nk]' direction='DESC' using='[federated.d336ab393eeb4c6dbc80].[sum:avg_composite:qk]' />
+      </table>
+      <simple-id uuid='{702304FD-F0BF-4CDB-B270-87AB7E31EBAC}' />
+    </worksheet>
+    <worksheet name='시간대별 배송수요'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hourly Demand' name='federated.ef0e6b200d25422384b1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.ef0e6b200d25422384b1'>
+            <column aggregation='Sum' datatype='integer' name='[hour]' role='measure' type='quantitative' />
+            <column-instance column='[hour]' derivation='None' name='[none:hour:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[total_del_cnt]' role='measure' type='quantitative' />
+            <column-instance column='[total_del_cnt]' derivation='Sum' name='[sum:total_del_cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' value='배송 건수' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column=''>
+                <color-one-way>
+                  <color>#4e79a7</color>
+                </color-one-way>
+              </color>
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.ef0e6b200d25422384b1].[sum:total_del_cnt:qk]</rows>
+        <cols>[federated.ef0e6b200d25422384b1].[none:hour:qk]</cols>
+      </table>
+      <simple-id uuid='{E6C2D9F2-AFAA-42AB-98E9-319E425968CA}' />
+    </worksheet>
+    <worksheet name='허브 상세정보'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Final Hubs' name='federated.d1fdc3df1e3f4957826d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.d1fdc3df1e3f4957826d'>
+            <column aggregation='Count' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[facility]' role='dimension' type='nominal' />
+            <column-instance column='[facility]' derivation='None' name='[none:facility:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' datatype='string' name='[delivery_mode]' role='dimension' type='nominal' />
+            <column-instance column='[delivery_mode]' derivation='None' name='[none:delivery_mode:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+            <column-instance column='[capacity]' derivation='Sum' name='[sum:capacity:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[new_covered]' role='measure' type='quantitative' />
+            <column-instance column='[new_covered]' derivation='Sum' name='[sum:new_covered:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='integer' name='[total_covered]' role='measure' type='quantitative' />
+            <column-instance column='[total_covered]' derivation='Sum' name='[sum:total_covered:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[coverage_pct]' role='measure' type='quantitative' />
+            <column-instance column='[coverage_pct]' derivation='Sum' name='[sum:coverage_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.d1fdc3df1e3f4957826d].[sum:capacity:qk]' />
+            </encodings>
+          </pane>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.d1fdc3df1e3f4957826d].[sum:new_covered:qk]' />
+            </encodings>
+          </pane>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.d1fdc3df1e3f4957826d].[sum:total_covered:qk]' />
+            </encodings>
+          </pane>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.d1fdc3df1e3f4957826d].[sum:coverage_pct:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.d1fdc3df1e3f4957826d].[none:name:nk]</rows>
+        <cols>([federated.d1fdc3df1e3f4957826d].[sum:capacity:qk] + [federated.d1fdc3df1e3f4957826d].[sum:new_covered:qk] + [federated.d1fdc3df1e3f4957826d].[sum:total_covered:qk] + [federated.d1fdc3df1e3f4957826d].[sum:coverage_pct:qk])</cols>
+      </table>
+      <simple-id uuid='{84A55656-7A33-462A-B8BA-3FD58B915E5C}' />
+    </worksheet>
+    <worksheet name='배송모드 비교'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mode Radar Scores' name='federated.6ae1e38a0fd847b5be8b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.6ae1e38a0fd847b5be8b'>
+            <column aggregation='Count' datatype='string' name='[metric]' role='dimension' type='nominal' />
+            <column-instance column='[metric]' derivation='None' name='[none:metric:nk]' pivot='key' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[motorcycle]' role='measure' type='quantitative' />
+            <column-instance column='[motorcycle]' derivation='Sum' name='[sum:motorcycle:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' datatype='real' name='[drone_robot]' role='measure' type='quantitative' />
+            <column-instance column='[drone_robot]' derivation='Sum' name='[sum:drone_robot:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.6ae1e38a0fd847b5be8b].[none:metric:nk]</rows>
+        <cols>([federated.6ae1e38a0fd847b5be8b].[sum:motorcycle:qk] + [federated.6ae1e38a0fd847b5be8b].[sum:drone_robot:qk])</cols>
+      </table>
+      <simple-id uuid='{196A9932-E2ED-47B6-807B-F4DF06D6DBA9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='성남시 드론·로봇 배송 거점 최적화'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='5000' id='2' name='Title' type-v2='title' w='100000' x='0' y='0'>
+            <formatted-text>
+              <run fontstyle='bold' fontsize='18'>성남시 드론·로봇 융합 배송 거점 최적 입지 분석</run>
+            </formatted-text>
+          </zone>
+          <zone h='60000' id='3' type-v2='layout-basic' w='100000' x='0' y='5000'>
+            <zone h='60000' id='4' name='거점 적합도 지도' type-v2='worksheet' w='60000' x='0' y='5000' />
+            <zone h='60000' id='5' type-v2='layout-basic' w='40000' x='60000' y='5000'>
+              <zone h='30000' id='6' name='동별 종합점수' type-v2='worksheet' w='40000' x='60000' y='5000' />
+              <zone h='30000' id='7' name='배송모드 비교' type-v2='worksheet' w='40000' x='60000' y='35000' />
+            </zone>
+          </zone>
+          <zone h='35000' id='8' type-v2='layout-basic' w='100000' x='0' y='65000'>
+            <zone h='35000' id='9' name='시간대별 배송수요' type-v2='worksheet' w='50000' x='0' y='65000' />
+            <zone h='35000' id='10' name='허브 상세정보' type-v2='worksheet' w='50000' x='50000' y='65000' />
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='거점 적합도 지도'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2B1173AF-2621-42E9-9C2C-BC61436902C2}' />
+    </window>
+    <window class='worksheet' name='동별 종합점수'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2D3863D-DF2D-42FC-8B4C-06C0F28C3091}' />
+    </window>
+    <window class='worksheet' name='시간대별 배송수요'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28A39F58-22F1-42E7-9679-AF4207B28A72}' />
+    </window>
+    <window class='worksheet' name='허브 상세정보'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1733B349-F762-43FC-B4BE-694C7AB7D3ED}' />
+    </window>
+    <window class='worksheet' name='배송모드 비교'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95DDF6A8-E41D-4FC4-8342-71490ED0D177}' />
+    </window>
+    <window class='dashboard' maximized="true" name='성남시 드론·로봇 배송 거점 최적화'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F4FE7F8-599E-4822-B95E-5B26834AF8FD}' />
+    </window>
+  </windows>
+</workbook>
