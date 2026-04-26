@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>성남시 드론·로봇 배송 거점 최적화</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>🚁 성남시 드론·로봇 융합 배송 거점 최적 입지 분석</h1>
+  <div class="subtitle">Multi-Layered Decision Support System · 2026 성남시 공공데이터 활용 시각화 경진대회</div>
+  <span class="badge">레이어 조합 → 실시간 거점 재최적화</span>
+</div>
+
+<div class="dashboard">
+
+  <!-- KPI Row -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-total-cells">1,947</div>
+      <div class="kpi-label">전체 H3 셀 (res.9)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-feasible">0</div>
+      <div class="kpi-label">적합 셀 수 <span style="font-size:10px;color:#556">(레이어 조합)</span></div>
+    </div>
+    <div class="kpi-card accent">
+      <div class="kpi-value" id="kpi-num-hubs">4</div>
+      <div class="kpi-label">선정 거점 수</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-value" id="kpi-coverage">0%</div>
+      <div class="kpi-label">고수요 커버리지 (500m)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-avg-cs">0</div>
+      <div class="kpi-label">평균 우선순위</div>
+    </div>
+  </div>
+
+  <!-- Map + Side Panel -->
+  <div class="main-grid">
+    <div class="map-panel">
+      <div id="map"></div>
+    </div>
+    <div class="side-panel">
+      <!-- Layer Toggles -->
+      <div class="layer-panel">
+        <div class="panel-title">⚙️ 제약 레이어 조합 선택</div>
+        <div class="layer-grid">
+          <label class="layer-toggle active" data-layer="sa">
+            <input type="checkbox" data-layer="sa" checked>
+            <div class="layer-dot" style="background:#e94560"></div>
+            <span>✈️ 공역 제한</span>
+          </label>
+          <label class="layer-toggle active" data-layer="so">
+            <input type="checkbox" data-layer="so" checked>
+            <div class="layer-dot" style="background:#ff9800"></div>
+            <span>🏢 장애물</span>
+          </label>
+          <label class="layer-toggle active" data-layer="sn">
+            <input type="checkbox" data-layer="sn" checked>
+            <div class="layer-dot" style="background:#ffeb3b"></div>
+            <span>🔊 소음 민감</span>
+          </label>
+          <label class="layer-toggle active" data-layer="st">
+            <input type="checkbox" data-layer="st" checked>
+            <div class="layer-dot" style="background:#4caf50"></div>
+            <span>⛰️ 지형 경사</span>
+          </label>
+          <label class="layer-toggle active" data-layer="sw" style="grid-column:1/-1">
+            <input type="checkbox" data-layer="sw" checked>
+            <div class="layer-dot" style="background:#2196f3"></div>
+            <span>🌬️ 기상 (바람)</span>
+          </label>
+        </div>
+        <div class="formula-box">
+          <b>현재 스코어 :</b> <span id="formula-display">공역 × 장애물 × 소음 × 지형 × 기상 × 드론 수요지수</span>
+          <span id="update-spin" class="updating">🔄</span>
+        </div>
+      </div>
+
+      <!-- POI Layer Toggles -->
+      <div class="poi-panel">
+        <div class="panel-title">📍 POI 레이어 표시</div>
+        <div class="poi-grid">
+          <label class="poi-toggle" data-poi="park">
+            <input type="checkbox" data-poi="park">
+            <div class="poi-dot" style="background:#ce93d8"></div>
+            <span>🌳 공원</span>
+            <span class="poi-count">512</span>
+          </label>
+          <label class="poi-toggle" data-poi="commercial">
+            <input type="checkbox" data-poi="commercial">
+            <div class="poi-dot" style="background:#9c27b0"></div>
+            <span>🏪 상권</span>
+            <span class="poi-count">108</span>
+          </label>
+          <label class="poi-toggle" data-poi="medical">
+            <input type="checkbox" data-poi="medical">
+            <div class="poi-dot" style="background:#e040fb"></div>
+            <span>🏥 의료</span>
+            <span class="poi-count">128</span>
+          </label>
+          <label class="poi-toggle" data-poi="subway">
+            <input type="checkbox" data-poi="subway">
+            <div class="poi-dot" style="background:#7c4dff"></div>
+            <span>🚇 지하철</span>
+            <span class="poi-count">129</span>
+          </label>
+          <label class="poi-toggle" data-poi="school" style="grid-column:1/-1">
+            <input type="checkbox" data-poi="school">
+            <div class="poi-dot" style="background:#b39ddb"></div>
+            <span>🏫 학교</span>
+            <span class="poi-count">81</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Dynamic Hub Results -->
+      <div class="hub-panel">
+        <div class="panel-title">📍 최적 거점 <span id="hub-count-badge" style="background:#e9456033;color:#e94560;border-radius:10px;padding:1px 8px;font-size:12px;"></span></div>
+        <div id="hub-list">
+          <div style="color:#556;font-size:12px;padding:8px;">레이어 조합 중…</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart Row 1: demand ranking + hourly demand -->
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>📊 행정동 드론 수요지수 순위 (Top 15)</h3>
+      <div id="chart-bar" class="chart-box"></div>
+    </div>
+    <div class="chart-card">
+      <h3>🕐 시간대별 배송 수요 패턴</h3>
+      <div id="chart-hourly" class="chart-box"></div>
+    </div>
+  </div>
+
+  <!-- Chart Row 2: radar + feasible pct -->
+  <div class="chart-row">
+    <div class="chart-card">
+      <h3>🔄 고수요 동 수요 구성요소 비교</h3>
+      <div id="chart-radar" class="chart-box"></div>
+    </div>
+    <div class="chart-card">
+      <h3>📈 동별 적합 셀 비율 (%)</h3>
+      <div id="chart-feasible" class="chart-box-tall" style="height:260px;overflow-y:auto;"></div>
+    </div>
+  </div>
+
+  <!-- Comparison table -->
+  <div class="chart-card" style="margin-bottom:16px;">
+    <h3>📋 배송 수단 비교 분석</h3>
+    <table class="comp-table">
+      <thead>
+        <tr><th>지표</th><th>오토바이</th><th>드론+로봇</th><th>드론 우위</th></tr>
+      </thead>
+      <tbody id="comp-tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="status-bar">
+    ⬛ H3 res.9 · 500m 서비스 반경 · 그리디 셋 커버 알고리즘 · 실시간 레이어 재최적화
+    &nbsp;|&nbsp; 데이터: 성남시 공공데이터포털 · NGII · 배달의민족 2023
+  </div>
+</div>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/demand.js"></script>
+<script src="assets/js/poi.js"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/controls.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
