@@ -14,5 +14,10 @@
   "annual_carbon_ton_1000d": 115.8,
   "eta_p10": 10.4,
   "eta_p50": 11.9,
-  "eta_p90": 31.4
+  "eta_p90": 31.4,
+  "P_drone_available_observed": 0.9013,
+  "P_wind_fail_observed": 0.0,
+  "P_rain_fail_observed": 0.0708,
+  "obs_station": "수원(119)",
+  "obs_period_days": 30
 }
