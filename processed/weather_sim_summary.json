@@ -1,0 +1,18 @@
+{
+  "N_simulations": 10000,
+  "P_drone_available": 0.7809,
+  "drone_usage_pct": 77.7,
+  "fallback_robot_pct": 22.3,
+  "avg_eta_drone_robot": 15.7,
+  "avg_eta_motorcycle": 9.8,
+  "avg_time_saving_min": -6.0,
+  "T_efficiency_pct": -61.3,
+  "avg_carbon_drone_robot": 0.0474,
+  "avg_carbon_motorcycle": 0.3645,
+  "avg_carbon_saving_kg": 0.3171,
+  "E_reduction_pct": 87.0,
+  "annual_carbon_ton_1000d": 115.8,
+  "eta_p10": 10.4,
+  "eta_p50": 11.9,
+  "eta_p90": 31.4
+}
