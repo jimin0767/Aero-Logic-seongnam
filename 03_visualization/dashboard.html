@@ -120,6 +120,16 @@ body { font-family:'Noto Sans KR',sans-serif; background:#0f0f1a; color:#e0e0e0;
 .updating { display:none; }
 .updating.show { display:inline-block; animation:spin .6s linear infinite; }
 @keyframes spin { to{transform:rotate(360deg)} }
+/* Demand index overlay panel */
+.demand-panel { background:linear-gradient(145deg,#16213e,#1a1a2e); border:1px solid #0f3460; border-radius:12px; padding:16px 18px; }
+.demand-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.demand-toggle {
+  display:flex; align-items:center; gap:8px; padding:9px 12px;
+  background:#0f1928; border:1px solid #1a3a5c; border-radius:8px;
+  cursor:pointer; transition:all .2s; user-select:none;
+}
+.demand-toggle.active { background:#1a0f26; border-color:#ce93d8; }
+.demand-toggle input { display:none; }
 </style>
 </head>
 <body>
@@ -235,6 +245,28 @@ body { font-family:'Noto Sans KR',sans-serif; background:#0f0f1a; color:#e0e0e0;
         </div>
       </div>
 
+      <!-- Demand Index Overlays (nynji analysis) -->
+      <div class="demand-panel">
+        <div class="panel-title">&#128200; 수요 분석 레이어 (nynji)</div>
+        <div class="demand-grid">
+          <label class="demand-toggle" data-demand="b2b">
+            <input type="checkbox" data-demand="b2b">
+            <div class="layer-dot" style="background:#ff6b35"></div>
+            <span>&#127970; B2B 기업 활동</span>
+          </label>
+          <label class="demand-toggle" data-demand="b2c">
+            <input type="checkbox" data-demand="b2c">
+            <div class="layer-dot" style="background:#a855f7"></div>
+            <span>&#128717; B2C 소비 수요</span>
+          </label>
+          <label class="demand-toggle" data-demand="robot" style="grid-column:1/-1">
+            <input type="checkbox" data-demand="robot">
+            <div class="layer-dot" style="background:#06b6d4"></div>
+            <span>&#129302; 로봇 배송 용이성</span>
+          </label>
+        </div>
+      </div>
+
       <!-- Dynamic Hub Results -->
       <div class="hub-panel">
         <div class="panel-title">📍 최적 거점 <span id="hub-count-badge" style="background:#e9456033;color:#e94560;border-radius:10px;padding:1px 8px;font-size:12px;"></span></div>
@@ -278,6 +310,22 @@ body { font-family:'Noto Sans KR',sans-serif; background:#0f0f1a; color:#e0e0e0;
       </thead>
       <tbody id="comp-tbody"></tbody>
     </table>
+  </div>
+
+  <!-- Demand index charts (nynji analysis) -->
+  <div class="chart-row3" style="margin-bottom:16px;">
+    <div class="chart-card">
+      <h3>&#127970; B2B 기업 활동 지수 (Top 15)</h3>
+      <div id="chart-b2b" class="chart-box"></div>
+    </div>
+    <div class="chart-card">
+      <h3>&#128717; B2C 소비 수요 지수 (Top 15)</h3>
+      <div id="chart-b2c" class="chart-box"></div>
+    </div>
+    <div class="chart-card">
+      <h3>&#129302; 로봇 배송 용이성 지수 (Top 15)</h3>
+      <div id="chart-robot" class="chart-box"></div>
+    </div>
   </div>
 
   <div class="status-bar">
@@ -755,6 +803,194 @@ const plotlyLayout = {
       <td><span class="tag ${adv?'tag-green':'tag-red'}">${r.advantage}</span></td>`;
     tbody.appendChild(tr);
   });
+})();
+
+// ================================================================
+// Demand index data (nynji branch — 기업·신용·로봇용이성 분석)
+// ================================================================
+const B2B_INDEX = {
+  "상대원1동":{idx:88.87,corp:3286},"삼평동":{idx:67.37,corp:2982},"서현1동":{idx:60.20,corp:2145},
+  "정자1동":{idx:52.47,corp:2128},"야탑1동":{idx:46.18,corp:1602},"수내1동":{idx:44.21,corp:1657},
+  "성남동":{idx:39.97,corp:999},"구미1동":{idx:39.85,corp:1089},"위례동":{idx:39.76,corp:1212},
+  "야탑3동":{idx:39.45,corp:961},"구미동":{idx:36.86,corp:990},"금곡동":{idx:35.22,corp:895},
+  "복정동":{idx:34.94,corp:657},"시흥동":{idx:34.75,corp:993},"상대원2동":{idx:34.27,corp:289},
+  "운중동":{idx:31.64,corp:725},"고등동":{idx:30.97,corp:561},"신촌동":{idx:28.58,corp:138},
+  "백현동":{idx:27.01,corp:620},"상대원3동":{idx:23.90,corp:51},"신흥2동":{idx:23.47,corp:187},
+  "판교동":{idx:23.14,corp:375},"도촌동":{idx:23.03,corp:550},"야탑2동":{idx:22.88,corp:285},
+  "정자동":{idx:22.79,corp:264},"서현2동":{idx:22.13,corp:176},"이매1동":{idx:21.65,corp:406},
+  "신흥3동":{idx:21.44,corp:119},"금광2동":{idx:21.07,corp:194},"하대원동":{idx:20.94,corp:333},
+  "신흥1동":{idx:20.51,corp:82},"수진2동":{idx:17.04,corp:247},"태평2동":{idx:16.29,corp:118},
+  "수내3동":{idx:15.25,corp:72},"양지동":{idx:14.66,corp:44},"태평1동":{idx:14.36,corp:200},
+  "수진1동":{idx:13.52,corp:125},"정자3동":{idx:13.36,corp:119},"태평3동":{idx:13.18,corp:89},
+  "산성동":{idx:12.72,corp:28},"수내2동":{idx:12.71,corp:90},"단대동":{idx:12.70,corp:88},
+  "정자2동":{idx:12.19,corp:66},"은행2동":{idx:12.15,corp:94},"분당동":{idx:11.82,corp:151},
+  "은행1동":{idx:11.25,corp:28},"이매2동":{idx:10.08,corp:117},"금광1동":{idx:7.45,corp:61},
+  "태평4동":{idx:3.09,corp:51},"중앙동":{idx:3.01,corp:57}
+};
+
+const B2C_INDEX = {
+  "판교동":{idx:81.09,zone:"즉시 확장 구역"},"백현동":{idx:78.64,zone:"즉시 확장 구역"},
+  "수내2동":{idx:76.58,zone:"안정 수요 구역"},"정자1동":{idx:72.59,zone:"즉시 확장 구역"},
+  "삼평동":{idx:70.91,zone:"즉시 확장 구역"},"운중동":{idx:70.06,zone:"안정 수요 구역"},
+  "정자동":{idx:67.62,zone:"즉시 확장 구역"},"수내1동":{idx:67.41,zone:"즉시 확장 구역"},
+  "정자2동":{idx:66.97,zone:"즉시 확장 구역"},"이매2동":{idx:66.91,zone:"즉시 확장 구역"},
+  "고등동":{idx:66.31,zone:"즉시 확장 구역"},"정자3동":{idx:66.31,zone:"즉시 확장 구역"},
+  "수내3동":{idx:65.61,zone:"안정 수요 구역"},"서현1동":{idx:60.87,zone:"즉시 확장 구역"},
+  "시흥동":{idx:59.87,zone:"즉시 확장 구역"},"이매1동":{idx:58.99,zone:"안정 수요 구역"},
+  "구미1동":{idx:58.34,zone:"즉시 확장 구역"},"서현2동":{idx:57.36,zone:"안정 수요 구역"},
+  "구미동":{idx:56.33,zone:"즉시 확장 구역"},"금곡동":{idx:56.24,zone:"안정 수요 구역"},
+  "위례동":{idx:53.73,zone:"안정 수요 구역"},"분당동":{idx:51.25,zone:"안정 수요 구역"},
+  "야탑2동":{idx:49.28,zone:"즉시 확장 구역"},"신촌동":{idx:48.86,zone:"안정 수요 구역"},
+  "야탑1동":{idx:47.01,zone:"성장 잠재 구역"},"도촌동":{idx:46.22,zone:"안정 수요 구역"},
+  "중앙동":{idx:45.62,zone:"성장 잠재 구역"},"야탑3동":{idx:45.30,zone:"성장 잠재 구역"},
+  "금광1동":{idx:41.05,zone:"성장 잠재 구역"},"단대동":{idx:40.30,zone:"성장 잠재 구역"},
+  "신흥2동":{idx:39.14,zone:"관망 구역"},"금광2동":{idx:34.49,zone:"성장 잠재 구역"},
+  "신흥3동":{idx:30.40,zone:"관망 구역"},"하대원동":{idx:30.20,zone:"관망 구역"},
+  "신흥1동":{idx:29.48,zone:"관망 구역"},"은행2동":{idx:28.40,zone:"성장 잠재 구역"},
+  "성남동":{idx:27.40,zone:"관망 구역"},"상대원1동":{idx:27.22,zone:"성장 잠재 구역"},
+  "은행1동":{idx:26.69,zone:"관망 구역"},"상대원2동":{idx:24.80,zone:"성장 잠재 구역"},
+  "복정동":{idx:22.48,zone:"관망 구역"},"상대원3동":{idx:22.36,zone:"관망 구역"},
+  "산성동":{idx:18.38,zone:"성장 잠재 구역"},"양지동":{idx:16.08,zone:"관망 구역"},
+  "태평1동":{idx:15.18,zone:"관망 구역"},"수진2동":{idx:14.99,zone:"관망 구역"},
+  "태평3동":{idx:14.30,zone:"관망 구역"},"태평2동":{idx:14.27,zone:"관망 구역"},
+  "수진1동":{idx:13.72,zone:"관망 구역"},"태평4동":{idx:11.67,zone:"관망 구역"}
+};
+
+const ROBOT_INDEX = {
+  "신흥2동":75.53,"중앙동":74.44,"서현2동":74.19,"산성동":71.92,"태평4동":69.95,
+  "신흥3동":68.98,"은행2동":68.68,"수진2동":68.48,"단대동":68.17,"금광2동":67.80,
+  "판교동":67.16,"수내1동":66.89,"신흥1동":66.87,"성남동":66.57,"금광1동":65.73,
+  "수내3동":64.45,"태평1동":64.27,"삼평동":63.62,"백현동":63.44,"신촌동":62.72,
+  "은행1동":61.64,"시흥동":61.40,"하대원동":61.37,"정자1동":60.91,"상대원1동":60.46,
+  "상대원2동":60.25,"정자3동":59.96,"태평2동":59.89,"위례동":59.87,"수진1동":59.73,
+  "수내2동":58.93,"태평3동":58.28,"복정동":56.93,"이매2동":56.87,"이매1동":56.44,
+  "정자2동":56.29,"분당동":56.10,"금곡동":55.20,"고등동":54.19,"서현1동":53.90,
+  "상대원3동":53.00,"정자동":52.34,"야탑3동":52.15,"도촌동":50.86,"야탑1동":49.23,
+  "운중동":47.08,"양지동":45.20,"구미1동":38.00,"구미동":34.89,"야탑2동":34.09
+};
+
+// ── Demand overlay markers ────────────────────────────────────
+const demandMarkers = {b2b:[],b2c:[],robot:[]};
+const demandActive  = {b2b:false,b2c:false,robot:false};
+
+function demandGradientColor(val,maxVal){
+  const r = Math.min(val/maxVal,1);
+  if(r>=0.8) return '#ff4500';
+  if(r>=0.6) return '#ff7043';
+  if(r>=0.4) return '#ffa070';
+  if(r>=0.2) return '#ffd0b0';
+  return '#fff0e8';
+}
+
+function b2cZoneColor(zone){
+  const zmap = {
+    "즉시 확장 구역":"#a855f7","안정 수요 구역":"#7c3aed",
+    "성장 잠재 구역":"#c084fc","관망 구역":"#6b7280"
+  };
+  return zmap[zone]||'#6b7280';
+}
+
+function buildDemandOverlay(type){
+  demandMarkers[type].forEach(m=>map.removeLayer(m));
+  demandMarkers[type]=[];
+  if(!demandActive[type]) return;
+  GRID.forEach(cell=>{
+    const dong=cell.dong;
+    let color=null,tip='';
+    if(type==='b2b'&&B2B_INDEX[dong]){
+      const d=B2B_INDEX[dong];
+      color=demandGradientColor(d.idx,100);
+      tip=`<b>${dong}</b><br>&#127970; B2B 지수: <b>${d.idx}</b><br>기업 수: ${d.corp}`;
+    }else if(type==='b2c'&&B2C_INDEX[dong]){
+      const d=B2C_INDEX[dong];
+      color=b2cZoneColor(d.zone);
+      tip=`<b>${dong}</b><br>&#128717; B2C 지수: <b>${d.idx}</b><br>${d.zone}`;
+    }else if(type==='robot'&&ROBOT_INDEX[dong]!==undefined){
+      const v=ROBOT_INDEX[dong];
+      color=demandGradientColor(v,80);
+      tip=`<b>${dong}</b><br>&#129302; 로봇 용이성: <b>${v}</b>`;
+    }
+    if(!color) return;
+    const m=L.circleMarker([cell.lat,cell.lon],{
+      radius:8,fillColor:color,fillOpacity:0.70,
+      color:color,weight:0.5,opacity:0.85
+    }).bindPopup(
+      `<div style="font-family:'Noto Sans KR',sans-serif;font-size:12px;">${tip}</div>`,
+      {maxWidth:200}
+    );
+    m.addTo(map);
+    demandMarkers[type].push(m);
+  });
+}
+
+document.querySelectorAll('.demand-toggle').forEach(label=>{
+  label.addEventListener('click',function(e){
+    const inp=this.querySelector('input');
+    inp.checked=!inp.checked;
+    this.classList.toggle('active',inp.checked);
+    const type=this.dataset.demand;
+    demandActive[type]=inp.checked;
+    buildDemandOverlay(type);
+    e.preventDefault();
+  });
+});
+
+// ── B2B chart ─────────────────────────────────────────────
+(() => {
+  const entries=Object.entries(B2B_INDEX).sort((a,b)=>b[1].idx-a[1].idx).slice(0,15);
+  Plotly.newPlot('chart-b2b',[{
+    type:'bar',
+    x:entries.map(e=>e[0]),
+    y:entries.map(e=>e[1].idx),
+    marker:{color:entries.map(e=>demandGradientColor(e[1].idx,100)),line:{color:'#0f3460',width:1}},
+    text:entries.map(e=>e[1].idx.toFixed(1)),
+    textposition:'outside',textfont:{size:10,color:'#aab'},
+    hovertemplate:'%{x}<br>B2B 지수: %{y:.1f}<extra></extra>',
+  }],{
+    ...plotlyLayout,
+    xaxis:{tickangle:-35,tickfont:{size:10},gridcolor:'#0f346033'},
+    yaxis:{gridcolor:'#0f346044',zeroline:false,range:[0,110]},
+    margin:{...plotlyLayout.margin,b:80},
+  },{responsive:true,displayModeBar:false});
+})();
+
+// ── B2C chart ─────────────────────────────────────────────
+(() => {
+  const entries=Object.entries(B2C_INDEX).sort((a,b)=>b[1].idx-a[1].idx).slice(0,15);
+  Plotly.newPlot('chart-b2c',[{
+    type:'bar',
+    x:entries.map(e=>e[0]),
+    y:entries.map(e=>e[1].idx),
+    marker:{color:entries.map(e=>b2cZoneColor(e[1].zone)),line:{color:'#0f3460',width:1}},
+    text:entries.map(e=>e[1].idx.toFixed(1)),
+    textposition:'outside',textfont:{size:10,color:'#aab'},
+    customdata:entries.map(e=>e[1].zone),
+    hovertemplate:'%{x}<br>B2C 지수: %{y:.1f}<br>%{customdata}<extra></extra>',
+  }],{
+    ...plotlyLayout,
+    xaxis:{tickangle:-35,tickfont:{size:10},gridcolor:'#0f346033'},
+    yaxis:{gridcolor:'#0f346044',zeroline:false,range:[0,100]},
+    margin:{...plotlyLayout.margin,b:80},
+  },{responsive:true,displayModeBar:false});
+})();
+
+// ── Robot chart ───────────────────────────────────────────
+(() => {
+  const entries=Object.entries(ROBOT_INDEX).sort((a,b)=>b[1]-a[1]).slice(0,15);
+  Plotly.newPlot('chart-robot',[{
+    type:'bar',
+    x:entries.map(e=>e[0]),
+    y:entries.map(e=>e[1]),
+    marker:{color:entries.map(e=>demandGradientColor(e[1],80)),line:{color:'#0f3460',width:1}},
+    text:entries.map(e=>e[1].toFixed(1)),
+    textposition:'outside',textfont:{size:10,color:'#aab'},
+    hovertemplate:'%{x}<br>로봇 용이성: %{y:.1f}<extra></extra>',
+  }],{
+    ...plotlyLayout,
+    xaxis:{tickangle:-35,tickfont:{size:10},gridcolor:'#0f346033'},
+    yaxis:{gridcolor:'#0f346044',zeroline:false,range:[0,90]},
+    margin:{...plotlyLayout.margin,b:80},
+  },{responsive:true,displayModeBar:false});
 })();
 </script>
 </body>
