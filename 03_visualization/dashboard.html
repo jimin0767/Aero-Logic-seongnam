@@ -324,17 +324,17 @@ body { font-family:'Noto Sans KR',sans-serif; background:#0f0f1a; color:#e0e0e0;
           <label class="demand-toggle" data-demand="b2b">
             <input type="checkbox" data-demand="b2b">
             <div class="layer-dot" style="background:#ff6b35"></div>
-            <span>&#127970; B2B 기업 활동</span>
+            <span>&#127970; 기업수요지수</span>
           </label>
           <label class="demand-toggle" data-demand="b2c">
             <input type="checkbox" data-demand="b2c">
             <div class="layer-dot" style="background:#a855f7"></div>
-            <span>&#128717; B2C 소비 수요</span>
+            <span>&#128717; 소비력지수</span>
           </label>
-          <label class="demand-toggle" data-demand="robot" style="grid-column:1/-1">
-            <input type="checkbox" data-demand="robot">
-            <div class="layer-dot" style="background:#06b6d4"></div>
-            <span>&#129302; 로봇 배송 용이성</span>
+          <label class="demand-toggle" data-demand="ddi" style="grid-column:1/-1">
+            <input type="checkbox" data-demand="ddi">
+            <div class="layer-dot" style="background:#53d769"></div>
+            <span>&#128230; 상권활력지수</span>
           </label>
         </div>
       </div>
@@ -470,9 +470,20 @@ function haversineM(lat1, lon1, lat2, lon2) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+// 수요 점수: 기업수요지수 + 소비력지수 + 상권활력지수 (equal weight)
+// ═══════════════════════════════════════════════════════════════
+function cellDemandScore(cell) {
+  let sum = 0, n = 0;
+  if (demandActive.b2b) { sum += B2B_INDEX[cell.dong] ? B2B_INDEX[cell.dong].idx / 100 : 0; n++; }
+  if (demandActive.b2c) { sum += B2C_INDEX[cell.dong] ? B2C_INDEX[cell.dong].idx / 100 : 0; n++; }
+  if (demandActive.ddi) { sum += cell.ddi; n++; }
+  return n === 0 ? 0 : sum / n;
+}
+
+// ═══════════════════════════════════════════════════════════════
 // Greedy set-cover hub selection
 // ═══════════════════════════════════════════════════════════════
-function selectHubs(scores, maxHubs=10, coverageTarget=0.9) {
+function selectHubs(scores, demScores, demThr, maxHubs=10, coverageTarget=0.9) {
   // 1. Identify feasible cells and hotspots
   const feasible  = new Set();
   const hotspots  = new Set();
@@ -481,9 +492,9 @@ function selectHubs(scores, maxHubs=10, coverageTarget=0.9) {
   scores.forEach((sc, i) => {
     if (sc > 0) {
       feasible.add(i);
-      if (GRID[i].urgv >= URG_THR) {
+      if (demScores[i] >= demThr) {
         hotspots.add(i);
-        totalUrg += GRID[i].urgv;
+        totalUrg += demScores[i];
       }
     }
   });
@@ -491,7 +502,7 @@ function selectHubs(scores, maxHubs=10, coverageTarget=0.9) {
   if (hotspots.size === 0) return { hubs: [], feasible, hotspots, totalUrg };
 
   const uncovered = new Set(hotspots);
-  const selected  = [];   // facility indices
+  const selected  = [];
 
   for (let k = 0; k < maxHubs && uncovered.size > 0; k++) {
     let bestFac = -1, bestScore = -Infinity;
@@ -499,13 +510,11 @@ function selectHubs(scores, maxHubs=10, coverageTarget=0.9) {
     for (let f = 0; f < FACS.length; f++) {
       if (selected.includes(f)) continue;
 
-      // Facility must sit in a feasible cell or be near one
       const cells = COV[f];
       const coveredNew = cells.filter(ci => uncovered.has(ci));
       if (coveredNew.length === 0) continue;
 
-      // Score = covered hotspots + 0.1 × urgency sum (mirrors NB10)
-      const urgSum = coveredNew.reduce((s, ci) => s + GRID[ci].urgv, 0);
+      const urgSum = coveredNew.reduce((s, ci) => s + demScores[ci], 0);
       const sc = coveredNew.length + 0.1 * urgSum;
 
       if (sc > bestScore) { bestScore = sc; bestFac = f; }
@@ -515,7 +524,6 @@ function selectHubs(scores, maxHubs=10, coverageTarget=0.9) {
     selected.push(bestFac);
     COV[bestFac].forEach(ci => uncovered.delete(ci));
 
-    // Early stop if coverage target reached
     const coveredCount = hotspots.size - uncovered.size;
     if (coveredCount / hotspots.size >= coverageTarget) break;
   }
@@ -629,6 +637,7 @@ function buildHexLayer(scores) {
 
 // ── Dynamic hub markers ───────────────────────────────────────
 let hubMarkers = [], servicePolys = [], routeLines = [];
+let _demScores = [], _demThr = 0;
 
 // Vivid neon palette — distinct from the green/yellow/orange hex-cell heatmap
 // and from the POI layer colours (green, orange, red, blue, yellow)
@@ -671,7 +680,7 @@ function buildHubLayer(selFacIndices, scores) {
       iconSize: [44,44], iconAnchor: [22,22], popupAnchor: [0,-24]
     });
     const cov = COV[fi].filter(ci => scores[ci] > 0).length;
-    const hotCov = COV[fi].filter(ci => scores[ci] > 0 && GRID[ci].urgv >= URG_THR).length;
+    const hotCov = COV[fi].filter(ci => scores[ci] > 0 && _demScores[ci] >= _demThr).length;
     // ★ Fix: capture return value of .addTo() directly (avoids brittle _layers lookup)
     const marker = L.marker([fac.lat, fac.lon], {icon})
       .bindPopup(
@@ -695,8 +704,8 @@ function buildHubLayer(selFacIndices, scores) {
 
     // Routes: lines from hub to nearest cells with highest scores
     const topCells = COV[fi]
-      .filter(ci => scores[ci] > 0 && GRID[ci].urgv >= URG_THR)
-      .sort((a, b) => scores[b] + GRID[b].urgv - scores[a] - GRID[a].urgv)
+      .filter(ci => scores[ci] > 0 && _demScores[ci] >= _demThr)
+      .sort((a, b) => scores[b] + _demScores[b] - scores[a] - _demScores[a])
       .slice(0, 5);
     topCells.forEach(ci => {
       const cell = GRID[ci];
@@ -753,8 +762,14 @@ function updateDashboard() {
   // 2. Update hex map
   buildHexLayer(scores);
 
-  // 3. Run greedy set-cover
-  const result = selectHubs(scores);
+  // 3. 수요 점수 계산 (기업수요지수 + 소비력지수 + 상권활력지수) 및 임계값
+  _demScores = GRID.map(cellDemandScore);
+  const demSorted = [..._demScores].sort((a, b) => a - b);
+  _demThr = demSorted[Math.floor(demSorted.length * 0.285)];
+  const demScores = _demScores, demThr = _demThr;
+
+  // 4. Run greedy set-cover
+  const result = selectHubs(scores, demScores, demThr);
   const selFacIndices = result.hubs;
   const feasible = result.feasible;
   const hotspots = result.hotspots;
@@ -792,9 +807,6 @@ document.querySelectorAll('.layer-toggle').forEach(label => {
     e.preventDefault();
   });
 });
-
-// Initial render
-updateDashboard();
 
 // ═══════════════════════════════════════════════════════════════
 // Static charts (Plotly)
@@ -966,8 +978,11 @@ const ROBOT_INDEX = {
 };
 
 // ── Demand overlay markers ────────────────────────────────────
-const demandMarkers = {b2b:[],b2c:[],robot:[]};
-const demandActive  = {b2b:false,b2c:false,robot:false};
+const demandMarkers = {b2b:[],b2c:[],ddi:[]};
+const demandActive  = {b2b:false,b2c:false,ddi:false};
+
+// Initial render (모든 데이터 정의 이후 호출)
+updateDashboard();
 
 function demandGradientColor(val,maxVal){
   const r = Math.min(val/maxVal,1);
@@ -996,15 +1011,14 @@ function buildDemandOverlay(type){
     if(type==='b2b'&&B2B_INDEX[dong]){
       const d=B2B_INDEX[dong];
       color=demandGradientColor(d.idx,100);
-      tip=`<b>${dong}</b><br>&#127970; B2B 지수: <b>${d.idx}</b><br>기업 수: ${d.corp}`;
+      tip=`<b>${dong}</b><br>&#127970; 기업수요지수: <b>${d.idx}</b><br>기업 수: ${d.corp}`;
     }else if(type==='b2c'&&B2C_INDEX[dong]){
       const d=B2C_INDEX[dong];
       color=b2cZoneColor(d.zone);
-      tip=`<b>${dong}</b><br>&#128717; B2C 지수: <b>${d.idx}</b><br>${d.zone}`;
-    }else if(type==='robot'&&ROBOT_INDEX[dong]!==undefined){
-      const v=ROBOT_INDEX[dong];
-      color=demandGradientColor(v,80);
-      tip=`<b>${dong}</b><br>&#129302; 로봇 용이성: <b>${v}</b>`;
+      tip=`<b>${dong}</b><br>&#128717; 소비력지수: <b>${d.idx}</b><br>${d.zone}`;
+    }else if(type==='ddi'){
+      color=demandGradientColor(cell.ddi,1);
+      tip=`<b>${dong}</b><br>&#128230; 상권활력지수: <b>${cell.ddi.toFixed(3)}</b>`;
     }
     if(!color) return;
     const m=L.circleMarker([cell.lat,cell.lon],{
@@ -1027,6 +1041,7 @@ document.querySelectorAll('.demand-toggle').forEach(label=>{
     const type=this.dataset.demand;
     demandActive[type]=inp.checked;
     buildDemandOverlay(type);
+    updateDashboard();
     e.preventDefault();
   });
 });
