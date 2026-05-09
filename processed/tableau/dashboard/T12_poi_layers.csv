@@ -1,0 +1,1529 @@
+﻿poi_category,poi_category_ko,poi_id,name,lat,lon,source_table,score,near_hub
+medical,의료,medical_0001,,37.32886,127.11563,poi_layers.json,,
+medical,의료,medical_0002,죽전키즈앤미즈한의원,37.33195,127.12384,poi_layers.json,,
+medical,의료,medical_0003,,37.32719,127.11286,poi_layers.json,,
+medical,의료,medical_0004,핑크한의원,37.332,127.12544,poi_layers.json,,
+medical,의료,medical_0005,,37.32843,127.11376,poi_layers.json,,
+medical,의료,medical_0006,서울경희한의원,37.32011,127.09803,poi_layers.json,,
+medical,의료,medical_0007,,37.32842,127.11374,poi_layers.json,,
+medical,의료,medical_0008,연세웰비뇨기과피부과,37.32022,127.11388,poi_layers.json,,
+medical,의료,medical_0009,희망찬한의원,37.33204,127.12763,poi_layers.json,,
+medical,의료,medical_0010,,37.32707,127.11334,poi_layers.json,,
+medical,의료,medical_0011,밝은누리안과,37.32199,127.09611,poi_layers.json,,
+medical,의료,medical_0012,하이탑피부비뇨기과의원,37.32719,127.11286,poi_layers.json,,
+medical,의료,medical_0013,,37.33196,127.12059,poi_layers.json,,
+medical,의료,medical_0014,경희태동한의원,37.33535,127.10869,poi_layers.json,,
+medical,의료,medical_0015,,37.32835,127.11448,poi_layers.json,,
+medical,의료,medical_0016,맑은신경과,37.3225,127.0957,poi_layers.json,,
+medical,의료,medical_0017,와이즈병원,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0018,태영한의원,37.33164,127.11059,poi_layers.json,,
+medical,의료,medical_0019,연세키즈소아과,37.33199,127.12358,poi_layers.json,,
+medical,의료,medical_0020,알콜정신전문병원,37.33251,127.10092,poi_layers.json,,
+medical,의료,medical_0021,종아리퇴축비만클리닉,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0022,,37.32865,127.11421,poi_layers.json,,
+medical,의료,medical_0023,수지서울정형외과,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0024,연세내과의원,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0025,연세웰내과의원,37.34072,127.09903,poi_layers.json,,
+medical,의료,medical_0026,유영일내과의원,37.32701,127.11225,poi_layers.json,,
+medical,의료,medical_0027,미라클의원,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0028,,37.32863,127.11419,poi_layers.json,,
+medical,의료,medical_0029,김안과의원,37.32459,127.09749,poi_layers.json,,
+medical,의료,medical_0030,수지정신보건실,37.32236,127.09771,poi_layers.json,,
+medical,의료,medical_0031,염광피부과의원,37.33725,127.08875,poi_layers.json,,
+medical,의료,medical_0032,,37.32863,127.11419,poi_layers.json,,
+medical,의료,medical_0033,장이비인후과,37.32699,127.11219,poi_layers.json,,
+medical,의료,medical_0034,,37.32861,127.11425,poi_layers.json,,
+medical,의료,medical_0035,차호인정형외과,37.32348,127.09556,poi_layers.json,,
+medical,의료,medical_0036,동천서울이비인후과의원,37.33572,127.09328,poi_layers.json,,
+medical,의료,medical_0037,수지신경외과,37.32176,127.0941,poi_layers.json,,
+medical,의료,medical_0038,길이비인후과,37.32221,127.09474,poi_layers.json,,
+medical,의료,medical_0039,,37.33165,127.11748,poi_layers.json,,
+medical,의료,medical_0040,,37.33045,127.10844,poi_layers.json,,
+medical,의료,medical_0041,용한외과,37.32459,127.09749,poi_layers.json,,
+medical,의료,medical_0042,이안소아과의원,37.32217,127.09584,poi_layers.json,,
+medical,의료,medical_0043,연세산부인과,37.32459,127.09749,poi_layers.json,,
+medical,의료,medical_0044,로하스정신과의원,37.32191,127.09594,poi_layers.json,,
+medical,의료,medical_0045,참가정의원,37.32447,127.07671,poi_layers.json,,
+medical,의료,medical_0046,동천한의원,37.33593,127.09298,poi_layers.json,,
+medical,의료,medical_0047,수강한의원,37.32192,127.09608,poi_layers.json,,
+medical,의료,medical_0048,수지아동발달센터,37.32097,127.09466,poi_layers.json,,
+medical,의료,medical_0049,맥한의원,37.32073,127.11502,poi_layers.json,,
+medical,의료,medical_0050,이상봉마취통증의학과의원,37.32334,127.09575,poi_layers.json,,
+medical,의료,medical_0051,성모마취통증의학과의원,37.32702,127.09868,poi_layers.json,,
+medical,의료,medical_0052,영재한의원,37.33431,127.09701,poi_layers.json,,
+medical,의료,medical_0053,수지한의원,37.32571,127.09647,poi_layers.json,,
+medical,의료,medical_0054,경희본한의원,37.32221,127.09474,poi_layers.json,,
+medical,의료,medical_0055,소망한의원,37.32177,127.09416,poi_layers.json,,
+medical,의료,medical_0056,카톨릭경희한의원,37.32256,127.09554,poi_layers.json,,
+medical,의료,medical_0057,주성차병원,37.3481,127.08917,poi_layers.json,,
+medical,의료,medical_0058,"한양내과, 류마티스클리닉-Hanyang Clinic",37.34966,127.10958,poi_layers.json,,
+medical,의료,medical_0059,맑은이빈인후과의원 판교점,37.38847,127.11548,poi_layers.json,,
+medical,의료,medical_0060,도제한의원,37.38845,127.11543,poi_layers.json,,
+medical,의료,medical_0061,튼튼가정의학과의원,37.38852,127.1154,poi_layers.json,,
+medical,의료,medical_0062,판교연세피부과,37.38842,127.1151,poi_layers.json,,
+medical,의료,medical_0063,맑은샘경희한의원,37.38835,127.11509,poi_layers.json,,
+medical,의료,medical_0064,퍼스트소아청소년과,37.38831,127.11511,poi_layers.json,,
+medical,의료,medical_0065,선현주한의원,37.38823,127.11468,poi_layers.json,,
+medical,의료,medical_0066,좋은이웃요양병원,37.38731,127.12347,poi_layers.json,,
+medical,의료,medical_0067,분당제일여성병원,37.3869,127.12177,poi_layers.json,,
+medical,의료,medical_0068,서울나우병원,37.38398,127.12015,poi_layers.json,,
+medical,의료,medical_0069,양지부부한의원,37.45589,127.16202,poi_layers.json,,
+medical,의료,medical_0070,태평양약국,37.45801,127.16459,poi_layers.json,,
+medical,의료,medical_0071,,37.33708,127.11658,poi_layers.json,,
+medical,의료,medical_0072,,37.33698,127.11593,poi_layers.json,,
+medical,의료,medical_0073,,37.33711,127.11595,poi_layers.json,,
+medical,의료,medical_0074,,37.33766,127.11633,poi_layers.json,,
+medical,의료,medical_0075,,37.33769,127.11637,poi_layers.json,,
+medical,의료,medical_0076,더헤리티지 너싱홈,37.35821,127.10033,poi_layers.json,,
+medical,의료,medical_0077,백두산약국,37.34389,127.17951,poi_layers.json,,
+medical,의료,medical_0078,동국대학교 분당한방병원,37.36728,127.12803,poi_layers.json,,
+medical,의료,medical_0079,모란정신건강의학과의원,37.43067,127.12981,poi_layers.json,,
+medical,의료,medical_0080,메디피움병원,37.39769,127.1126,poi_layers.json,,
+medical,의료,medical_0081,휴엔병원(12층),37.4399,127.14406,poi_layers.json,,
+medical,의료,medical_0082,럭스타워약국,37.39643,127.11175,poi_layers.json,,
+medical,의료,medical_0083,럭스온누리약국,37.39644,127.11146,poi_layers.json,,
+medical,의료,medical_0084,웰츠약국,37.39791,127.11269,poi_layers.json,,
+medical,의료,medical_0085,휴엔병원(12층),37.4399,127.14399,poi_layers.json,,
+medical,의료,medical_0086,럭스온누리약국,37.39645,127.1115,poi_layers.json,,
+medical,의료,medical_0087,럭스타워약국,37.39645,127.11173,poi_layers.json,,
+medical,의료,medical_0088,태평양약국,37.39736,127.11269,poi_layers.json,,
+medical,의료,medical_0089,분당구보건소,37.41104,127.12469,poi_layers.json,,
+medical,의료,medical_0090,헬스케어혁신파크,37.35418,127.12088,poi_layers.json,,
+medical,의료,medical_0091,분당백화점약국 (연중무휴),37.38536,127.12455,poi_layers.json,,
+medical,의료,medical_0092,새코끼리약국,37.45792,127.16475,poi_layers.json,,
+medical,의료,medical_0093,드림약국,37.3433,127.17826,poi_layers.json,,
+medical,의료,medical_0094,능골사랑약국,37.34427,127.17999,poi_layers.json,,
+medical,의료,medical_0095,대평양약국,37.34425,127.17827,poi_layers.json,,
+medical,의료,medical_0096,오포온누리약국,37.34497,127.17761,poi_layers.json,,
+medical,의료,medical_0097,능원약국,37.3306,127.1558,poi_layers.json,,
+medical,의료,medical_0098,마이팜 약국,37.45369,127.1616,poi_layers.json,,
+medical,의료,medical_0099,올가스킨케어,37.32789,127.0731,poi_layers.json,,
+medical,의료,medical_0100,수정구 보건소,37.44432,127.14417,poi_layers.json,,
+medical,의료,medical_0101,분당메디칼약국,37.34979,127.1094,poi_layers.json,,
+medical,의료,medical_0102,태광약국,37.35085,127.10925,poi_layers.json,,
+medical,의료,medical_0103,미금프라자약국,37.35021,127.11046,poi_layers.json,,
+medical,의료,medical_0104,하나약국,37.34567,127.11174,poi_layers.json,,
+medical,의료,medical_0105,명수약국,37.34972,127.11632,poi_layers.json,,
+medical,의료,medical_0106,엄마손약국,37.34967,127.11061,poi_layers.json,,
+medical,의료,medical_0107,분당봄약국,37.3497,127.11016,poi_layers.json,,
+medical,의료,medical_0108,죽전열린약국,37.32678,127.10924,poi_layers.json,,
+medical,의료,medical_0109,365그린약국,37.35045,127.10833,poi_layers.json,,
+medical,의료,medical_0110,보건진료소,37.45052,127.12968,poi_layers.json,,
+medical,의료,medical_0111,가든파이브약국,37.47827,127.12582,poi_layers.json,,
+medical,의료,medical_0112,월드옵티마약국,37.461,127.16867,poi_layers.json,,
+medical,의료,medical_0113,새모란21세기약국,37.4323,127.12946,poi_layers.json,,
+medical,의료,medical_0114,분당그린약국,37.35956,127.10661,poi_layers.json,,
+medical,의료,medical_0115,신현약국,37.36627,127.15948,poi_layers.json,,
+medical,의료,medical_0116,판교제일이비인후과 내과 피부과,37.40224,127.11026,poi_layers.json,,
+medical,의료,medical_0117,판교이화약국,37.38984,127.0899,poi_layers.json,,
+medical,의료,medical_0118,분당베스트병원,37.41219,127.12988,poi_layers.json,,
+medical,의료,medical_0119,신중앙메디칼온누리약국,37.44537,127.16192,poi_layers.json,,
+medical,의료,medical_0120,성모윌병원,37.43448,127.12832,poi_layers.json,,
+medical,의료,medical_0121,네이처요양병원,37.46641,127.09974,poi_layers.json,,
+medical,의료,medical_0122,솔빛내과의원,37.32985,127.09234,poi_layers.json,,
+medical,의료,medical_0123,맑은샘약국,37.32323,127.07735,poi_layers.json,,
+medical,의료,medical_0124,수지한림약국,37.32374,127.09538,poi_layers.json,,
+medical,의료,medical_0125,메디플러스약국,37.32384,127.09527,poi_layers.json,,
+medical,의료,medical_0126,온누리약국,37.32449,127.09471,poi_layers.json,,
+medical,의료,medical_0127,썬프라자약국,37.32333,127.09567,poi_layers.json,,
+medical,의료,medical_0128,곰돌이약국,37.47837,127.0555,poi_layers.json,,
+school,학교,school_0001,,37.33123,127.11699,poi_layers.json,,
+school,학교,school_0002,아이유치원,37.32613,127.09958,poi_layers.json,,
+school,학교,school_0003,나리유치원,37.3371,127.1047,poi_layers.json,,
+school,학교,school_0004,다솜유치원,37.33214,127.10037,poi_layers.json,,
+school,학교,school_0005,하나유치원,37.32813,127.09356,poi_layers.json,,
+school,학교,school_0006,현대유치원,37.32496,127.09438,poi_layers.json,,
+school,학교,school_0007,한국유치원,37.32702,127.09868,poi_layers.json,,
+school,학교,school_0008,이레유치원,37.32467,127.09318,poi_layers.json,,
+school,학교,school_0009,,37.3295,127.10934,poi_layers.json,,
+school,학교,school_0010,예인유치원,37.32777,127.09216,poi_layers.json,,
+school,학교,school_0011,,37.32653,127.11683,poi_layers.json,,
+school,학교,school_0012,수지다예린유치원,37.33235,127.05309,poi_layers.json,,
+school,학교,school_0013,정평초등학교,37.32071,127.08863,poi_layers.json,,
+school,학교,school_0014,,37.32777,127.11837,poi_layers.json,,
+school,학교,school_0015,선경어린이집,37.44145,127.1689,poi_layers.json,,
+school,학교,school_0016,아이큰별어린이집,37.33272,127.09508,poi_layers.json,,
+school,학교,school_0017,삼평유치원,37.40227,127.11643,poi_layers.json,,
+school,학교,school_0018,희영유치원,37.38824,127.11425,poi_layers.json,,
+school,학교,school_0019,은서유치원,37.44359,127.13497,poi_layers.json,,
+school,학교,school_0020,새싹들 어린이집,37.43268,127.15092,poi_layers.json,,
+school,학교,school_0021,은혜유치원,37.3609,127.11203,poi_layers.json,,
+school,학교,school_0022,오즈의마법사유치원,37.46397,127.10626,poi_layers.json,,
+school,학교,school_0023,자연키즈랜드,37.3481,127.17976,poi_layers.json,,
+school,학교,school_0024,서울국제학교,37.46621,127.12905,poi_layers.json,,
+school,학교,school_0025,중앙유치원,37.34137,127.1726,poi_layers.json,,
+school,학교,school_0026,대현초등학교 병설유치원,37.33383,127.10662,poi_layers.json,,
+school,학교,school_0027,샛별중학교,37.36831,127.12959,poi_layers.json,,
+school,학교,school_0028,은솔유치원,37.46782,127.13816,poi_layers.json,,
+school,학교,school_0029,성체유치원,37.43905,127.13763,poi_layers.json,,
+school,학교,school_0030,이화유치원,37.44702,127.13396,poi_layers.json,,
+school,학교,school_0031,광명초등학교,37.35965,127.16097,poi_layers.json,,
+school,학교,school_0032,야탑고등학교,37.40348,127.15294,poi_layers.json,,
+school,학교,school_0033,송림중학교,37.39216,127.13175,poi_layers.json,,
+school,학교,school_0034,판교테크노어린이집,37.39909,127.10927,poi_layers.json,,
+school,학교,school_0035,풍문고등학교,37.47139,127.10063,poi_layers.json,,
+school,학교,school_0036,신구대현장,37.44994,127.1673,poi_layers.json,,
+school,학교,school_0037,능평어린이집,37.34549,127.1752,poi_layers.json,,
+school,학교,school_0038,장안유치원,37.37081,127.14041,poi_layers.json,,
+school,학교,school_0039,홍천중학교,37.32122,127.07638,poi_layers.json,,
+school,학교,school_0040,아기사랑 어린이집,37.32854,127.07563,poi_layers.json,,
+school,학교,school_0041,한화꿈에그린어린이집,37.32349,127.08188,poi_layers.json,,
+school,학교,school_0042,세곡나비 어린이집,37.47477,127.11021,poi_layers.json,,
+school,학교,school_0043,꾸러기유치원,37.40382,127.1257,poi_layers.json,,
+school,학교,school_0044,자곡어린이집,37.47406,127.10177,poi_layers.json,,
+school,학교,school_0045,해나유치원,37.3906,127.09796,poi_layers.json,,
+school,학교,school_0046,1호관 정문,37.45953,127.12867,poi_layers.json,,
+school,학교,school_0047,1호관 후문,37.45948,127.12888,poi_layers.json,,
+school,학교,school_0048,2호관 학교식당,37.45861,127.129,poi_layers.json,,
+school,학교,school_0049,본관정문,37.46037,127.12861,poi_layers.json,,
+school,학교,school_0050,본관쪽문,37.46014,127.1288,poi_layers.json,,
+school,학교,school_0051,본관후문,37.4603,127.12846,poi_layers.json,,
+school,학교,school_0052,지하햄버거집,37.46057,127.12918,poi_layers.json,,
+school,학교,school_0053,"10호관,3호관 출입문",37.46083,127.12954,poi_layers.json,,
+school,학교,school_0054,10호관 지하출입문,37.4609,127.12931,poi_layers.json,,
+school,학교,school_0055,3호관 입구,37.46069,127.12964,poi_layers.json,,
+school,학교,school_0056,6호관 입구,37.46027,127.12921,poi_layers.json,,
+school,학교,school_0057,6호관 쪽문,37.4604,127.12941,poi_layers.json,,
+school,학교,school_0058,학생회관 정문,37.45825,127.12837,poi_layers.json,,
+school,학교,school_0059,8호관 옆문,37.45911,127.12926,poi_layers.json,,
+school,학교,school_0060,8호관 옆문2,37.4584,127.12934,poi_layers.json,,
+school,학교,school_0061,8호관 정문2,37.45853,127.12926,poi_layers.json,,
+school,학교,school_0062,8호관 정문,37.45872,127.12924,poi_layers.json,,
+school,학교,school_0063,2호관 쪽문2,37.45813,127.12918,poi_layers.json,,
+school,학교,school_0064,1호관 쪽문,37.45907,127.12886,poi_layers.json,,
+school,학교,school_0065,2호관 쪽문,37.459,127.12889,poi_layers.json,,
+school,학교,school_0066,6호관 후문,37.46033,127.12979,poi_layers.json,,
+school,학교,school_0067,도서관 후문,37.46003,127.12975,poi_layers.json,,
+school,학교,school_0068,도서관 옆문,37.46002,127.12934,poi_layers.json,,
+school,학교,school_0069,도서관 엘리베이터,37.45989,127.12919,poi_layers.json,,
+school,학교,school_0070,도서관 계단,37.45952,127.12924,poi_layers.json,,
+school,학교,school_0071,9호관 부출입문,37.46008,127.13013,poi_layers.json,,
+school,학교,school_0072,5호관 정문,37.46036,127.1302,poi_layers.json,,
+school,학교,school_0073,5호관 후문,37.46042,127.13081,poi_layers.json,,
+school,학교,school_0074,9호관 정문,37.46018,127.13045,poi_layers.json,,
+school,학교,school_0075,9호관 쪽문,37.46021,127.13079,poi_layers.json,,
+school,학교,school_0076,3호관 구름다리,37.4607,127.12992,poi_layers.json,,
+school,학교,school_0077,1호관 옆문,37.45996,127.12873,poi_layers.json,,
+school,학교,school_0078,학생회관 몊문,37.45824,127.1286,poi_layers.json,,
+school,학교,school_0079,학생회관 옆문2,37.45818,127.12812,poi_layers.json,,
+school,학교,school_0080,기숙사동 입구,37.45784,127.12804,poi_layers.json,,
+school,학교,school_0081,교류센터  정문,37.45767,127.12841,poi_layers.json,,
+subway,지하철,subway_0001,,37.36594,127.10779,poi_layers.json,,
+subway,지하철,subway_0002,,37.3664,127.10779,poi_layers.json,,
+subway,지하철,subway_0003,,37.47876,127.12642,poi_layers.json,,
+subway,지하철,subway_0004,,37.47854,127.12653,poi_layers.json,,
+subway,지하철,subway_0005,,37.47858,127.12587,poi_layers.json,,
+subway,지하철,subway_0006,,37.47833,127.12607,poi_layers.json,,
+subway,지하철,subway_0007,,37.47153,127.12702,poi_layers.json,,
+subway,지하철,subway_0008,,37.47144,127.12648,poi_layers.json,,
+subway,지하철,subway_0009,,37.47105,127.12639,poi_layers.json,,
+subway,지하철,subway_0010,,37.47022,127.12692,poi_layers.json,,
+subway,지하철,subway_0011,,37.45557,127.14974,poi_layers.json,,
+subway,지하철,subway_0012,,37.45592,127.15029,poi_layers.json,,
+subway,지하철,subway_0013,,37.45568,127.15011,poi_layers.json,,
+subway,지하철,subway_0014,,37.45235,127.15998,poi_layers.json,,
+subway,지하철,subway_0015,,37.45227,127.1603,poi_layers.json,,
+subway,지하철,subway_0016,,37.45177,127.16023,poi_layers.json,,
+subway,지하철,subway_0017,,37.45188,127.15968,poi_layers.json,,
+subway,지하철,subway_0018,,37.44541,127.15742,poi_layers.json,,
+subway,지하철,subway_0019,,37.44496,127.15709,poi_layers.json,,
+subway,지하철,subway_0020,,37.4445,127.15655,poi_layers.json,,
+subway,지하철,subway_0021,,37.44497,127.1563,poi_layers.json,,
+subway,지하철,subway_0022,,37.44541,127.15631,poi_layers.json,,
+subway,지하철,subway_0023,,37.44551,127.15656,poi_layers.json,,
+subway,지하철,subway_0024,,37.44567,127.15683,poi_layers.json,,
+subway,지하철,subway_0025,,37.44084,127.14806,poi_layers.json,,
+subway,지하철,subway_0026,,37.44062,127.14744,poi_layers.json,,
+subway,지하철,subway_0027,,37.44121,127.14764,poi_layers.json,,
+subway,지하철,subway_0028,,37.44109,127.14727,poi_layers.json,,
+subway,지하철,subway_0029,,37.43793,127.14103,poi_layers.json,,
+subway,지하철,subway_0030,,37.43764,127.14044,poi_layers.json,,
+subway,지하철,subway_0031,,37.43721,127.14096,poi_layers.json,,
+subway,지하철,subway_0032,,37.43741,127.14137,poi_layers.json,,
+subway,지하철,subway_0033,,37.43294,127.12919,poi_layers.json,,
+subway,지하철,subway_0034,,37.4324,127.12927,poi_layers.json,,
+subway,지하철,subway_0035,,37.43284,127.12883,poi_layers.json,,
+subway,지하철,subway_0036,,37.43232,127.12891,poi_layers.json,,
+subway,지하철,subway_0037,,37.43121,127.12946,poi_layers.json,,
+subway,지하철,subway_0038,,37.43173,127.12936,poi_layers.json,,
+subway,지하철,subway_0039,,37.43172,127.12897,poi_layers.json,,
+subway,지하철,subway_0040,,37.43124,127.12905,poi_layers.json,,
+subway,지하철,subway_0041,,37.43398,127.12856,poi_layers.json,,
+subway,지하철,subway_0042,,37.43399,127.12907,poi_layers.json,,
+subway,지하철,subway_0043,,37.43401,127.12964,poi_layers.json,,
+subway,지하철,subway_0044,,37.33936,127.10873,poi_layers.json,,
+subway,지하철,subway_0045,,37.33949,127.10855,poi_layers.json,,
+subway,지하철,subway_0046,,37.33983,127.10838,poi_layers.json,,
+subway,지하철,subway_0047,,37.33997,127.10939,poi_layers.json,,
+subway,지하철,subway_0048,,37.33953,127.10917,poi_layers.json,,
+subway,지하철,subway_0049,,37.34059,127.10938,poi_layers.json,,
+subway,지하철,subway_0050,,37.34062,127.10873,poi_layers.json,,
+subway,지하철,subway_0051,,37.32477,127.10721,poi_layers.json,,
+subway,지하철,subway_0052,,37.32494,127.10764,poi_layers.json,,
+subway,지하철,subway_0053,,37.32543,127.10739,poi_layers.json,,
+subway,지하철,subway_0054,,37.34944,127.1086,poi_layers.json,,
+subway,지하철,subway_0055,,37.34981,127.10821,poi_layers.json,,
+subway,지하철,subway_0056,,37.3502,127.10955,poi_layers.json,,
+subway,지하철,subway_0057,,37.35052,127.10914,poi_layers.json,,
+subway,지하철,subway_0058,,37.35052,127.10867,poi_layers.json,,
+subway,지하철,subway_0059,,37.34984,127.10955,poi_layers.json,,
+subway,지하철,subway_0060,,37.34952,127.10915,poi_layers.json,,
+subway,지하철,subway_0061,,37.35018,127.10822,poi_layers.json,,
+subway,지하철,subway_0062,,37.36622,127.10841,poi_layers.json,,
+subway,지하철,subway_0063,,37.36605,127.10841,poi_layers.json,,
+subway,지하철,subway_0064,,37.36819,127.10789,poi_layers.json,,
+subway,지하철,subway_0065,,37.37859,127.11472,poi_layers.json,,
+subway,지하철,subway_0066,,37.37873,127.11455,poi_layers.json,,
+subway,지하철,subway_0067,,37.37817,127.11375,poi_layers.json,,
+subway,지하철,subway_0068,,37.37801,127.11394,poi_layers.json,,
+subway,지하철,subway_0069,,37.38455,127.12312,poi_layers.json,,
+subway,지하철,subway_0070,,37.38427,127.1241,poi_layers.json,,
+subway,지하철,subway_0071,,37.38475,127.12288,poi_layers.json,,
+subway,지하철,subway_0072,,37.3852,127.12353,poi_layers.json,,
+subway,지하철,subway_0073,,37.385,127.12372,poi_layers.json,,
+subway,지하철,subway_0074,,37.39443,127.1288,poi_layers.json,,
+subway,지하철,subway_0075,,37.39479,127.12773,poi_layers.json,,
+subway,지하철,subway_0076,,37.39506,127.12796,poi_layers.json,,
+subway,지하철,subway_0077,,37.39735,127.12817,poi_layers.json,,
+subway,지하철,subway_0078,,37.39749,127.12877,poi_layers.json,,
+subway,지하철,subway_0079,,37.39715,127.12866,poi_layers.json,,
+subway,지하철,subway_0080,,37.41196,127.12838,poi_layers.json,,
+subway,지하철,subway_0081,,37.41204,127.12898,poi_layers.json,,
+subway,지하철,subway_0082,,37.4114,127.12916,poi_layers.json,,
+subway,지하철,subway_0083,,37.4113,127.12823,poi_layers.json,,
+subway,지하철,subway_0084,모란역 12번 출구,37.43343,127.12952,poi_layers.json,,
+subway,지하철,subway_0085,,37.44009,127.12738,poi_layers.json,,
+subway,지하철,subway_0086,,37.44018,127.12796,poi_layers.json,,
+subway,지하철,subway_0087,,37.43995,127.12812,poi_layers.json,,
+subway,지하철,subway_0088,,37.43969,127.12809,poi_layers.json,,
+subway,지하철,subway_0089,,37.43935,127.12809,poi_layers.json,,
+subway,지하철,subway_0090,,37.43909,127.1275,poi_layers.json,,
+subway,지하철,subway_0091,,37.44832,127.12635,poi_layers.json,,
+subway,지하철,subway_0092,,37.44913,127.12635,poi_layers.json,,
+subway,지하철,subway_0093,,37.44957,127.12686,poi_layers.json,,
+subway,지하철,subway_0094,,37.44849,127.12696,poi_layers.json,,
+subway,지하철,subway_0095,,37.44765,127.12702,poi_layers.json,,
+subway,지하철,subway_0096,,37.39484,127.11036,poi_layers.json,,
+subway,지하철,subway_0097,,37.39535,127.11149,poi_layers.json,,
+subway,지하철,subway_0098,,37.39457,127.11181,poi_layers.json,,
+subway,지하철,subway_0099,,37.39416,127.11094,poi_layers.json,,
+subway,지하철,subway_0100,,37.44895,127.05429,poi_layers.json,,
+subway,지하철,subway_0101,,37.44769,127.05499,poi_layers.json,,
+subway,지하철,subway_0102,수지구청역 3번 출입구,37.32353,127.09458,poi_layers.json,,
+subway,지하철,subway_0103,,37.32228,127.09455,poi_layers.json,,
+subway,지하철,subway_0104,,37.32299,127.09526,poi_layers.json,,
+subway,지하철,subway_0105,,37.32277,127.09546,poi_layers.json,,
+subway,지하철,subway_0106,,37.33777,127.10303,poi_layers.json,,
+subway,지하철,subway_0107,,37.33774,127.10259,poi_layers.json,,
+subway,지하철,subway_0108,,37.33858,127.10258,poi_layers.json,,
+subway,지하철,subway_0109,복정,37.47058,127.12671,poi_layers.json,,
+subway,지하철,subway_0110,,37.36713,127.10836,poi_layers.json,,
+subway,지하철,subway_0111,이매,37.39464,127.1284,poi_layers.json,,
+subway,지하철,subway_0112,,37.39438,127.12797,poi_layers.json,,
+subway,지하철,subway_0113,,37.39473,127.12691,poi_layers.json,,
+subway,지하철,subway_0114,,37.39457,127.12691,poi_layers.json,,
+subway,지하철,subway_0115,모란,37.43374,127.12915,poi_layers.json,,
+subway,지하철,subway_0116,수진,37.43744,127.14069,poi_layers.json,,
+subway,지하철,subway_0117,단대오거리,37.44508,127.15678,poi_layers.json,,
+subway,지하철,subway_0118,남한산성입구,37.45155,127.15981,poi_layers.json,,
+subway,지하철,subway_0119,산성,37.45687,127.14993,poi_layers.json,,
+subway,지하철,subway_0120,남위례,37.46277,127.13922,poi_layers.json,,
+subway,지하철,subway_0121,장지,37.47889,127.12607,poi_layers.json,,
+subway,지하철,subway_0122,,37.46297,127.13964,poi_layers.json,,
+subway,지하철,subway_0123,,37.46334,127.13909,poi_layers.json,,
+subway,지하철,subway_0124,,37.32247,127.09435,poi_layers.json,,
+subway,지하철,subway_0125,,37.39374,127.12024,poi_layers.json,,
+subway,지하철,subway_0126,,37.39462,127.12137,poi_layers.json,,
+subway,지하철,subway_0127,,37.3949,127.12001,poi_layers.json,,
+subway,지하철,subway_0128,,37.39483,127.11942,poi_layers.json,,
+subway,지하철,subway_0129,,37.39481,127.11869,poi_layers.json,,
+commercial,상권,commercial_0001,가든파이브 라이프,37.47782,127.12518,poi_layers.json,,
+commercial,상권,commercial_0002,가든파이브 웍스,37.47763,127.12268,poi_layers.json,,
+commercial,상권,commercial_0003,,37.31955,127.08831,poi_layers.json,,
+commercial,상권,commercial_0004,보정동카페거리,37.32162,127.1103,poi_layers.json,,
+commercial,상권,commercial_0005,,37.40432,127.11549,poi_layers.json,,
+commercial,상권,commercial_0006,,37.40383,127.11595,poi_layers.json,,
+commercial,상권,commercial_0007,,37.38838,127.11509,poi_layers.json,,
+commercial,상권,commercial_0008,,37.38185,127.11277,poi_layers.json,,
+commercial,상권,commercial_0009,,37.39729,127.11133,poi_layers.json,,
+commercial,상권,commercial_0010,옷가게,37.36555,127.12727,poi_layers.json,,
+commercial,상권,commercial_0011,신세계 쉐덴,37.44429,127.14141,poi_layers.json,,
+commercial,상권,commercial_0012,,37.44199,127.14277,poi_layers.json,,
+commercial,상권,commercial_0013,,37.44042,127.14452,poi_layers.json,,
+commercial,상권,commercial_0014,,37.3382,127.17702,poi_layers.json,,
+commercial,상권,commercial_0015,Cu편의점 수지점,37.33469,127.10992,poi_layers.json,,
+commercial,상권,commercial_0016,닭죽촌,37.46169,127.15603,poi_layers.json,,
+commercial,상권,commercial_0017,BMW 한독모터스 분당서비스센터,37.37289,127.10122,poi_layers.json,,
+commercial,상권,commercial_0018,폭스바겐 아우토플라츠 판교전시장,37.36898,127.101,poi_layers.json,,
+commercial,상권,commercial_0019,tripledesign,37.38693,127.11513,poi_layers.json,,
+commercial,상권,commercial_0020,,37.36247,127.10661,poi_layers.json,,
+commercial,상권,commercial_0021,,37.37693,127.10527,poi_layers.json,,
+commercial,상권,commercial_0022,,37.40444,127.10059,poi_layers.json,,
+commercial,상권,commercial_0023,,37.40443,127.09891,poi_layers.json,,
+commercial,상권,commercial_0024,,37.40511,127.09947,poi_layers.json,,
+commercial,상권,commercial_0025,,37.40384,127.10001,poi_layers.json,,
+commercial,상권,commercial_0026,,37.40519,127.09776,poi_layers.json,,
+commercial,상권,commercial_0027,,37.40561,127.10023,poi_layers.json,,
+commercial,상권,commercial_0028,,37.40539,127.10064,poi_layers.json,,
+commercial,상권,commercial_0029,,37.40449,127.09766,poi_layers.json,,
+commercial,상권,commercial_0030,,37.40516,127.10105,poi_layers.json,,
+commercial,상권,commercial_0031,,37.40363,127.09847,poi_layers.json,,
+commercial,상권,commercial_0032,,37.40582,127.09816,poi_layers.json,,
+commercial,상권,commercial_0033,,37.40492,127.10146,poi_layers.json,,
+commercial,상권,commercial_0034,,37.40609,127.09932,poi_layers.json,,
+commercial,상권,commercial_0035,,37.40416,127.10268,poi_layers.json,,
+commercial,상권,commercial_0036,,37.40584,127.09983,poi_layers.json,,
+commercial,상권,commercial_0037,,37.40394,127.09814,poi_layers.json,,
+commercial,상권,commercial_0038,,37.40333,127.10094,poi_layers.json,,
+commercial,상권,commercial_0039,,37.4062,127.09866,poi_layers.json,,
+commercial,상권,commercial_0040,,37.40041,127.1014,poi_layers.json,,
+commercial,상권,commercial_0041,,37.40127,127.10313,poi_layers.json,,
+commercial,상권,commercial_0042,,37.40263,127.10202,poi_layers.json,,
+commercial,상권,commercial_0043,,37.40212,127.10023,poi_layers.json,,
+commercial,상권,commercial_0044,,37.40226,127.10059,poi_layers.json,,
+commercial,상권,commercial_0045,,37.40205,127.10356,poi_layers.json,,
+commercial,상권,commercial_0046,,37.40252,127.10146,poi_layers.json,,
+commercial,상권,commercial_0047,,37.40063,127.10456,poi_layers.json,,
+commercial,상권,commercial_0048,,37.40272,127.10293,poi_layers.json,,
+commercial,상권,commercial_0049,,37.4004,127.10313,poi_layers.json,,
+commercial,상권,commercial_0050,,37.40274,127.10367,poi_layers.json,,
+commercial,상권,commercial_0051,,37.40237,127.10094,poi_layers.json,,
+commercial,상권,commercial_0052,,37.4016,127.1011,poi_layers.json,,
+commercial,상권,commercial_0053,,37.40363,127.10737,poi_layers.json,,
+commercial,상권,commercial_0054,,37.40634,127.10333,poi_layers.json,,
+commercial,상권,commercial_0055,,37.4046,127.10997,poi_layers.json,,
+commercial,상권,commercial_0056,,37.40485,127.1113,poi_layers.json,,
+commercial,상권,commercial_0057,,37.40606,127.10256,poi_layers.json,,
+commercial,상권,commercial_0058,,37.40368,127.1061,poi_layers.json,,
+commercial,상권,commercial_0059,,37.40468,127.1063,poi_layers.json,,
+commercial,상권,commercial_0060,,37.40655,127.10163,poi_layers.json,,
+commercial,상권,commercial_0061,,37.40363,127.10826,poi_layers.json,,
+commercial,상권,commercial_0062,,37.4037,127.11035,poi_layers.json,,
+commercial,상권,commercial_0063,,37.40363,127.10682,poi_layers.json,,
+commercial,상권,commercial_0064,,37.40414,127.10502,poi_layers.json,,
+commercial,상권,commercial_0065,,37.40391,127.11166,poi_layers.json,,
+commercial,상권,commercial_0066,,37.40062,127.10807,poi_layers.json,,
+commercial,상권,commercial_0067,,37.40012,127.10921,poi_layers.json,,
+commercial,상권,commercial_0068,,37.40207,127.10865,poi_layers.json,,
+commercial,상권,commercial_0069,,37.40012,127.10874,poi_layers.json,,
+commercial,상권,commercial_0070,,37.40088,127.10807,poi_layers.json,,
+commercial,상권,commercial_0071,,37.40063,127.10685,poi_layers.json,,
+commercial,상권,commercial_0072,,37.40277,127.10737,poi_layers.json,,
+commercial,상권,commercial_0073,,37.40043,127.10923,poi_layers.json,,
+commercial,상권,commercial_0074,,37.40043,127.10874,poi_layers.json,,
+commercial,상권,commercial_0075,,37.40278,127.10808,poi_layers.json,,
+commercial,상권,commercial_0076,,37.40008,127.10807,poi_layers.json,,
+commercial,상권,commercial_0077,,37.40128,127.10865,poi_layers.json,,
+commercial,상권,commercial_0078,,37.40036,127.10807,poi_layers.json,,
+commercial,상권,commercial_0079,,37.40206,127.10662,poi_layers.json,,
+commercial,상권,commercial_0080,,37.40073,127.10923,poi_layers.json,,
+commercial,상권,commercial_0081,,37.40278,127.1089,poi_layers.json,,
+commercial,상권,commercial_0082,,37.40073,127.10874,poi_layers.json,,
+commercial,상권,commercial_0083,,37.39938,127.10918,poi_layers.json,,
+commercial,상권,commercial_0084,,37.39939,127.1086,poi_layers.json,,
+commercial,상권,commercial_0085,,37.39939,127.10807,poi_layers.json,,
+commercial,상권,commercial_0086,,37.40279,127.11146,poi_layers.json,,
+commercial,상권,commercial_0087,,37.40278,127.11073,poi_layers.json,,
+commercial,상권,commercial_0088,,37.40239,127.11216,poi_layers.json,,
+commercial,상권,commercial_0089,,37.40207,127.11044,poi_layers.json,,
+commercial,상권,commercial_0090,,37.40277,127.11017,poi_layers.json,,
+commercial,상권,commercial_0091,,37.40042,127.11044,poi_layers.json,,
+commercial,상권,commercial_0092,,37.40076,127.11221,poi_layers.json,,
+commercial,상권,commercial_0093,,37.40129,127.11044,poi_layers.json,,
+commercial,상권,commercial_0094,,37.36613,127.10698,poi_layers.json,,
+commercial,상권,commercial_0095,,37.32926,127.15652,poi_layers.json,,
+commercial,상권,commercial_0096,,37.33294,127.16017,poi_layers.json,,
+commercial,상권,commercial_0097,,37.47291,127.14997,poi_layers.json,,
+commercial,상권,commercial_0098,,37.47302,127.14275,poi_layers.json,,
+commercial,상권,commercial_0099,,37.37176,127.10219,poi_layers.json,,
+commercial,상권,commercial_0100,,37.3714,127.10219,poi_layers.json,,
+commercial,상권,commercial_0101,,37.37213,127.10225,poi_layers.json,,
+commercial,상권,commercial_0102,,37.37244,127.10223,poi_layers.json,,
+commercial,상권,commercial_0103,,37.37283,127.10222,poi_layers.json,,
+commercial,상권,commercial_0104,,37.37321,127.10218,poi_layers.json,,
+commercial,상권,commercial_0105,,37.37355,127.10216,poi_layers.json,,
+commercial,상권,commercial_0106,,37.45127,127.14862,poi_layers.json,,
+commercial,상권,commercial_0107,,37.38048,127.10499,poi_layers.json,,
+commercial,상권,commercial_0108,수지외식타운,37.3274,127.09638,poi_layers.json,,
+park,공원,park_0001,글샘공원,37.47957,127.12154,poi_layers.json,,
+park,공원,park_0002,자혜공원,37.45159,127.17072,poi_layers.json,,
+park,공원,park_0003,금광소공원,37.44383,127.15833,poi_layers.json,,
+park,공원,park_0004,노루목공원,37.4529,127.16563,poi_layers.json,,
+park,공원,park_0005,은행근린공원,37.45405,127.16932,poi_layers.json,,
+park,공원,park_0006,은행근린공원,37.45538,127.17054,poi_layers.json,,
+park,공원,park_0007,희망대공원,37.44738,127.151,poi_layers.json,,
+park,공원,park_0008,단대공원,37.45439,127.15589,poi_layers.json,,
+park,공원,park_0009,양지체육공원,37.4603,127.16219,poi_layers.json,,
+park,공원,park_0010,달터근린공원,37.47882,127.05296,poi_layers.json,,
+park,공원,park_0011,황송공원,37.44393,127.17408,poi_layers.json,,
+park,공원,park_0012,섬말공원,37.41772,127.15313,poi_layers.json,,
+park,공원,park_0013,율동공원,37.37852,127.15036,poi_layers.json,,
+park,공원,park_0014,상희공원,37.41082,127.14132,poi_layers.json,,
+park,공원,park_0015,,37.41169,127.13629,poi_layers.json,,
+park,공원,park_0016,야탑역 광장,37.41177,127.12816,poi_layers.json,,
+park,공원,park_0017,,37.36613,127.10751,poi_layers.json,,
+park,공원,park_0018,서울 헌릉과 인릉,37.46559,127.08207,poi_layers.json,,
+park,공원,park_0019,신봉체육공원,37.32947,127.06648,poi_layers.json,,
+park,공원,park_0020,동천체육공원,37.33467,127.09633,poi_layers.json,,
+park,공원,park_0021,손곡어린이공원,37.33738,127.09548,poi_layers.json,,
+park,공원,park_0022,수지체육공원,37.32927,127.09745,poi_layers.json,,
+park,공원,park_0023,새마을공원,37.32902,127.09456,poi_layers.json,,
+park,공원,park_0024,수지근린공원,37.32401,127.09098,poi_layers.json,,
+park,공원,park_0025,,37.32699,127.10575,poi_layers.json,,
+park,공원,park_0026,독골공원,37.33194,127.1005,poi_layers.json,,
+park,공원,park_0027,신정공원,37.31973,127.09422,poi_layers.json,,
+park,공원,park_0028,별빛공원,37.32051,127.08779,poi_layers.json,,
+park,공원,park_0029,도마치 어린이공원,37.32708,127.06512,poi_layers.json,,
+park,공원,park_0030,양지말 어린이공원,37.3292,127.06992,poi_layers.json,,
+park,공원,park_0031,동천2 어린이공원,37.33499,127.08866,poi_layers.json,,
+park,공원,park_0032,동천3 어린이공원,37.3341,127.09078,poi_layers.json,,
+park,공원,park_0033,홍천말근린공원,37.32185,127.07827,poi_layers.json,,
+park,공원,park_0034,토월공원,37.32296,127.09701,poi_layers.json,,
+park,공원,park_0035,목련어린이공원,37.47427,127.05245,poi_layers.json,,
+park,공원,park_0036,푸르내공원,37.32316,127.11208,poi_layers.json,,
+park,공원,park_0037,엑스파크공원,37.32291,127.11013,poi_layers.json,,
+park,공원,park_0038,,37.4729,127.09771,poi_layers.json,,
+park,공원,park_0039,중앙공원,37.37706,127.12442,poi_layers.json,,
+park,공원,park_0040,풍덕공원,37.32289,127.10135,poi_layers.json,,
+park,공원,park_0041,풍덕천공원,37.32382,127.09916,poi_layers.json,,
+park,공원,park_0042,수풍소공원,37.32412,127.097,poi_layers.json,,
+park,공원,park_0043,,37.47914,127.12445,poi_layers.json,,
+park,공원,park_0044,,37.39474,127.11491,poi_layers.json,,
+park,공원,park_0045,나들이공원,37.39487,127.11773,poi_layers.json,,
+park,공원,park_0046,,37.39476,127.11936,poi_layers.json,,
+park,공원,park_0047,죽전새터공원,37.33111,127.12378,poi_layers.json,,
+park,공원,park_0048,무지개공원,37.3338,127.12443,poi_layers.json,,
+park,공원,park_0049,새터어린이공원,37.33428,127.11968,poi_layers.json,,
+park,공원,park_0050,방아공원,37.32996,127.12556,poi_layers.json,,
+park,공원,park_0051,,37.32982,127.11684,poi_layers.json,,
+park,공원,park_0052,야탑1동공영주차장,37.41182,127.13225,poi_layers.json,,
+park,공원,park_0053,숲안어린이공원,37.38889,127.116,poi_layers.json,,
+park,공원,park_0054,하늘 어린이공원,37.41471,127.13063,poi_layers.json,,
+park,공원,park_0055,이왕이공원,37.41213,127.16253,poi_layers.json,,
+park,공원,park_0056,저류지,37.39838,127.11851,poi_layers.json,,
+park,공원,park_0057,봇들어린이공원,37.39948,127.11829,poi_layers.json,,
+park,공원,park_0058,꿈동산어린이공원,37.41454,127.126,poi_layers.json,,
+park,공원,park_0059,,37.40179,127.1149,poi_layers.json,,
+park,공원,park_0060,,37.40214,127.11814,poi_layers.json,,
+park,공원,park_0061,송현공원,37.40916,127.11692,poi_layers.json,,
+park,공원,park_0062,종달새어린이공원,37.40646,127.12328,poi_layers.json,,
+park,공원,park_0063,아름어린이공원,37.40252,127.12297,poi_layers.json,,
+park,공원,park_0064,세곡공원,37.47019,127.09835,poi_layers.json,,
+park,공원,park_0065,금곡공원,37.35731,127.1102,poi_layers.json,,
+park,공원,park_0066,매송어린이공원,37.39763,127.12296,poi_layers.json,,
+park,공원,park_0067,,37.39226,127.12506,poi_layers.json,,
+park,공원,park_0068,이매길어린이공원,37.39306,127.12183,poi_layers.json,,
+park,공원,park_0069,누엣길어린이공원,37.38983,127.12561,poi_layers.json,,
+park,공원,park_0070,황새울공원,37.38413,127.11842,poi_layers.json,,
+park,공원,park_0071,잔디광장,37.38188,127.12006,poi_layers.json,,
+park,공원,park_0072,,37.38311,127.1168,poi_layers.json,,
+park,공원,park_0073,,37.40589,127.11249,poi_layers.json,,
+park,공원,park_0074,,37.40236,127.11325,poi_layers.json,,
+park,공원,park_0075,,37.40075,127.11326,poi_layers.json,,
+park,공원,park_0076,삼평어린이공원,37.39952,127.1147,poi_layers.json,,
+park,공원,park_0077,마루공원,37.38199,127.11321,poi_layers.json,,
+park,공원,park_0078,서현어린이공원,37.38197,127.1271,poi_layers.json,,
+park,공원,park_0079,103,37.38241,127.13068,poi_layers.json,,
+park,공원,park_0080,,37.39462,127.10765,poi_layers.json,,
+park,공원,park_0081,물방울어린이공원,37.38674,127.11592,poi_layers.json,,
+park,공원,park_0082,미르어린이공원,37.39497,127.0992,poi_layers.json,,
+park,공원,park_0083,,37.39069,127.08821,poi_layers.json,,
+park,공원,park_0084,,37.38927,127.08871,poi_layers.json,,
+park,공원,park_0085,뒷구미어린이공원,37.3489,127.11129,poi_layers.json,,
+park,공원,park_0086,머내과학공원,37.34661,127.10635,poi_layers.json,,
+park,공원,park_0087,오리공원,37.34047,127.11206,poi_layers.json,,
+park,공원,park_0088,수내 어린이 공원,37.36466,127.12824,poi_layers.json,,
+park,공원,park_0089,대원공원,37.43395,127.15087,poi_layers.json,,
+park,공원,park_0090,무지개어린이공원,37.33978,127.12278,poi_layers.json,,
+park,공원,park_0091,송현어린이공원,37.40452,127.11511,poi_layers.json,,
+park,공원,park_0092,동부코오롱아파트 놀이터,37.3908,127.12574,poi_layers.json,,
+park,공원,park_0093,복정공원,37.45533,127.12842,poi_layers.json,,
+park,공원,park_0094,백현어린이공원,37.37122,127.11233,poi_layers.json,,
+park,공원,park_0095,능골공원,37.37039,127.11654,poi_layers.json,,
+park,공원,park_0096,한솔 어린이 공원,37.36664,127.11693,poi_layers.json,,
+park,공원,park_0097,정든어린이공원,37.36158,127.11651,poi_layers.json,,
+park,공원,park_0098,봉우재어린이공원,37.36116,127.11251,poi_layers.json,,
+park,공원,park_0099,느티마을어린이공원,37.36626,127.1118,poi_layers.json,,
+park,공원,park_0100,죽현마을 중앙공원,37.32035,127.11671,poi_layers.json,,
+park,공원,park_0101,배수지공원,37.32122,127.12193,poi_layers.json,,
+park,공원,park_0102,분당어린이공원,37.37905,127.13113,poi_layers.json,,
+park,공원,park_0103,철쭉 어린이공원,37.36642,127.12224,poi_layers.json,,
+park,공원,park_0104,점골어린이공원,37.3773,127.14036,poi_layers.json,,
+park,공원,park_0105,앞구미어린이공원,37.35356,127.11341,poi_layers.json,,
+park,공원,park_0106,청솔어린이공원,37.35156,127.11067,poi_layers.json,,
+park,공원,park_0107,야생화어린이공원,37.35152,127.10661,poi_layers.json,,
+park,공원,park_0108,벌말공원,37.34811,127.11529,poi_layers.json,,
+park,공원,park_0109,,37.34231,127.17419,poi_layers.json,,
+park,공원,park_0110,,37.34265,127.17474,poi_layers.json,,
+park,공원,park_0111,,37.33986,127.1739,poi_layers.json,,
+park,공원,park_0112,구미 어린이공원,37.33746,127.11729,poi_layers.json,,
+park,공원,park_0113,푸른어린이공원,37.36838,127.12505,poi_layers.json,,
+park,공원,park_0114,,37.35058,127.11347,poi_layers.json,,
+park,공원,park_0115,,37.3502,127.11376,poi_layers.json,,
+park,공원,park_0116,,37.35141,127.11595,poi_layers.json,,
+park,공원,park_0117,모자이크파크,37.39461,127.10897,poi_layers.json,,
+park,공원,park_0118,,37.47783,127.14237,poi_layers.json,,
+park,공원,park_0119,,37.44309,127.13404,poi_layers.json,,
+park,공원,park_0120,,37.34365,127.11816,poi_layers.json,,
+park,공원,park_0121,까치마을어린이공원,37.35118,127.11816,poi_layers.json,,
+park,공원,park_0122,샘터어린이공원,37.34883,127.11869,poi_layers.json,,
+park,공원,park_0123,하얀어린이공원,37.34492,127.11798,poi_layers.json,,
+park,공원,park_0124,오리어린이공원,37.34445,127.11414,poi_layers.json,,
+park,공원,park_0125,,37.46933,127.09068,poi_layers.json,,
+park,공원,park_0126,광장,37.34156,127.09712,poi_layers.json,,
+park,공원,park_0127,,37.36161,127.12089,poi_layers.json,,
+park,공원,park_0128,주공아파트 놀이터,37.34559,127.11454,poi_layers.json,,
+park,공원,park_0129,하얀마을 놀이터,37.34562,127.11239,poi_layers.json,,
+park,공원,park_0130,,37.34508,127.11225,poi_layers.json,,
+park,공원,park_0131,아래방죽마을공원,37.47332,127.10822,poi_layers.json,,
+park,공원,park_0132,당골공원,37.37215,127.12981,poi_layers.json,,
+park,공원,park_0133,,37.48042,127.08919,poi_layers.json,,
+park,공원,park_0134,내정어린이공원,37.37204,127.12143,poi_layers.json,,
+park,공원,park_0135,초림어린이공원,37.37537,127.11757,poi_layers.json,,
+park,공원,park_0136,,37.47264,127.14514,poi_layers.json,,
+park,공원,park_0137,,37.47309,127.14494,poi_layers.json,,
+park,공원,park_0138,매화1단지 놀이터,37.41586,127.13571,poi_layers.json,,
+park,공원,park_0139,,37.36376,127.11443,poi_layers.json,,
+park,공원,park_0140,,37.47182,127.10903,poi_layers.json,,
+park,공원,park_0141,,37.4726,127.10659,poi_layers.json,,
+park,공원,park_0142,,37.46974,127.10457,poi_layers.json,,
+park,공원,park_0143,햇빛어린이공원,37.37453,127.11682,poi_layers.json,,
+park,공원,park_0144,연꽃 어린이공원,37.41533,127.13743,poi_layers.json,,
+park,공원,park_0145,과수원어린이공원,37.4024,127.12596,poi_layers.json,,
+park,공원,park_0146,고양이쉼터,37.47252,127.08894,poi_layers.json,,
+park,공원,park_0147,버들어린이공원,37.47938,127.13363,poi_layers.json,,
+park,공원,park_0148,방아다리어린이공원,37.39775,127.12579,poi_layers.json,,
+park,공원,park_0149,서당어린이공원,37.3752,127.13448,poi_layers.json,,
+park,공원,park_0150,효자어린이공원,37.37609,127.13503,poi_layers.json,,
+park,공원,park_0151,양영어린이공원,37.37339,127.13932,poi_layers.json,,
+park,공원,park_0152,미래어린이공원,37.37105,127.13596,poi_layers.json,,
+park,공원,park_0153,태현공원,37.36949,127.14357,poi_layers.json,,
+park,공원,park_0154,수련어린이공원,37.37241,127.1405,poi_layers.json,,
+park,공원,park_0155,안말어린이공원,37.37258,127.14305,poi_layers.json,,
+park,공원,park_0156,장안어린이공원,37.37071,127.141,poi_layers.json,,
+park,공원,park_0157,정자목어린이공원,37.38494,127.11055,poi_layers.json,,
+park,공원,park_0158,보물섬어린이공원,37.38397,127.11312,poi_layers.json,,
+park,공원,park_0159,화랑공원,37.39718,127.10489,poi_layers.json,,
+park,공원,park_0160,구미공원,37.34218,127.11874,poi_layers.json,,
+park,공원,park_0161,,37.32677,127.09227,poi_layers.json,,
+park,공원,park_0162,방죽골공원,37.32521,127.08967,poi_layers.json,,
+park,공원,park_0163,동천2근린공원,37.33214,127.09034,poi_layers.json,,
+park,공원,park_0164,,37.33096,127.09517,poi_layers.json,,
+park,공원,park_0165,,37.3427,127.11257,poi_layers.json,,
+park,공원,park_0166,바람길 어린이공원,37.39212,127.0667,poi_layers.json,,
+park,공원,park_0167,물빛어린이공원,37.391,127.06709,poi_layers.json,,
+park,공원,park_0168,운중공원,37.39086,127.07191,poi_layers.json,,
+park,공원,park_0169,,37.39,127.07659,poi_layers.json,,
+park,공원,park_0170,,37.38989,127.07242,poi_layers.json,,
+park,공원,park_0171,,37.39371,127.07992,poi_layers.json,,
+park,공원,park_0172,,37.39236,127.0797,poi_layers.json,,
+park,공원,park_0173,눈꽃어린이공원,37.39156,127.08367,poi_layers.json,,
+park,공원,park_0174,도담어린이공원,37.38868,127.08211,poi_layers.json,,
+park,공원,park_0175,,37.39101,127.07959,poi_layers.json,,
+park,공원,park_0176,,37.38483,127.07277,poi_layers.json,,
+park,공원,park_0177,성남여수지구시청공원,37.41915,127.1237,poi_layers.json,,
+park,공원,park_0178,,37.41781,127.12663,poi_layers.json,,
+park,공원,park_0179,한아름어린이공원,37.4178,127.12596,poi_layers.json,,
+park,공원,park_0180,,37.34807,127.11251,poi_layers.json,,
+park,공원,park_0181,신원아파트 놀이터,37.34857,127.11222,poi_layers.json,,
+park,공원,park_0182,,37.46921,127.15733,poi_layers.json,,
+park,공원,park_0183,,37.3475,127.11099,poi_layers.json,,
+park,공원,park_0184,홍천어린이공원,37.32564,127.07631,poi_layers.json,,
+park,공원,park_0185,,37.43709,127.16824,poi_layers.json,,
+park,공원,park_0186,,37.43937,127.17041,poi_layers.json,,
+park,공원,park_0187,,37.34468,127.11092,poi_layers.json,,
+park,공원,park_0188,,37.41969,127.13155,poi_layers.json,,
+park,공원,park_0189,,37.43715,127.14853,poi_layers.json,,
+park,공원,park_0190,,37.43737,127.14904,poi_layers.json,,
+park,공원,park_0191,낙생어린이공원,37.38687,127.10024,poi_layers.json,,
+park,공원,park_0192,,37.42849,127.12646,poi_layers.json,,
+park,공원,park_0193,,37.43032,127.12639,poi_layers.json,,
+park,공원,park_0194,용인동천어린이공원,37.33868,127.08426,poi_layers.json,,
+park,공원,park_0195,,37.47256,127.10836,poi_layers.json,,
+park,공원,park_0196,,37.47229,127.10746,poi_layers.json,,
+park,공원,park_0197,율현공원,37.47249,127.11546,poi_layers.json,,
+park,공원,park_0198,율현공원,37.47554,127.11504,poi_layers.json,,
+park,공원,park_0199,,37.41141,127.09895,poi_layers.json,,
+park,공원,park_0200,주산도어린이공원,37.4609,127.12887,poi_layers.json,,
+park,공원,park_0201,신일어린이공원,37.32819,127.07723,poi_layers.json,,
+park,공원,park_0202,풍덕천소공원,37.32455,127.10058,poi_layers.json,,
+park,공원,park_0203,달빛어린이공원,37.32645,127.09982,poi_layers.json,,
+park,공원,park_0204,,37.33893,127.08491,poi_layers.json,,
+park,공원,park_0205,송례근린공원,37.47765,127.14098,poi_layers.json,,
+park,공원,park_0206,포이공원,37.47274,127.0519,poi_layers.json,,
+park,공원,park_0207,,37.47095,127.04983,poi_layers.json,,
+park,공원,park_0208,,37.47237,127.05033,poi_layers.json,,
+park,공원,park_0209,,37.47317,127.0533,poi_layers.json,,
+park,공원,park_0210,우주공원,37.40405,127.10138,poi_layers.json,,
+park,공원,park_0211,빛나래어린이공원,37.40513,127.09865,poi_layers.json,,
+park,공원,park_0212,까치마을 근린공원,37.34765,127.11341,poi_layers.json,,
+park,공원,park_0213,환상어린이공원,37.40164,127.10214,poi_layers.json,,
+park,공원,park_0214,달팽이어린이공원,37.40442,127.10799,poi_layers.json,,
+park,공원,park_0215,판교테크노파크 공원,37.3991,127.10817,poi_layers.json,,
+park,공원,park_0216,봇들저류지 공원,37.39931,127.1112,poi_layers.json,,
+park,공원,park_0217,어울어린이공원,37.40169,127.11135,poi_layers.json,,
+park,공원,park_0218,,37.32614,127.07671,poi_layers.json,,
+park,공원,park_0219,,37.33036,127.11495,poi_layers.json,,
+park,공원,park_0220,,37.47765,127.142,poi_layers.json,,
+park,공원,park_0221,,37.47728,127.14026,poi_layers.json,,
+park,공원,park_0222,위례별근린공원,37.47761,127.14573,poi_layers.json,,
+park,공원,park_0223,,37.34056,127.10134,poi_layers.json,,
+park,공원,park_0224,,37.33971,127.10124,poi_layers.json,,
+park,공원,park_0225,영풍아파트 공원,37.34045,127.10078,poi_layers.json,,
+park,공원,park_0226,현대홈타운 공원,37.33943,127.09961,poi_layers.json,,
+park,공원,park_0227,,37.33845,127.10247,poi_layers.json,,
+park,공원,park_0228,,37.33834,127.10241,poi_layers.json,,
+park,공원,park_0229,,37.33812,127.10247,poi_layers.json,,
+park,공원,park_0230,,37.33775,127.10244,poi_layers.json,,
+park,공원,park_0231,,37.3375,127.1025,poi_layers.json,,
+park,공원,park_0232,,37.33726,127.10251,poi_layers.json,,
+park,공원,park_0233,,37.33793,127.1025,poi_layers.json,,
+park,공원,park_0234,,37.32866,127.10157,poi_layers.json,,
+park,공원,park_0235,,37.33666,127.10251,poi_layers.json,,
+park,공원,park_0236,,37.36915,127.1145,poi_layers.json,,
+park,공원,park_0237,선경아파트 놀이터,37.3482,127.11226,poi_layers.json,,
+park,공원,park_0238,선경아파트 놀이터,37.34604,127.11226,poi_layers.json,,
+park,공원,park_0239,,37.34455,127.09255,poi_layers.json,,
+park,공원,park_0240,동천 1 근린공원,37.33371,127.08608,poi_layers.json,,
+park,공원,park_0241,은행정이공원,37.45709,127.16891,poi_layers.json,,
+park,공원,park_0242,은행오거리 쉼터,37.45591,127.16793,poi_layers.json,,
+park,공원,park_0243,폭포공원,37.32053,127.13071,poi_layers.json,,
+park,공원,park_0244,,37.34172,127.1706,poi_layers.json,,
+park,공원,park_0245,,37.34168,127.17012,poi_layers.json,,
+park,공원,park_0246,,37.33186,127.16324,poi_layers.json,,
+park,공원,park_0247,,37.33218,127.16251,poi_layers.json,,
+park,공원,park_0248,,37.33233,127.15449,poi_layers.json,,
+park,공원,park_0249,,37.33452,127.15881,poi_layers.json,,
+park,공원,park_0250,,37.33432,127.15882,poi_layers.json,,
+park,공원,park_0251,,37.33513,127.16968,poi_layers.json,,
+park,공원,park_0252,,37.32886,127.15902,poi_layers.json,,
+park,공원,park_0253,,37.3266,127.16061,poi_layers.json,,
+park,공원,park_0254,,37.32101,127.15532,poi_layers.json,,
+park,공원,park_0255,,37.34214,127.172,poi_layers.json,,
+park,공원,park_0256,,37.34832,127.17972,poi_layers.json,,
+park,공원,park_0257,,37.34639,127.15344,poi_layers.json,,
+park,공원,park_0258,제4호소공원,37.33229,127.13654,poi_layers.json,,
+park,공원,park_0259,비발디공원,37.32529,127.12596,poi_layers.json,,
+park,공원,park_0260,숲자락 공원,37.47069,127.09336,poi_layers.json,,
+park,공원,park_0261,안골어린이공원,37.32229,127.12426,poi_layers.json,,
+park,공원,park_0262,구미공원,37.34083,127.12203,poi_layers.json,,
+park,공원,park_0263,신한아파트 소공원,37.33885,127.11455,poi_layers.json,,
+park,공원,park_0264,3단지 관리사무소 앞 공원,37.33942,127.11436,poi_layers.json,,
+park,공원,park_0265,덕봉어린이공원,37.34223,127.12585,poi_layers.json,,
+park,공원,park_0266,3단지 테니스장 공터,37.33915,127.11395,poi_layers.json,,
+park,공원,park_0267,,37.3386,127.11529,poi_layers.json,,
+park,공원,park_0268,진고개공원,37.33652,127.11359,poi_layers.json,,
+park,공원,park_0269,탄천 무지개공원,37.33945,127.11444,poi_layers.json,,
+park,공원,park_0270,건영 3단지 공원,37.33969,127.11535,poi_layers.json,,
+park,공원,park_0271,탄천공원,37.33678,127.11205,poi_layers.json,,
+park,공원,park_0272,불곡어린이공원,37.3447,127.12655,poi_layers.json,,
+park,공원,park_0273,큰골어린이공원,37.34021,127.12608,poi_layers.json,,
+park,공원,park_0274,,37.33893,127.11364,poi_layers.json,,
+park,공원,park_0275,12단지 주공공원,37.33466,127.12033,poi_layers.json,,
+park,공원,park_0276,주공 소공원,37.33528,127.12035,poi_layers.json,,
+park,공원,park_0277,양지동 어린이공원,37.46302,127.1683,poi_layers.json,,
+park,공원,park_0278,양지공원,37.46415,127.16351,poi_layers.json,,
+park,공원,park_0279,,37.43913,127.15398,poi_layers.json,,
+park,공원,park_0280,,37.44109,127.1592,poi_layers.json,,
+park,공원,park_0281,가로공원,37.33696,127.11835,poi_layers.json,,
+park,공원,park_0282,,37.34018,127.11849,poi_layers.json,,
+park,공원,park_0283,,37.46957,127.14707,poi_layers.json,,
+park,공원,park_0284,,37.47613,127.14919,poi_layers.json,,
+park,공원,park_0285,청구 5단지 테니스장,37.34006,127.11784,poi_layers.json,,
+park,공원,park_0286,,37.33945,127.11908,poi_layers.json,,
+park,공원,park_0287,,37.33998,127.11924,poi_layers.json,,
+park,공원,park_0288,,37.33799,127.12099,poi_layers.json,,
+park,공원,park_0289,,37.34028,127.12125,poi_layers.json,,
+park,공원,park_0290,영장근린공원,37.45096,127.13379,poi_layers.json,,
+park,공원,park_0291,,37.45466,127.05308,poi_layers.json,,
+park,공원,park_0292,,37.45293,127.0522,poi_layers.json,,
+park,공원,park_0293,,37.35045,127.11343,poi_layers.json,,
+park,공원,park_0294,래미안이스트파크 놀이공원,37.32968,127.10011,poi_layers.json,,
+park,공원,park_0295,래미안로스트밸리,37.32851,127.09985,poi_layers.json,,
+park,공원,park_0296,,37.32925,127.09923,poi_layers.json,,
+park,공원,park_0297,래미안머쉬룸쉘터,37.32969,127.09942,poi_layers.json,,
+park,공원,park_0298,그랜드빌 입구정원,37.34344,127.1166,poi_layers.json,,
+park,공원,park_0299,402동 정원,37.34378,127.11668,poi_layers.json,,
+park,공원,park_0300,402동 정원,37.34366,127.11684,poi_layers.json,,
+park,공원,park_0301,403동 정원,37.34363,127.11686,poi_layers.json,,
+park,공원,park_0302,403동 정원,37.34355,127.11701,poi_layers.json,,
+park,공원,park_0303,213동 정원,37.34322,127.11669,poi_layers.json,,
+park,공원,park_0304,203동 정원,37.3436,127.11757,poi_layers.json,,
+park,공원,park_0305,404동 정원,37.34385,127.11761,poi_layers.json,,
+park,공원,park_0306,401동 정원,37.34387,127.11638,poi_layers.json,,
+park,공원,park_0307,407동 정원,37.34408,127.11684,poi_layers.json,,
+park,공원,park_0308,406동 정원,37.34398,127.11706,poi_layers.json,,
+park,공원,park_0309,신봉배수지,37.33694,127.06391,poi_layers.json,,
+park,공원,park_0310,상보골 어린이공원,37.32899,127.06358,poi_layers.json,,
+park,공원,park_0311,,37.32773,127.06609,poi_layers.json,,
+park,공원,park_0312,바지산 어린이공원,37.32026,127.07755,poi_layers.json,,
+park,공원,park_0313,도마치 근린공원,37.32746,127.06211,poi_layers.json,,
+park,공원,park_0314,,37.32629,127.06397,poi_layers.json,,
+park,공원,park_0315,신봉어린이공원,37.32927,127.07219,poi_layers.json,,
+park,공원,park_0316,중말 어린이공원,37.32785,127.07428,poi_layers.json,,
+park,공원,park_0317,,37.32473,127.10628,poi_layers.json,,
+park,공원,park_0318,기왓골어린이공원,37.4642,127.1279,poi_layers.json,,
+park,공원,park_0319,,37.47175,127.09371,poi_layers.json,,
+park,공원,park_0320,,37.47494,127.14517,poi_layers.json,,
+park,공원,park_0321,,37.4679,127.15247,poi_layers.json,,
+park,공원,park_0322,솔밭어린이공원,37.38449,127.13053,poi_layers.json,,
+park,공원,park_0323,,37.36871,127.11374,poi_layers.json,,
+park,공원,park_0324,,37.3481,127.11526,poi_layers.json,,
+park,공원,park_0325,,37.34804,127.11532,poi_layers.json,,
+park,공원,park_0326,,37.34859,127.11341,poi_layers.json,,
+park,공원,park_0327,,37.34825,127.11381,poi_layers.json,,
+park,공원,park_0328,,37.34749,127.11456,poi_layers.json,,
+park,공원,park_0329,,37.34657,127.11459,poi_layers.json,,
+park,공원,park_0330,,37.34631,127.11416,poi_layers.json,,
+park,공원,park_0331,,37.33978,127.11799,poi_layers.json,,
+park,공원,park_0332,하나로마트 문화광장,37.3387,127.10841,poi_layers.json,,
+park,공원,park_0333,,37.3323,127.12191,poi_layers.json,,
+park,공원,park_0334,,37.33203,127.12199,poi_layers.json,,
+park,공원,park_0335,,37.3379,127.10968,poi_layers.json,,
+park,공원,park_0336,,37.33783,127.11097,poi_layers.json,,
+park,공원,park_0337,무지개로 공원,37.33992,127.11099,poi_layers.json,,
+park,공원,park_0338,,37.34743,127.11311,poi_layers.json,,
+park,공원,park_0339,,37.34751,127.11261,poi_layers.json,,
+park,공원,park_0340,,37.34744,127.11395,poi_layers.json,,
+park,공원,park_0341,,37.34729,127.11223,poi_layers.json,,
+park,공원,park_0342,,37.34665,127.11215,poi_layers.json,,
+park,공원,park_0343,,37.34652,127.11422,poi_layers.json,,
+park,공원,park_0344,,37.35073,127.10863,poi_layers.json,,
+park,공원,park_0345,,37.35086,127.10832,poi_layers.json,,
+park,공원,park_0346,,37.34516,127.11846,poi_layers.json,,
+park,공원,park_0347,,37.33564,127.1156,poi_layers.json,,
+park,공원,park_0348,,37.34176,127.12491,poi_layers.json,,
+park,공원,park_0349,,37.34222,127.12465,poi_layers.json,,
+park,공원,park_0350,테니스장,37.33635,127.11537,poi_layers.json,,
+park,공원,park_0351,,37.33541,127.11643,poi_layers.json,,
+park,공원,park_0352,,37.33474,127.11601,poi_layers.json,,
+park,공원,park_0353,,37.33458,127.1169,poi_layers.json,,
+park,공원,park_0354,,37.3349,127.11748,poi_layers.json,,
+park,공원,park_0355,,37.33636,127.11398,poi_layers.json,,
+park,공원,park_0356,,37.33589,127.11452,poi_layers.json,,
+park,공원,park_0357,,37.33679,127.11463,poi_layers.json,,
+park,공원,park_0358,,37.33946,127.11662,poi_layers.json,,
+park,공원,park_0359,,37.34015,127.11662,poi_layers.json,,
+park,공원,park_0360,,37.33888,127.11721,poi_layers.json,,
+park,공원,park_0361,,37.33926,127.1176,poi_layers.json,,
+park,공원,park_0362,,37.33648,127.10841,poi_layers.json,,
+park,공원,park_0363,,37.33396,127.10591,poi_layers.json,,
+park,공원,park_0364,,37.33859,127.11966,poi_layers.json,,
+park,공원,park_0365,,37.33837,127.11806,poi_layers.json,,
+park,공원,park_0366,,37.33941,127.12073,poi_layers.json,,
+park,공원,park_0367,,37.34053,127.12065,poi_layers.json,,
+park,공원,park_0368,,37.34156,127.12639,poi_layers.json,,
+park,공원,park_0369,,37.34144,127.12624,poi_layers.json,,
+park,공원,park_0370,넘말 어린이공원,37.34047,127.12477,poi_layers.json,,
+park,공원,park_0371,,37.34025,127.12364,poi_layers.json,,
+park,공원,park_0372,,37.33857,127.12213,poi_layers.json,,
+park,공원,park_0373,,37.33809,127.11967,poi_layers.json,,
+park,공원,park_0374,,37.33435,127.11647,poi_layers.json,,
+park,공원,park_0375,,37.33916,127.11577,poi_layers.json,,
+park,공원,park_0376,,37.339,127.11996,poi_layers.json,,
+park,공원,park_0377,,37.33967,127.10994,poi_layers.json,,
+park,공원,park_0378,래미안쉼터,37.3302,127.09958,poi_layers.json,,
+park,공원,park_0379,동막천산책로,37.34292,127.10741,poi_layers.json,,
+park,공원,park_0380,,37.47115,127.10055,poi_layers.json,,
+park,공원,park_0381,,37.47036,127.10459,poi_layers.json,,
+park,공원,park_0382,해오름근린공원,37.4604,127.10366,poi_layers.json,,
+park,공원,park_0383,,37.37483,127.13238,poi_layers.json,,
+park,공원,park_0384,,37.37389,127.13252,poi_layers.json,,
+park,공원,park_0385,,37.42875,127.12641,poi_layers.json,,
+park,공원,park_0386,,37.43117,127.12435,poi_layers.json,,
+park,공원,park_0387,동문 어린이공원,37.36925,127.14659,poi_layers.json,,
+park,공원,park_0388,태현 어린이공원,37.36754,127.1428,poi_layers.json,,
+park,공원,park_0389,선지봉 어린이공원,37.36556,127.14135,poi_layers.json,,
+park,공원,park_0390,너른들 어린이공원,37.39016,127.09916,poi_layers.json,,
+park,공원,park_0391,새싹 어린이공원,37.41545,127.14109,poi_layers.json,,
+park,공원,park_0392,매향 어린이공원,37.41463,127.13793,poi_layers.json,,
+park,공원,park_0393,바람개비 어린이공원,37.40255,127.09484,poi_layers.json,,
+park,공원,park_0394,봄볕 어린이공원,37.39832,127.09737,poi_layers.json,,
+park,공원,park_0395,너울 어린이공원,37.38986,127.09149,poi_layers.json,,
+park,공원,park_0396,,37.46729,127.09716,poi_layers.json,,
+park,공원,park_0397,,37.46733,127.09865,poi_layers.json,,
+park,공원,park_0398,,37.46807,127.10059,poi_layers.json,,
+park,공원,park_0399,,37.4676,127.09979,poi_layers.json,,
+park,공원,park_0400,,37.46586,127.10931,poi_layers.json,,
+park,공원,park_0401,,37.46391,127.1071,poi_layers.json,,
+park,공원,park_0402,,37.46238,127.10458,poi_layers.json,,
+park,공원,park_0403,,37.46319,127.10129,poi_layers.json,,
+park,공원,park_0404,,37.45347,127.05354,poi_layers.json,,
+park,공원,park_0405,,37.47502,127.11125,poi_layers.json,,
+park,공원,park_0406,,37.46073,127.1474,poi_layers.json,,
+park,공원,park_0407,힐링포레스트,37.47367,127.15527,poi_layers.json,,
+park,공원,park_0408,,37.47368,127.1562,poi_layers.json,,
+park,공원,park_0409,,37.47236,127.15578,poi_layers.json,,
+park,공원,park_0410,복정어린이공원,37.46769,127.12789,poi_layers.json,,
+park,공원,park_0411,성남제1공단근린공원,37.44617,127.15365,poi_layers.json,,
+park,공원,park_0412,,37.46405,127.08036,poi_layers.json,,
+park,공원,park_0413,,37.46381,127.07978,poi_layers.json,,
+park,공원,park_0414,,37.46652,127.07418,poi_layers.json,,
+park,공원,park_0415,,37.46677,127.07403,poi_layers.json,,
+park,공원,park_0416,,37.46687,127.07406,poi_layers.json,,
+park,공원,park_0417,,37.4666,127.07434,poi_layers.json,,
+park,공원,park_0418,,37.43496,127.16689,poi_layers.json,,
+park,공원,park_0419,,37.46559,127.10943,poi_layers.json,,
+park,공원,park_0420,,37.46381,127.10721,poi_layers.json,,
+park,공원,park_0421,,37.46528,127.10913,poi_layers.json,,
+park,공원,park_0422,,37.46661,127.10869,poi_layers.json,,
+park,공원,park_0423,,37.46767,127.07601,poi_layers.json,,
+park,공원,park_0424,,37.46785,127.07569,poi_layers.json,,
+park,공원,park_0425,,37.46758,127.07588,poi_layers.json,,
+park,공원,park_0426,,37.46732,127.07412,poi_layers.json,,
+park,공원,park_0427,,37.46746,127.0739,poi_layers.json,,
+park,공원,park_0428,,37.46752,127.07419,poi_layers.json,,
+park,공원,park_0429,,37.46764,127.07376,poi_layers.json,,
+park,공원,park_0430,,37.46793,127.07506,poi_layers.json,,
+park,공원,park_0431,,37.46994,127.13869,poi_layers.json,,
+park,공원,park_0432,,37.46967,127.13809,poi_layers.json,,
+park,공원,park_0433,위례역사수변공원,37.4692,127.14135,poi_layers.json,,
+park,공원,park_0434,,37.46773,127.07448,poi_layers.json,,
+park,공원,park_0435,,37.46809,127.07492,poi_layers.json,,
+park,공원,park_0436,,37.46803,127.07319,poi_layers.json,,
+park,공원,park_0437,,37.46867,127.07311,poi_layers.json,,
+park,공원,park_0438,,37.46878,127.07308,poi_layers.json,,
+park,공원,park_0439,,37.46903,127.07358,poi_layers.json,,
+park,공원,park_0440,,37.46897,127.0737,poi_layers.json,,
+park,공원,park_0441,,37.4685,127.07319,poi_layers.json,,
+park,공원,park_0442,,37.46858,127.07365,poi_layers.json,,
+park,공원,park_0443,,37.46917,127.07421,poi_layers.json,,
+park,공원,park_0444,,37.4692,127.07438,poi_layers.json,,
+park,공원,park_0445,,37.46824,127.07257,poi_layers.json,,
+park,공원,park_0446,,37.46822,127.07305,poi_layers.json,,
+park,공원,park_0447,,37.4684,127.0729,poi_layers.json,,
+park,공원,park_0448,,37.46827,127.07282,poi_layers.json,,
+park,공원,park_0449,,37.46893,127.07424,poi_layers.json,,
+park,공원,park_0450,,37.46875,127.07442,poi_layers.json,,
+park,공원,park_0451,,37.46848,127.07464,poi_layers.json,,
+park,공원,park_0452,,37.46735,127.07364,poi_layers.json,,
+park,공원,park_0453,,37.47209,127.1446,poi_layers.json,,
+park,공원,park_0454,솔바람 어린이공원,37.47888,127.12955,poi_layers.json,,
+park,공원,park_0455,,37.47531,127.12514,poi_layers.json,,
+park,공원,park_0456,광교산체육공원,37.35235,127.05163,poi_layers.json,,
+park,공원,park_0457,성남판교역사공원,37.40094,127.09576,poi_layers.json,,
+park,공원,park_0458,홍씨마을 어린이공원,37.45306,127.06566,poi_layers.json,,
+park,공원,park_0459,안개근린공원,37.47205,127.10219,poi_layers.json,,
+park,공원,park_0460,대모산 도시자연공원,37.48029,127.08129,poi_layers.json,,
+park,공원,park_0461,,37.36873,127.06792,poi_layers.json,,
+park,공원,park_0462,,37.36866,127.06894,poi_layers.json,,
+park,공원,park_0463,,37.36628,127.06976,poi_layers.json,,
+park,공원,park_0464,,37.37326,127.06991,poi_layers.json,,
+park,공원,park_0465,,37.32013,127.11214,poi_layers.json,,
+park,공원,park_0466,,37.47686,127.13287,poi_layers.json,,
+park,공원,park_0467,,37.47856,127.13535,poi_layers.json,,
+park,공원,park_0468,고산근린공원,37.4252,127.09768,poi_layers.json,,
+park,공원,park_0469,고등근린공원,37.42906,127.09911,poi_layers.json,,
+park,공원,park_0470,,37.43476,127.15942,poi_layers.json,,
+park,공원,park_0471,,37.4367,127.16513,poi_layers.json,,
+park,공원,park_0472,,37.45827,127.10297,poi_layers.json,,
+park,공원,park_0473,,37.45453,127.10607,poi_layers.json,,
+park,공원,park_0474,,37.45388,127.10195,poi_layers.json,,
+park,공원,park_0475,,37.45328,127.10216,poi_layers.json,,
+park,공원,park_0476,,37.45329,127.10407,poi_layers.json,,
+park,공원,park_0477,,37.45351,127.10448,poi_layers.json,,
+park,공원,park_0478,,37.45176,127.0995,poi_layers.json,,
+park,공원,park_0479,,37.45173,127.09969,poi_layers.json,,
+park,공원,park_0480,,37.44966,127.09761,poi_layers.json,,
+park,공원,park_0481,,37.45033,127.09929,poi_layers.json,,
+park,공원,park_0482,,37.44972,127.1011,poi_layers.json,,
+park,공원,park_0483,,37.44864,127.09787,poi_layers.json,,
+park,공원,park_0484,,37.44858,127.09828,poi_layers.json,,
+park,공원,park_0485,,37.44936,127.09809,poi_layers.json,,
+park,공원,park_0486,,37.47849,127.10626,poi_layers.json,,
+park,공원,park_0487,능평8통체육공원,37.35882,127.16963,poi_layers.json,,
+park,공원,park_0488,신현배수지 체육시설공원,37.37239,127.16606,poi_layers.json,,
+park,공원,park_0489,,37.45746,127.15024,poi_layers.json,,
+park,공원,park_0490,,37.47023,127.11746,poi_layers.json,,
+park,공원,park_0491,,37.4676,127.11357,poi_layers.json,,
+park,공원,park_0492,,37.46387,127.12661,poi_layers.json,,
+park,공원,park_0493,,37.46645,127.1296,poi_layers.json,,
+park,공원,park_0494,Podaesang Memorial House,37.39401,127.07809,poi_layers.json,,
+park,공원,park_0495,학생정원,37.40002,127.11611,poi_layers.json,,
+park,공원,park_0496,낙생대공원 체육시설,37.38611,127.10423,poi_layers.json,,
+park,공원,park_0497,,37.47107,127.10599,poi_layers.json,,
+park,공원,park_0498,,37.47171,127.10638,poi_layers.json,,
+park,공원,park_0499,운동장,37.32005,127.06529,poi_layers.json,,
+park,공원,park_0500,,37.32128,127.06092,poi_layers.json,,
+park,공원,park_0501,,37.46589,127.09547,poi_layers.json,,
+park,공원,park_0502,,37.46659,127.0965,poi_layers.json,,
+park,공원,park_0503,,37.44916,127.05792,poi_layers.json,,
+park,공원,park_0504,,37.44765,127.05799,poi_layers.json,,
+park,공원,park_0505,주민운동시설,37.47954,127.10733,poi_layers.json,,
+park,공원,park_0506,놀이터,37.47849,127.10824,poi_layers.json,,
+park,공원,park_0507,놀이터,37.47806,127.10817,poi_layers.json,,
+park,공원,park_0508,태평공원,37.44113,127.12145,poi_layers.json,,
+park,공원,park_0509,율현공원 장미원,37.47213,127.1151,poi_layers.json,,
+park,공원,park_0510,솔밭공원,37.47382,127.10829,poi_layers.json,,
+park,공원,park_0511,,37.41303,127.09945,poi_layers.json,,
+park,공원,park_0512,진경산수원,37.43782,127.14677,poi_layers.json,,
+vertiport,버티포트,vertiport_0001,공영주차장,37.355652,127.098267,dashboard.html:VERTIPORTS,0.759,True
+vertiport,버티포트,vertiport_0002,공영주차장,37.344888,127.109611,dashboard.html:VERTIPORTS,0.753,True
+vertiport,버티포트,vertiport_0003,공영주차장,37.345419,127.109582,dashboard.html:VERTIPORTS,0.753,True
+vertiport,버티포트,vertiport_0004,공영주차장,37.352936,127.102129,dashboard.html:VERTIPORTS,0.746,True
+vertiport,버티포트,vertiport_0005,공영주차장,37.353549,127.101355,dashboard.html:VERTIPORTS,0.746,True
+vertiport,버티포트,vertiport_0006,공영주차장,37.336513,127.118127,dashboard.html:VERTIPORTS,0.738,False
+vertiport,버티포트,vertiport_0007,공영주차장,37.343906,127.116749,dashboard.html:VERTIPORTS,0.737,True
+vertiport,버티포트,vertiport_0008,공영주차장,37.344211,127.116625,dashboard.html:VERTIPORTS,0.737,True
+vertiport,버티포트,vertiport_0009,공영주차장,37.334889,127.117282,dashboard.html:VERTIPORTS,0.733,False
+vertiport,버티포트,vertiport_0010,주차장,37.357602,127.119624,dashboard.html:VERTIPORTS,0.731,True
+vertiport,버티포트,vertiport_0011,공영주차장,37.359255,127.110875,dashboard.html:VERTIPORTS,0.73,True
+vertiport,버티포트,vertiport_0012,공영주차장,37.340041,127.123096,dashboard.html:VERTIPORTS,0.73,True
+vertiport,버티포트,vertiport_0013,공영주차장,37.336559,127.117228,dashboard.html:VERTIPORTS,0.728,False
+vertiport,버티포트,vertiport_0014,공영주차장,37.347924,127.12471,dashboard.html:VERTIPORTS,0.727,True
+vertiport,버티포트,vertiport_0015,이마트24 분당미켈란점,37.359571,127.107187,dashboard.html:VERTIPORTS,0.727,True
+vertiport,버티포트,vertiport_0016,공영주차장,37.34835,127.124992,dashboard.html:VERTIPORTS,0.724,True
+vertiport,버티포트,vertiport_0017,공영주차장,37.344124,127.109664,dashboard.html:VERTIPORTS,0.723,True
+vertiport,버티포트,vertiport_0018,공영주차장,37.34438,127.109651,dashboard.html:VERTIPORTS,0.723,True
+vertiport,버티포트,vertiport_0019,대농식자재마트,37.366724,127.068299,dashboard.html:VERTIPORTS,0.704,False
+vertiport,버티포트,vertiport_0020,정자3동 행정복지센터,37.360785,127.119555,dashboard.html:VERTIPORTS,0.697,True
+vertiport,버티포트,vertiport_0021,그랜드빌 주민회관,37.343331,127.116812,dashboard.html:VERTIPORTS,0.697,True
+vertiport,버티포트,vertiport_0022,구미동 행정복지센터,37.340209,127.122616,dashboard.html:VERTIPORTS,0.69,True
+vertiport,버티포트,vertiport_0023,하얀마을복지회관,37.344518,127.112275,dashboard.html:VERTIPORTS,0.684,True
+vertiport,버티포트,vertiport_0024,상가,37.349094,127.115664,dashboard.html:VERTIPORTS,0.681,True
+vertiport,버티포트,vertiport_0025,gs더프레시,37.345681,127.112657,dashboard.html:VERTIPORTS,0.677,True
+vertiport,버티포트,vertiport_0026,이마트24,37.347573,127.111754,dashboard.html:VERTIPORTS,0.677,True
+vertiport,버티포트,vertiport_0027,킴스클럽,37.349243,127.10648,dashboard.html:VERTIPORTS,0.674,True
+vertiport,버티포트,vertiport_0028,이마트 분당점,37.358764,127.119706,dashboard.html:VERTIPORTS,0.672,True
+vertiport,버티포트,vertiport_0029,공원,37.364478,127.073434,dashboard.html:VERTIPORTS,0.671,True
+vertiport,버티포트,vertiport_0030,공영주차장,37.383007,127.149683,dashboard.html:VERTIPORTS,0.668,True
+vertiport,버티포트,vertiport_0031,공영주차장,37.388004,127.121183,dashboard.html:VERTIPORTS,0.667,True
+vertiport,버티포트,vertiport_0032,공영주차장,37.387746,127.121475,dashboard.html:VERTIPORTS,0.667,True
+vertiport,버티포트,vertiport_0033,대원 상가,37.351661,127.113305,dashboard.html:VERTIPORTS,0.667,True
+vertiport,버티포트,vertiport_0034,공영주차장,37.384007,127.136368,dashboard.html:VERTIPORTS,0.665,True
+vertiport,버티포트,vertiport_0035,공원,37.364698,127.072018,dashboard.html:VERTIPORTS,0.664,True
+vertiport,버티포트,vertiport_0036,공영주차장,37.386744,127.122758,dashboard.html:VERTIPORTS,0.662,True
+vertiport,버티포트,vertiport_0037,공영주차장,37.40044,127.113607,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0038,공영주차장,37.400006,127.114091,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0039,506동 앞 주차장,37.400453,127.114259,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0040,봇들마을 5단지 상가 전용 주차장,37.400027,127.114085,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0041,501동 앞 주차장,37.400438,127.113615,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0042,공영주차장,37.400463,127.114271,dashboard.html:VERTIPORTS,0.661,True
+vertiport,버티포트,vertiport_0043,공영주차장,37.397921,127.11452,dashboard.html:VERTIPORTS,0.656,True
+vertiport,버티포트,vertiport_0044,공영주차장,37.401081,127.114273,dashboard.html:VERTIPORTS,0.655,True
+vertiport,버티포트,vertiport_0045,504동 앞 주차장,37.401067,127.114253,dashboard.html:VERTIPORTS,0.655,True
+vertiport,버티포트,vertiport_0046,공원,37.36374,127.07,dashboard.html:VERTIPORTS,0.655,True
+vertiport,버티포트,vertiport_0047,공영주차장,37.400408,127.102084,dashboard.html:VERTIPORTS,0.655,True
+vertiport,버티포트,vertiport_0048,공영주차장,37.399352,127.10186,dashboard.html:VERTIPORTS,0.655,True
+vertiport,버티포트,vertiport_0049,503동 앞 주차장,37.401029,127.113615,dashboard.html:VERTIPORTS,0.654,True
+vertiport,버티포트,vertiport_0050,공영주차장,37.401045,127.113605,dashboard.html:VERTIPORTS,0.654,True
+vertiport,버티포트,vertiport_0051,공영주차장,37.400527,127.111466,dashboard.html:VERTIPORTS,0.654,True
+vertiport,버티포트,vertiport_0052,Daewon Apt. playground,37.351027,127.114423,dashboard.html:VERTIPORTS,0.653,True
+vertiport,버티포트,vertiport_0053,공원,37.351567,127.114905,dashboard.html:VERTIPORTS,0.653,True
+vertiport,버티포트,vertiport_0054,공원,37.351421,127.115938,dashboard.html:VERTIPORTS,0.653,True
+vertiport,버티포트,vertiport_0055,홈플러스익스프레스,37.355805,127.105588,dashboard.html:VERTIPORTS,0.652,True
+vertiport,버티포트,vertiport_0056,공원,37.364436,127.070853,dashboard.html:VERTIPORTS,0.65,True
+vertiport,버티포트,vertiport_0057,공영주차장,37.377839,127.107549,dashboard.html:VERTIPORTS,0.649,True
+vertiport,버티포트,vertiport_0058,공영주차장,37.377545,127.105673,dashboard.html:VERTIPORTS,0.649,True
+vertiport,버티포트,vertiport_0059,상가동,37.34676,127.117125,dashboard.html:VERTIPORTS,0.644,True
+vertiport,버티포트,vertiport_0060,대형마트,37.340531,127.10513,dashboard.html:VERTIPORTS,0.643,True
+vertiport,버티포트,vertiport_0061,공원,37.347488,127.114563,dashboard.html:VERTIPORTS,0.641,True
+vertiport,버티포트,vertiport_0062,벌말공원,37.348108,127.115295,dashboard.html:VERTIPORTS,0.641,True
+vertiport,버티포트,vertiport_0063,공원,37.348249,127.113822,dashboard.html:VERTIPORTS,0.641,True
+vertiport,버티포트,vertiport_0064,공원,37.348186,127.115138,dashboard.html:VERTIPORTS,0.641,True
+vertiport,버티포트,vertiport_0065,공원,37.347948,127.115444,dashboard.html:VERTIPORTS,0.641,True
+vertiport,버티포트,vertiport_0066,하얀마을6단지 상가,37.345717,127.113657,dashboard.html:VERTIPORTS,0.64,True
+vertiport,버티포트,vertiport_0067,상가동,37.345264,127.113616,dashboard.html:VERTIPORTS,0.64,True
+vertiport,버티포트,vertiport_0068,까치마을어린이공원,37.351175,127.118162,dashboard.html:VERTIPORTS,0.639,True
+vertiport,버티포트,vertiport_0069,이우학교,37.352448,127.090732,dashboard.html:VERTIPORTS,0.638,True
+vertiport,버티포트,vertiport_0070,선경아파트 놀이터,37.346045,127.112261,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0071,까치마을 근린공원,37.347655,127.113375,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0072,공원,37.346647,127.112152,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0073,하얀마을 놀이터,37.345618,127.112398,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0074,공원,37.347297,127.112211,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0075,공원,37.346524,127.114212,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0076,공원,37.347509,127.112612,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0077,공원,37.347451,127.11381,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0078,선경아파트 놀이터,37.348202,127.112263,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0079,공원,37.347428,127.113108,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0080,공원,37.348164,127.112304,dashboard.html:VERTIPORTS,0.637,True
+vertiport,버티포트,vertiport_0081,머내과학공원,37.346615,127.106011,dashboard.html:VERTIPORTS,0.634,True
+vertiport,버티포트,vertiport_0082,앞구미어린이공원,37.35355,127.113406,dashboard.html:VERTIPORTS,0.627,True
+vertiport,버티포트,vertiport_0083,공영주차장,37.383581,127.118712,dashboard.html:VERTIPORTS,0.626,True
+vertiport,버티포트,vertiport_0084,공영주차장,37.385728,127.119036,dashboard.html:VERTIPORTS,0.626,True
+vertiport,버티포트,vertiport_0085,공영주차장,37.467315,127.153275,dashboard.html:VERTIPORTS,0.626,True
+vertiport,버티포트,vertiport_0086,위례 더제이 주차빌딩,37.472688,127.149745,dashboard.html:VERTIPORTS,0.624,True
+vertiport,버티포트,vertiport_0087,공영주차장,37.466934,127.143294,dashboard.html:VERTIPORTS,0.623,True
+vertiport,버티포트,vertiport_0088,공원,37.344239,127.11907,dashboard.html:VERTIPORTS,0.623,True
+vertiport,버티포트,vertiport_0089,공영주차장,37.460281,127.146655,dashboard.html:VERTIPORTS,0.622,True
+vertiport,버티포트,vertiport_0090,공영주차장,37.469338,127.147806,dashboard.html:VERTIPORTS,0.621,True
+vertiport,버티포트,vertiport_0091,공영주차장,37.46349,127.142313,dashboard.html:VERTIPORTS,0.621,True
+vertiport,버티포트,vertiport_0092,봇들7단지 생활지원센터,37.397261,127.116551,dashboard.html:VERTIPORTS,0.621,True
+vertiport,버티포트,vertiport_0093,탄천 무지개공원,37.339728,127.114258,dashboard.html:VERTIPORTS,0.618,True
+vertiport,버티포트,vertiport_0094,건영 3단지 공원,37.33969,127.115345,dashboard.html:VERTIPORTS,0.618,True
+vertiport,버티포트,vertiport_0095,공원,37.338924,127.113657,dashboard.html:VERTIPORTS,0.618,True
+vertiport,버티포트,vertiport_0096,3단지 테니스장 공터,37.339131,127.113986,dashboard.html:VERTIPORTS,0.618,True
+vertiport,버티포트,vertiport_0097,3단지 관리사무소 앞 공원,37.339366,127.114379,dashboard.html:VERTIPORTS,0.618,True
+vertiport,버티포트,vertiport_0098,공원,37.343652,127.118157,dashboard.html:VERTIPORTS,0.617,True
+vertiport,버티포트,vertiport_0099,공원,37.34433,127.116586,dashboard.html:VERTIPORTS,0.617,True
+vertiport,버티포트,vertiport_0100,놀이터,37.342769,127.117308,dashboard.html:VERTIPORTS,0.617,True
+vertiport,버티포트,vertiport_0101,공원,37.344173,127.118532,dashboard.html:VERTIPORTS,0.617,True
+vertiport,버티포트,vertiport_0102,삼평동 행정복지센터,37.406066,127.11635,dashboard.html:VERTIPORTS,0.615,True
+vertiport,버티포트,vertiport_0103,공영주차장,37.411853,127.125031,dashboard.html:VERTIPORTS,0.614,True
+vertiport,버티포트,vertiport_0104,공영주차장,37.412566,127.124492,dashboard.html:VERTIPORTS,0.614,True
+vertiport,버티포트,vertiport_0105,공영주차장,37.410981,127.125581,dashboard.html:VERTIPORTS,0.614,True
+vertiport,버티포트,vertiport_0106,공원,37.354209,127.111072,dashboard.html:VERTIPORTS,0.612,True
+vertiport,버티포트,vertiport_0107,공영주차장,37.350451,127.10673,dashboard.html:VERTIPORTS,0.611,True
+vertiport,버티포트,vertiport_0108,공영주차장,37.350788,127.106844,dashboard.html:VERTIPORTS,0.611,True
+vertiport,버티포트,vertiport_0109,공영주차장,37.410625,127.119243,dashboard.html:VERTIPORTS,0.611,True
+vertiport,버티포트,vertiport_0110,구미공원,37.340841,127.122019,dashboard.html:VERTIPORTS,0.61,True
+vertiport,버티포트,vertiport_0111,공원,37.340222,127.123635,dashboard.html:VERTIPORTS,0.61,True
+vertiport,버티포트,vertiport_0112,정자1동행정복지센터,37.364526,127.105678,dashboard.html:VERTIPORTS,0.609,True
+vertiport,버티포트,vertiport_0113,오리공원,37.340775,127.112504,dashboard.html:VERTIPORTS,0.608,True
+vertiport,버티포트,vertiport_0114,하얀어린이공원,37.344926,127.117978,dashboard.html:VERTIPORTS,0.604,True
+vertiport,버티포트,vertiport_0115,공원,37.344687,127.110916,dashboard.html:VERTIPORTS,0.604,True
+vertiport,버티포트,vertiport_0116,공원,37.342871,127.112428,dashboard.html:VERTIPORTS,0.604,True
+vertiport,버티포트,vertiport_0117,공원,37.345084,127.11225,dashboard.html:VERTIPORTS,0.604,True
+vertiport,버티포트,vertiport_0118,미금초등학교,37.347052,127.115298,dashboard.html:VERTIPORTS,0.601,True
+vertiport,버티포트,vertiport_0119,주공아파트 놀이터,37.34559,127.114542,dashboard.html:VERTIPORTS,0.6,True
+vertiport,버티포트,vertiport_0120,오리어린이공원,37.344455,127.114138,dashboard.html:VERTIPORTS,0.6,True
+vertiport,버티포트,vertiport_0121,공원,37.346571,127.114591,dashboard.html:VERTIPORTS,0.6,True
+vertiport,버티포트,vertiport_0122,공원,37.346312,127.114143,dashboard.html:VERTIPORTS,0.6,True
+vertiport,버티포트,vertiport_0123,공원,37.341447,127.126241,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0124,넘말 어린이공원,37.340481,127.124768,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0125,공원,37.342212,127.124661,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0126,공원,37.341558,127.126404,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0127,큰골어린이공원,37.340197,127.126044,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0128,공원,37.341755,127.124919,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0129,덕봉어린이공원,37.342219,127.12584,dashboard.html:VERTIPORTS,0.599,True
+vertiport,버티포트,vertiport_0130,공영주차장,37.363243,127.100935,dashboard.html:VERTIPORTS,0.59,True
+vertiport,버티포트,vertiport_0131,공영주차장,37.39275,127.111541,dashboard.html:VERTIPORTS,0.589,True
+vertiport,버티포트,vertiport_0132,판교공영주차장,37.393359,127.110712,dashboard.html:VERTIPORTS,0.589,True
+vertiport,버티포트,vertiport_0133,청솔초등학교,37.354043,127.114162,dashboard.html:VERTIPORTS,0.588,True
+vertiport,버티포트,vertiport_0134,공영주차장,37.386531,127.10345,dashboard.html:VERTIPORTS,0.588,True
+vertiport,버티포트,vertiport_0135,공영주차장,37.389799,127.10863,dashboard.html:VERTIPORTS,0.587,True
+vertiport,버티포트,vertiport_0136,롯데슈퍼,37.37811,127.132233,dashboard.html:VERTIPORTS,0.587,True
+vertiport,버티포트,vertiport_0137,다이소(지하1층),37.383906,127.121589,dashboard.html:VERTIPORTS,0.587,True
+vertiport,버티포트,vertiport_0138,공영주차장,37.396848,127.111439,dashboard.html:VERTIPORTS,0.586,True
+vertiport,버티포트,vertiport_0139,현대슈퍼,37.377896,127.129408,dashboard.html:VERTIPORTS,0.585,True
+vertiport,버티포트,vertiport_0140,공영주차장,37.392216,127.104771,dashboard.html:VERTIPORTS,0.584,True
+vertiport,버티포트,vertiport_0141,공영주차장,37.391695,127.104407,dashboard.html:VERTIPORTS,0.584,True
+vertiport,버티포트,vertiport_0142,형제슈퍼,37.379828,127.13352,dashboard.html:VERTIPORTS,0.583,True
+vertiport,버티포트,vertiport_0143,위례평생학습관,37.468293,127.149517,dashboard.html:VERTIPORTS,0.583,True
+vertiport,버티포트,vertiport_0144,AK플라자 분당,37.385093,127.123102,dashboard.html:VERTIPORTS,0.583,True
+vertiport,버티포트,vertiport_0145,롯데마트 서현점,37.385932,127.120593,dashboard.html:VERTIPORTS,0.582,True
+vertiport,버티포트,vertiport_0146,학교,37.347961,127.119223,dashboard.html:VERTIPORTS,0.581,True
+vertiport,버티포트,vertiport_0147,수내1동 행정복지센터,37.375624,127.117889,dashboard.html:VERTIPORTS,0.581,True
+vertiport,버티포트,vertiport_0148,학교,37.347046,127.119198,dashboard.html:VERTIPORTS,0.581,True
+vertiport,버티포트,vertiport_0149,롯데마트 판교점 (Lottemart),37.395486,127.113339,dashboard.html:VERTIPORTS,0.576,True
+vertiport,버티포트,vertiport_0150,구미중학교,37.345975,127.123647,dashboard.html:VERTIPORTS,0.576,True
+vertiport,버티포트,vertiport_0151,청호마트,37.403693,127.116391,dashboard.html:VERTIPORTS,0.575,True
+vertiport,버티포트,vertiport_0152,공영주차장,37.400479,127.129029,dashboard.html:VERTIPORTS,0.575,True
+vertiport,버티포트,vertiport_0153,구미1동 행정복지센터,37.349269,127.111757,dashboard.html:VERTIPORTS,0.574,True
+vertiport,버티포트,vertiport_0154,공영주차장,37.419677,127.121837,dashboard.html:VERTIPORTS,0.572,True
+vertiport,버티포트,vertiport_0155,공영주차장,37.466295,127.127537,dashboard.html:VERTIPORTS,0.572,True
+vertiport,버티포트,vertiport_0156,공영주차장,37.41982,127.122658,dashboard.html:VERTIPORTS,0.572,True
+vertiport,버티포트,vertiport_0157,청솔중학교,37.355726,127.110784,dashboard.html:VERTIPORTS,0.572,True
+vertiport,버티포트,vertiport_0158,금곡동 행정복지센터,37.351644,127.107068,dashboard.html:VERTIPORTS,0.571,True
+vertiport,버티포트,vertiport_0159,공영주차장,37.357532,127.105459,dashboard.html:VERTIPORTS,0.571,True
+vertiport,버티포트,vertiport_0160,분당중학교,37.360533,127.11065,dashboard.html:VERTIPORTS,0.57,True
+vertiport,버티포트,vertiport_0161,이마트에브리데이 분당정자점,37.371792,127.10627,dashboard.html:VERTIPORTS,0.57,True
+vertiport,버티포트,vertiport_0162,분당경영고등학교,37.355782,127.109636,dashboard.html:VERTIPORTS,0.569,True
+vertiport,버티포트,vertiport_0163,금곡공원,37.357146,127.109579,dashboard.html:VERTIPORTS,0.567,True
+vertiport,버티포트,vertiport_0164,학교,37.343879,127.115355,dashboard.html:VERTIPORTS,0.56,True
+vertiport,버티포트,vertiport_0165,공영주차장,37.386787,127.141478,dashboard.html:VERTIPORTS,0.558,True
+vertiport,버티포트,vertiport_0166,분당중앙고등학교,37.360419,127.123975,dashboard.html:VERTIPORTS,0.554,True
+vertiport,버티포트,vertiport_0167,공영주차장,37.404766,127.115093,dashboard.html:VERTIPORTS,0.553,True
+vertiport,버티포트,vertiport_0168,공영주차장,37.403048,127.099337,dashboard.html:VERTIPORTS,0.551,True
+vertiport,버티포트,vertiport_0169,공영주차장,37.402774,127.106821,dashboard.html:VERTIPORTS,0.551,True
+vertiport,버티포트,vertiport_0170,공영주차장,37.403683,127.109083,dashboard.html:VERTIPORTS,0.551,True
+vertiport,버티포트,vertiport_0171,공영주차장,37.394275,127.104373,dashboard.html:VERTIPORTS,0.55,True
+vertiport,버티포트,vertiport_0172,공영주차장,37.405768,127.103179,dashboard.html:VERTIPORTS,0.549,True
+vertiport,버티포트,vertiport_0173,율동공원,37.377825,127.150041,dashboard.html:VERTIPORTS,0.549,True
+vertiport,버티포트,vertiport_0174,공원,37.382238,127.149614,dashboard.html:VERTIPORTS,0.548,True
+vertiport,버티포트,vertiport_0175,공원,37.3795,127.131784,dashboard.html:VERTIPORTS,0.547,True
+vertiport,버티포트,vertiport_0176,공원,37.377758,127.131844,dashboard.html:VERTIPORTS,0.547,True
+vertiport,버티포트,vertiport_0177,분당어린이공원,37.379056,127.13115,dashboard.html:VERTIPORTS,0.547,True
+vertiport,버티포트,vertiport_0178,공원,37.378584,127.130735,dashboard.html:VERTIPORTS,0.547,True
+vertiport,버티포트,vertiport_0179,잔디광장,37.381885,127.120072,dashboard.html:VERTIPORTS,0.546,True
+vertiport,버티포트,vertiport_0180,공원,37.376861,127.130904,dashboard.html:VERTIPORTS,0.545,True
+vertiport,버티포트,vertiport_0181,공원,37.377056,127.130081,dashboard.html:VERTIPORTS,0.545,True
+vertiport,버티포트,vertiport_0182,공원,37.378623,127.128136,dashboard.html:VERTIPORTS,0.545,True
+vertiport,버티포트,vertiport_0183,공원,37.377569,127.128348,dashboard.html:VERTIPORTS,0.545,True
+vertiport,버티포트,vertiport_0184,공원,37.377725,127.127645,dashboard.html:VERTIPORTS,0.545,True
+vertiport,버티포트,vertiport_0185,백현동 행정복지센터,37.388452,127.110851,dashboard.html:VERTIPORTS,0.544,True
+vertiport,버티포트,vertiport_0186,공원,37.380851,127.129906,dashboard.html:VERTIPORTS,0.544,True
+vertiport,버티포트,vertiport_0187,공원,37.379152,127.129083,dashboard.html:VERTIPORTS,0.544,True
+vertiport,버티포트,vertiport_0188,롯데슈퍼마켓,37.473506,127.149904,dashboard.html:VERTIPORTS,0.544,True
+vertiport,버티포트,vertiport_0189,공원,37.37946,127.134345,dashboard.html:VERTIPORTS,0.543,True
+vertiport,버티포트,vertiport_0190,공원,37.38151,127.132248,dashboard.html:VERTIPORTS,0.543,True
+vertiport,버티포트,vertiport_0191,공원,37.380425,127.131049,dashboard.html:VERTIPORTS,0.543,True
+vertiport,버티포트,vertiport_0192,공원,37.381768,127.132761,dashboard.html:VERTIPORTS,0.543,True
+vertiport,버티포트,vertiport_0193,롯데백화점 분당점,37.378396,127.114296,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0194,하모니마트,37.377474,127.114428,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0195,삼평어린이공원,37.399528,127.114891,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0196,놀이터,37.400531,127.114819,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0197,Homeplus Express,37.374649,127.118256,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0198,Mono Mart,37.374884,127.117951,dashboard.html:VERTIPORTS,0.541,True
+vertiport,버티포트,vertiport_0199,봇들어린이공원,37.399561,127.118404,dashboard.html:VERTIPORTS,0.539,True
+vertiport,버티포트,vertiport_0200,저류지,37.398388,127.118446,dashboard.html:VERTIPORTS,0.539,True
+vertiport,버티포트,vertiport_0201,학생정원,37.400028,127.11611,dashboard.html:VERTIPORTS,0.538,True
+vertiport,버티포트,vertiport_0202,화랑공원,37.39741,127.105023,dashboard.html:VERTIPORTS,0.537,True
+vertiport,버티포트,vertiport_0203,공원,37.402339,127.113251,dashboard.html:VERTIPORTS,0.535,True
+vertiport,버티포트,vertiport_0204,공원,37.401762,127.114988,dashboard.html:VERTIPORTS,0.535,True
+vertiport,버티포트,vertiport_0205,놀이터,37.401246,127.114858,dashboard.html:VERTIPORTS,0.535,True
+vertiport,버티포트,vertiport_0206,공원,37.402149,127.1181,dashboard.html:VERTIPORTS,0.535,True
+vertiport,버티포트,vertiport_0207,낙생농협마트 미금지점,37.349788,127.111197,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0208,주민두레생협 미금점,37.350279,127.111774,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0209,공원,37.394751,127.119361,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0210,공원,37.395278,127.119836,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0211,봇들저류지 공원,37.399416,127.110987,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0212,공원,37.400757,127.113264,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0213,공원,37.402104,127.11137,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0214,어울어린이공원,37.401688,127.11135,dashboard.html:VERTIPORTS,0.534,True
+vertiport,버티포트,vertiport_0215,홈플러스 야탑점,37.413161,127.127354,dashboard.html:VERTIPORTS,0.533,True
+vertiport,버티포트,vertiport_0216,판교테크노파크 공원,37.399029,127.107851,dashboard.html:VERTIPORTS,0.533,True
+vertiport,버티포트,vertiport_0217,킴스클럽,37.410894,127.127445,dashboard.html:VERTIPORTS,0.532,True
+vertiport,버티포트,vertiport_0218,2001아울렛 분당점,37.349015,127.107391,dashboard.html:VERTIPORTS,0.531,True
+vertiport,버티포트,vertiport_0219,도깨비마트,37.350859,127.108426,dashboard.html:VERTIPORTS,0.531,True
+vertiport,버티포트,vertiport_0220,성남시청,37.420094,127.12661,dashboard.html:VERTIPORTS,0.531,True
+vertiport,버티포트,vertiport_0221,공원,37.366129,127.107506,dashboard.html:VERTIPORTS,0.53,True
+vertiport,버티포트,vertiport_0222,공영주차장,37.443623,127.178976,dashboard.html:VERTIPORTS,0.524,True
+vertiport,버티포트,vertiport_0223,공영주차장,37.443088,127.178684,dashboard.html:VERTIPORTS,0.524,True
+vertiport,버티포트,vertiport_0224,공영주차장,37.44282,127.178584,dashboard.html:VERTIPORTS,0.524,True
+vertiport,버티포트,vertiport_0225,공영주차장,37.442926,127.178592,dashboard.html:VERTIPORTS,0.524,True
+vertiport,버티포트,vertiport_0226,공영주차장,37.438834,127.168489,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0227,공영주차장,37.445122,127.182408,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0228,공영주차장,37.445274,127.182435,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0229,공영주차장,37.441883,127.178394,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0230,공영주차장,37.442557,127.178569,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0231,공영주차장,37.442761,127.178463,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0232,공영주차장,37.442707,127.178575,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0233,공영주차장,37.442717,127.178331,dashboard.html:VERTIPORTS,0.523,True
+vertiport,버티포트,vertiport_0234,공영주차장,37.442584,127.180703,dashboard.html:VERTIPORTS,0.522,True
+vertiport,버티포트,vertiport_0235,공영주차장,37.442679,127.180791,dashboard.html:VERTIPORTS,0.522,True
+vertiport,버티포트,vertiport_0236,공영주차장,37.442662,127.181717,dashboard.html:VERTIPORTS,0.522,True
+vertiport,버티포트,vertiport_0237,공영주차장,37.442654,127.18181,dashboard.html:VERTIPORTS,0.522,True
+vertiport,버티포트,vertiport_0238,서현1동 행정복지센터,37.382776,127.126037,dashboard.html:VERTIPORTS,0.519,True
+vertiport,버티포트,vertiport_0239,공영주차장,37.46768,127.138467,dashboard.html:VERTIPORTS,0.518,True
+vertiport,버티포트,vertiport_0240,공영주차장,37.338921,127.10499,dashboard.html:VERTIPORTS,0.513,True
+vertiport,버티포트,vertiport_0241,공영주차장,37.337841,127.106391,dashboard.html:VERTIPORTS,0.513,True
+vertiport,버티포트,vertiport_0242,성남시 판교 생태학습원,37.399577,127.103872,dashboard.html:VERTIPORTS,0.513,True
+vertiport,버티포트,vertiport_0243,공영주차장,37.356491,127.098769,dashboard.html:VERTIPORTS,0.512,True
+vertiport,버티포트,vertiport_0244,공영주차장,37.337343,127.10803,dashboard.html:VERTIPORTS,0.511,True
+vertiport,버티포트,vertiport_0245,공영주차장,37.415505,127.13227,dashboard.html:VERTIPORTS,0.51,True
+vertiport,버티포트,vertiport_0246,현대백화점 판교점,37.3928,127.111991,dashboard.html:VERTIPORTS,0.509,True
+vertiport,버티포트,vertiport_0247,에스마트,37.387833,127.114935,dashboard.html:VERTIPORTS,0.508,True
+vertiport,버티포트,vertiport_0248,공원,37.46905,127.153884,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0249,공원,37.471121,127.153502,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0250,공원,37.470022,127.155729,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0251,공원,37.473178,127.153898,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0252,공원,37.472355,127.151089,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0253,공원,37.472842,127.152502,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0254,공원,37.470813,127.152977,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0255,공원,37.470507,127.152485,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0256,공원,37.471165,127.152024,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0257,학교,37.378584,127.1298,dashboard.html:VERTIPORTS,0.507,True
+vertiport,버티포트,vertiport_0258,황새울공원,37.384117,127.118172,dashboard.html:VERTIPORTS,0.506,True
+vertiport,버티포트,vertiport_0259,공원,37.466562,127.153238,dashboard.html:VERTIPORTS,0.506,True
+vertiport,버티포트,vertiport_0260,공원,37.468027,127.153484,dashboard.html:VERTIPORTS,0.506,True
+vertiport,버티포트,vertiport_0261,위례역사수변공원,37.469143,127.141479,dashboard.html:VERTIPORTS,0.506,True
+vertiport,버티포트,vertiport_0262,공원,37.469001,127.157499,dashboard.html:VERTIPORTS,0.505,True
+vertiport,버티포트,vertiport_0263,공원,37.46792,127.152568,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0264,공원,37.469183,127.151111,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0265,한살림,37.386257,127.111781,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0266,서현고등학교,37.381465,127.123845,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0267,홈플러스,37.388433,127.115019,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0268,No Brand,37.395441,127.10906,dashboard.html:VERTIPORTS,0.504,True
+vertiport,버티포트,vertiport_0269,공원,37.382972,127.116874,dashboard.html:VERTIPORTS,0.503,True
+vertiport,버티포트,vertiport_0270,공원,37.466561,127.152783,dashboard.html:VERTIPORTS,0.503,True
+vertiport,버티포트,vertiport_0271,공원,37.466126,127.151022,dashboard.html:VERTIPORTS,0.503,True
+vertiport,버티포트,vertiport_0272,공원,37.466754,127.151463,dashboard.html:VERTIPORTS,0.503,True
+vertiport,버티포트,vertiport_0273,공원,37.465868,127.142175,dashboard.html:VERTIPORTS,0.503,True
+vertiport,버티포트,vertiport_0274,공원,37.472125,127.144765,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0275,공원,37.470302,127.143252,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0276,공원,37.471594,127.144659,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0277,놀이터,37.472638,127.144668,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0278,공원,37.472007,127.14404,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0279,공원,37.461755,127.145325,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0280,공원,37.460812,127.147405,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0281,공원,37.464791,127.144895,dashboard.html:VERTIPORTS,0.502,True
+vertiport,버티포트,vertiport_0282,놀이터,37.472605,127.145513,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0283,공원,37.473189,127.1465,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0284,공원,37.473091,127.144939,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0285,공원,37.472641,127.145139,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0286,공원,37.469534,127.147125,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0287,공원,37.376082,127.11404,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0288,공원,37.374874,127.113804,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0289,놀이터,37.37828,127.117546,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0290,놀이터,37.378925,127.119188,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0291,서현초등학교,37.382455,127.128429,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0292,햇빛어린이공원,37.374534,127.116823,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0293,초림어린이공원,37.375338,127.117575,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0294,공원,37.37527,127.117512,dashboard.html:VERTIPORTS,0.501,True
+vertiport,버티포트,vertiport_0295,보물섬어린이공원,37.383934,127.113138,dashboard.html:VERTIPORTS,0.5,True
+vertiport,버티포트,vertiport_0296,마루공원,37.38217,127.113441,dashboard.html:VERTIPORTS,0.5,True
+vertiport,버티포트,vertiport_0297,공원,37.47161,127.135599,dashboard.html:VERTIPORTS,0.5,True
+vertiport,버티포트,vertiport_0298,삼평중학교,37.400432,127.115943,dashboard.html:VERTIPORTS,0.498,True
+vertiport,버티포트,vertiport_0299,이황초등학교 부지,37.401371,127.115971,dashboard.html:VERTIPORTS,0.498,True
+vertiport,버티포트,vertiport_0300,공원,37.337855,127.110966,dashboard.html:VERTIPORTS,0.495,True
+vertiport,버티포트,vertiport_0301,3단지 신한아파트 놀이터,37.338364,127.113556,dashboard.html:VERTIPORTS,0.495,True
+vertiport,버티포트,vertiport_0302,공원,37.348593,127.113405,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0303,꿈동산어린이공원,37.414544,127.125999,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0304,공원,37.350376,127.113585,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0305,공원,37.350433,127.113419,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0306,공원,37.349958,127.113775,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0307,신원아파트 놀이터,37.348555,127.112199,dashboard.html:VERTIPORTS,0.494,True
+vertiport,버티포트,vertiport_0308,청솔어린이공원,37.351564,127.110639,dashboard.html:VERTIPORTS,0.493,True
+vertiport,버티포트,vertiport_0309,공원,37.417395,127.129404,dashboard.html:VERTIPORTS,0.493,True
+vertiport,버티포트,vertiport_0310,야탑역 광장,37.411766,127.128159,dashboard.html:VERTIPORTS,0.492,True
+vertiport,버티포트,vertiport_0311,퐁퐁플라워 미금센터,37.348964,127.110478,dashboard.html:VERTIPORTS,0.492,True
+vertiport,버티포트,vertiport_0312,공원,37.347501,127.110986,dashboard.html:VERTIPORTS,0.492,True
+vertiport,버티포트,vertiport_0313,뒷구미어린이공원,37.348899,127.111291,dashboard.html:VERTIPORTS,0.492,True
+vertiport,버티포트,vertiport_0314,공원,37.350851,127.108308,dashboard.html:VERTIPORTS,0.491,True
+vertiport,버티포트,vertiport_0315,공원,37.350702,127.108631,dashboard.html:VERTIPORTS,0.491,True
+vertiport,버티포트,vertiport_0316,샘터어린이공원,37.348831,127.118688,dashboard.html:VERTIPORTS,0.491,True
+vertiport,버티포트,vertiport_0317,공영주차장,37.359516,127.115609,dashboard.html:VERTIPORTS,0.489,True
+vertiport,버티포트,vertiport_0318,분당도서관 지상주차장,37.358337,127.116432,dashboard.html:VERTIPORTS,0.489,True
+vertiport,버티포트,vertiport_0319,지하주차장입구,37.449488,127.171739,dashboard.html:VERTIPORTS,0.473,True
+vertiport,버티포트,vertiport_0320,공영주차장,37.405684,127.134903,dashboard.html:VERTIPORTS,0.472,True
+vertiport,버티포트,vertiport_0321,공영주차장,37.364162,127.111735,dashboard.html:VERTIPORTS,0.471,True
+vertiport,버티포트,vertiport_0322,공영주차장,37.36309,127.111718,dashboard.html:VERTIPORTS,0.471,True
+vertiport,버티포트,vertiport_0323,공영주차장,37.364,127.110644,dashboard.html:VERTIPORTS,0.471,True
+vertiport,버티포트,vertiport_0324,물방울어린이공원,37.386787,127.115869,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0325,야탑1동 행정복지센터,37.412028,127.130252,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0326,공영주차장,37.364857,127.111741,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0327,공영주차장,37.366459,127.112106,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0328,공영주차장,37.365462,127.112859,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0329,공영주차장,37.366765,127.111252,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0330,공영주차장,37.365489,127.111932,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0331,공영주차장,37.364916,127.112966,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0332,공영주차장,37.366643,127.112565,dashboard.html:VERTIPORTS,0.47,True
+vertiport,버티포트,vertiport_0333,공영주차장,37.466594,127.127303,dashboard.html:VERTIPORTS,0.469,True
+vertiport,버티포트,vertiport_0334,공영주차장,37.46792,127.127143,dashboard.html:VERTIPORTS,0.469,True
+vertiport,버티포트,vertiport_0335,공영주차장,37.364024,127.113954,dashboard.html:VERTIPORTS,0.469,True
+vertiport,버티포트,vertiport_0336,공영주차장,37.364154,127.112983,dashboard.html:VERTIPORTS,0.469,True
+vertiport,버티포트,vertiport_0337,공영주차장,37.364593,127.113985,dashboard.html:VERTIPORTS,0.469,True
+vertiport,버티포트,vertiport_0338,공영주차장,37.367974,127.110747,dashboard.html:VERTIPORTS,0.468,True
+vertiport,버티포트,vertiport_0339,공영주차장,37.365616,127.113921,dashboard.html:VERTIPORTS,0.468,True
+vertiport,버티포트,vertiport_0340,공영주차장,37.367974,127.11395,dashboard.html:VERTIPORTS,0.468,True
+vertiport,버티포트,vertiport_0341,공영주차장,37.366626,127.113905,dashboard.html:VERTIPORTS,0.468,True
+vertiport,버티포트,vertiport_0342,낙생대공원 체육시설,37.386086,127.104235,dashboard.html:VERTIPORTS,0.468,True
+vertiport,버티포트,vertiport_0343,나들이공원,37.394871,127.11773,dashboard.html:VERTIPORTS,0.466,True
+vertiport,버티포트,vertiport_0344,학교,37.471735,127.138168,dashboard.html:VERTIPORTS,0.466,True
+vertiport,버티포트,vertiport_0345,숲안어린이공원,37.388981,127.115918,dashboard.html:VERTIPORTS,0.464,True
+vertiport,버티포트,vertiport_0346,공원,37.39462,127.107645,dashboard.html:VERTIPORTS,0.464,True
+vertiport,버티포트,vertiport_0347,모자이크파크,37.394615,127.108971,dashboard.html:VERTIPORTS,0.464,True
+vertiport,버티포트,vertiport_0348,정자목어린이공원,37.384935,127.110553,dashboard.html:VERTIPORTS,0.464,True
+vertiport,버티포트,vertiport_0349,위례한빛중학교,37.467808,127.148766,dashboard.html:VERTIPORTS,0.463,True
+vertiport,버티포트,vertiport_0350,위례한빛고등학교,37.467072,127.150024,dashboard.html:VERTIPORTS,0.463,True
+vertiport,버티포트,vertiport_0351,위례고운초등학교,37.471273,127.146009,dashboard.html:VERTIPORTS,0.461,True
+vertiport,버티포트,vertiport_0352,학교,37.375113,127.116185,dashboard.html:VERTIPORTS,0.461,True
+vertiport,버티포트,vertiport_0353,학교,37.376682,127.117891,dashboard.html:VERTIPORTS,0.461,True
+vertiport,버티포트,vertiport_0354,위례푸른초등학교,37.470494,127.15108,dashboard.html:VERTIPORTS,0.46,True
+vertiport,버티포트,vertiport_0355,위례중앙초등학교,37.47182,127.13606,dashboard.html:VERTIPORTS,0.46,True
+vertiport,버티포트,vertiport_0356,공영주차장,37.398232,127.126014,dashboard.html:VERTIPORTS,0.46,True
+vertiport,버티포트,vertiport_0357,공영주차장,37.410324,127.124832,dashboard.html:VERTIPORTS,0.458,True
+vertiport,버티포트,vertiport_0358,공영주차장,37.387991,127.128201,dashboard.html:VERTIPORTS,0.456,True
+vertiport,버티포트,vertiport_0359,공영주차장,37.389727,127.099912,dashboard.html:VERTIPORTS,0.456,True
+vertiport,버티포트,vertiport_0360,공영주차장,37.389057,127.098,dashboard.html:VERTIPORTS,0.456,True
+vertiport,버티포트,vertiport_0361,판교제2공영주차장,37.390397,127.098533,dashboard.html:VERTIPORTS,0.456,True
+vertiport,버티포트,vertiport_0362,야탑초등학교,37.416244,127.125896,dashboard.html:VERTIPORTS,0.454,True
+vertiport,버티포트,vertiport_0363,공영주차장,37.401561,127.127438,dashboard.html:VERTIPORTS,0.454,True
+vertiport,버티포트,vertiport_0364,공영주차장,37.400989,127.12748,dashboard.html:VERTIPORTS,0.454,True
+vertiport,버티포트,vertiport_0365,공영주차장,37.402791,127.127306,dashboard.html:VERTIPORTS,0.454,True
+vertiport,버티포트,vertiport_0366,한아름어린이공원,37.417803,127.125957,dashboard.html:VERTIPORTS,0.453,True
+vertiport,버티포트,vertiport_0367,공원,37.41779,127.126638,dashboard.html:VERTIPORTS,0.453,True
+vertiport,버티포트,vertiport_0368,공영주차장,37.373608,127.14742,dashboard.html:VERTIPORTS,0.453,True
+vertiport,버티포트,vertiport_0369,공원,37.465175,127.129231,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0370,기왓골어린이공원,37.464172,127.12789,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0371,Pagoda,37.465978,127.128622,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0372,기왓골공원,37.464112,127.127978,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0373,성남여수지구시청공원,37.419089,127.123937,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0374,공영주차장,37.389204,127.140353,dashboard.html:VERTIPORTS,0.452,True
+vertiport,버티포트,vertiport_0375,공영주차장,37.373727,127.153555,dashboard.html:VERTIPORTS,0.451,True
+vertiport,버티포트,vertiport_0376,공영주차장,37.372651,127.155951,dashboard.html:VERTIPORTS,0.45,True
+vertiport,버티포트,vertiport_0377,공영주차장,37.371618,127.148261,dashboard.html:VERTIPORTS,0.45,True
+vertiport,버티포트,vertiport_0378,공영주차장,37.371612,127.148669,dashboard.html:VERTIPORTS,0.45,True
+vertiport,버티포트,vertiport_0379,서현어린이공원,37.381975,127.127095,dashboard.html:VERTIPORTS,0.439,True
+vertiport,버티포트,vertiport_0380,솔밭어린이공원,37.384484,127.130518,dashboard.html:VERTIPORTS,0.439,True
+vertiport,버티포트,vertiport_0381,공영주차장,37.399582,127.121725,dashboard.html:VERTIPORTS,0.437,True
+vertiport,버티포트,vertiport_0382,공영주차장,37.39941,127.121756,dashboard.html:VERTIPORTS,0.437,True
+vertiport,버티포트,vertiport_0383,분당 중앙공원 B 주차장,37.375983,127.121521,dashboard.html:VERTIPORTS,0.437,True
+vertiport,버티포트,vertiport_0384,우리생협 위례본점,37.466245,127.136606,dashboard.html:VERTIPORTS,0.435,True
+vertiport,버티포트,vertiport_0385,야탑3동 행정복지센터,37.410791,127.13791,dashboard.html:VERTIPORTS,0.434,True
+vertiport,버티포트,vertiport_0386,하나로마트,37.338845,127.106706,dashboard.html:VERTIPORTS,0.433,True
+vertiport,버티포트,vertiport_0387,송현어린이공원,37.404534,127.115068,dashboard.html:VERTIPORTS,0.433,True
+vertiport,버티포트,vertiport_0388,공원,37.404493,127.115026,dashboard.html:VERTIPORTS,0.433,True
+vertiport,버티포트,vertiport_0389,봇들공원,37.406071,127.107284,dashboard.html:VERTIPORTS,0.432,True
+vertiport,버티포트,vertiport_0390,달팽이어린이공원,37.404351,127.108018,dashboard.html:VERTIPORTS,0.432,True
+vertiport,버티포트,vertiport_0391,송현공원,37.40891,127.117058,dashboard.html:VERTIPORTS,0.432,True
+vertiport,버티포트,vertiport_0392,환상어린이공원,37.401622,127.102143,dashboard.html:VERTIPORTS,0.431,True
+vertiport,버티포트,vertiport_0393,정자동 행정복지센터,37.361469,127.111533,dashboard.html:VERTIPORTS,0.431,True
+vertiport,버티포트,vertiport_0394,공원,37.406765,127.112375,dashboard.html:VERTIPORTS,0.429,True
+vertiport,버티포트,vertiport_0395,우주공원,37.404031,127.101352,dashboard.html:VERTIPORTS,0.429,True
+vertiport,버티포트,vertiport_0396,공영주차장,37.456646,127.150764,dashboard.html:VERTIPORTS,0.428,True
+vertiport,버티포트,vertiport_0397,정자2동 행정복지센터,37.365991,127.115274,dashboard.html:VERTIPORTS,0.428,True
+vertiport,버티포트,vertiport_0398,공영,37.458186,127.154462,dashboard.html:VERTIPORTS,0.428,True
+vertiport,버티포트,vertiport_0399,공영주차장,37.461117,127.155098,dashboard.html:VERTIPORTS,0.428,True
+vertiport,버티포트,vertiport_0400,이마트24,37.340381,127.109719,dashboard.html:VERTIPORTS,0.427,True
+vertiport,버티포트,vertiport_0401,보평중학교,37.393967,127.115997,dashboard.html:VERTIPORTS,0.426,True
+vertiport,버티포트,vertiport_0402,보평초등학교,37.395662,127.117731,dashboard.html:VERTIPORTS,0.426,True
+vertiport,버티포트,vertiport_0403,신백현중학교,37.385912,127.110259,dashboard.html:VERTIPORTS,0.424,True
+vertiport,버티포트,vertiport_0404,신백현초등학교,37.387237,127.111986,dashboard.html:VERTIPORTS,0.424,True
+vertiport,버티포트,vertiport_0405,화랑초등학교,37.389888,127.116057,dashboard.html:VERTIPORTS,0.424,True
+vertiport,버티포트,vertiport_0406,보평고등학교,37.393948,127.117744,dashboard.html:VERTIPORTS,0.424,True
+vertiport,버티포트,vertiport_0407,이매1동 행정복지센터,37.399554,127.127155,dashboard.html:VERTIPORTS,0.419,True
+vertiport,버티포트,vertiport_0408,야탑2동 행정복지센터,37.409429,127.127365,dashboard.html:VERTIPORTS,0.418,True
+vertiport,버티포트,vertiport_0409,판교동 행정복지센터,37.38995,127.098602,dashboard.html:VERTIPORTS,0.416,True
+vertiport,버티포트,vertiport_0410,서울국제학교,37.465654,127.129022,dashboard.html:VERTIPORTS,0.412,True
+vertiport,버티포트,vertiport_0411,늘푸른초등학교,37.358024,127.105194,dashboard.html:VERTIPORTS,0.411,True
+vertiport,버티포트,vertiport_0412,늘푸른중학교,37.357192,127.10519,dashboard.html:VERTIPORTS,0.411,True
+vertiport,버티포트,vertiport_0413,사기막골 근린공원,37.445657,127.182779,dashboard.html:VERTIPORTS,0.404,True
+vertiport,버티포트,vertiport_0414,공원,37.442436,127.178307,dashboard.html:VERTIPORTS,0.403,True
+vertiport,버티포트,vertiport_0415,공원,37.439301,127.170521,dashboard.html:VERTIPORTS,0.401,True
+vertiport,버티포트,vertiport_0416,롯데슈퍼 분당정자점,37.362416,127.114575,dashboard.html:VERTIPORTS,0.4,True
+vertiport,버티포트,vertiport_0417,공원,37.467805,127.138633,dashboard.html:VERTIPORTS,0.398,True
+vertiport,버티포트,vertiport_0418,공원,37.47184,127.134709,dashboard.html:VERTIPORTS,0.398,True
+vertiport,버티포트,vertiport_0419,공원,37.464656,127.147898,dashboard.html:VERTIPORTS,0.398,True
+vertiport,버티포트,vertiport_0420,이매2동 행정복지센터,37.399573,127.12188,dashboard.html:VERTIPORTS,0.397,True
+vertiport,버티포트,vertiport_0421,수내2동 행정복지센터,37.372429,127.120867,dashboard.html:VERTIPORTS,0.395,True
+vertiport,버티포트,vertiport_0422,판교고등학교,37.405323,127.11476,dashboard.html:VERTIPORTS,0.393,True
+vertiport,버티포트,vertiport_0423,성남송현초등학교,37.405294,127.116413,dashboard.html:VERTIPORTS,0.393,True
+vertiport,버티포트,vertiport_0424,공원,37.336509,127.108536,dashboard.html:VERTIPORTS,0.392,True
+vertiport,버티포트,vertiport_0425,하나로마트 문화광장,37.338662,127.108445,dashboard.html:VERTIPORTS,0.392,True
+vertiport,버티포트,vertiport_0426,공원,37.337898,127.109681,dashboard.html:VERTIPORTS,0.392,True
+vertiport,버티포트,vertiport_0427,동막천산책로,37.342916,127.107393,dashboard.html:VERTIPORTS,0.391,True
+vertiport,버티포트,vertiport_0428,하늘 어린이공원,37.414719,127.130621,dashboard.html:VERTIPORTS,0.39,True
+vertiport,버티포트,vertiport_0429,야탑1동공영주차장,37.411839,127.132282,dashboard.html:VERTIPORTS,0.39,True
+vertiport,버티포트,vertiport_0430,불곡어린이공원,37.344721,127.126581,dashboard.html:VERTIPORTS,0.389,True
+vertiport,버티포트,vertiport_0431,정동마트,37.365281,127.114508,dashboard.html:VERTIPORTS,0.388,True
+vertiport,버티포트,vertiport_0432,공원,37.339672,127.109944,dashboard.html:VERTIPORTS,0.387,True
+vertiport,버티포트,vertiport_0433,무지개로 공원,37.339919,127.110982,dashboard.html:VERTIPORTS,0.387,True
+vertiport,버티포트,vertiport_0434,야생화어린이공원,37.351537,127.106642,dashboard.html:VERTIPORTS,0.385,True
+vertiport,버티포트,vertiport_0435,Home plus Express,37.405202,127.121999,dashboard.html:VERTIPORTS,0.377,True
+vertiport,버티포트,vertiport_0436,하나로마트,37.389859,127.098306,dashboard.html:VERTIPORTS,0.376,True
+vertiport,버티포트,vertiport_0437,홈플러스 익스프레스,37.365432,127.115075,dashboard.html:VERTIPORTS,0.37,True
+vertiport,버티포트,vertiport_0438,705동 놀이터,37.360162,127.115165,dashboard.html:VERTIPORTS,0.369,True
+vertiport,버티포트,vertiport_0439,공원,37.394735,127.11491,dashboard.html:VERTIPORTS,0.363,True
+vertiport,버티포트,vertiport_0440,상대원 초등학교,37.442186,127.181269,dashboard.html:VERTIPORTS,0.362,True
+vertiport,버티포트,vertiport_0441,봉우재어린이공원,37.361162,127.112509,dashboard.html:VERTIPORTS,0.359,True
+vertiport,버티포트,vertiport_0442,노브랜드,37.399385,127.122329,dashboard.html:VERTIPORTS,0.357,True
+vertiport,버티포트,vertiport_0443,싱싱마트,37.405206,127.121233,dashboard.html:VERTIPORTS,0.357,True
+vertiport,버티포트,vertiport_0444,싱싱마트,37.405136,127.12113,dashboard.html:VERTIPORTS,0.357,True
+vertiport,버티포트,vertiport_0445,정동마트,37.372613,127.120469,dashboard.html:VERTIPORTS,0.355,True
+vertiport,버티포트,vertiport_0446,위례한빛초등학교,37.465628,127.146981,dashboard.html:VERTIPORTS,0.354,True
+vertiport,버티포트,vertiport_0447,공원,37.368283,127.110153,dashboard.html:VERTIPORTS,0.354,True
+vertiport,버티포트,vertiport_0448,공원,37.411749,127.136222,dashboard.html:VERTIPORTS,0.354,True
+vertiport,버티포트,vertiport_0449,공원,37.367624,127.073467,dashboard.html:VERTIPORTS,0.354,True
+vertiport,버티포트,vertiport_0450,공원,37.367357,127.074296,dashboard.html:VERTIPORTS,0.354,True
+vertiport,버티포트,vertiport_0451,매향 어린이공원,37.414635,127.137687,dashboard.html:VERTIPORTS,0.353,True
+vertiport,버티포트,vertiport_0452,공원,37.450064,127.172477,dashboard.html:VERTIPORTS,0.35,True
+vertiport,버티포트,vertiport_0453,공원,37.450763,127.172169,dashboard.html:VERTIPORTS,0.35,True
+vertiport,버티포트,vertiport_0454,느티마을어린이공원,37.366257,127.111789,dashboard.html:VERTIPORTS,0.35,True
+vertiport,버티포트,vertiport_0455,공원,37.36592,127.112626,dashboard.html:VERTIPORTS,0.35,True
+vertiport,버티포트,vertiport_0456,놀이터,37.366339,127.112746,dashboard.html:VERTIPORTS,0.35,True
+vertiport,버티포트,vertiport_0457,복정어린이공원,37.467706,127.127871,dashboard.html:VERTIPORTS,0.349,True
+vertiport,버티포트,vertiport_0458,공원,37.3687,127.113784,dashboard.html:VERTIPORTS,0.349,True
+vertiport,버티포트,vertiport_0459,공원,37.368305,127.114451,dashboard.html:VERTIPORTS,0.349,True
+vertiport,버티포트,vertiport_0460,공원,37.369118,127.114578,dashboard.html:VERTIPORTS,0.349,True
+vertiport,버티포트,vertiport_0461,공원,37.363776,127.114453,dashboard.html:VERTIPORTS,0.348,True
+vertiport,버티포트,vertiport_0462,공원,37.364513,127.112578,dashboard.html:VERTIPORTS,0.348,True
+vertiport,버티포트,vertiport_0463,공원,37.368299,127.111704,dashboard.html:VERTIPORTS,0.348,True
+vertiport,버티포트,vertiport_0464,공원,37.367994,127.11264,dashboard.html:VERTIPORTS,0.348,True
+vertiport,버티포트,vertiport_0465,백현어린이공원,37.371196,127.112325,dashboard.html:VERTIPORTS,0.347,True
+vertiport,버티포트,vertiport_0466,공원,37.369092,127.073361,dashboard.html:VERTIPORTS,0.347,True
+vertiport,버티포트,vertiport_0467,공원,37.368282,127.071542,dashboard.html:VERTIPORTS,0.347,True
+vertiport,버티포트,vertiport_0468,공원,37.368013,127.07345,dashboard.html:VERTIPORTS,0.347,True
+vertiport,버티포트,vertiport_0469,공원,37.369326,127.072572,dashboard.html:VERTIPORTS,0.347,True
+vertiport,버티포트,vertiport_0470,공원,37.466465,127.129632,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0471,TIGER Gym,37.465972,127.129498,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0472,Atrium,37.466316,127.128871,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0473,공원,37.418588,127.131339,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0474,공원,37.41779,127.132292,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0475,공원,37.417371,127.133229,dashboard.html:VERTIPORTS,0.346,True
+vertiport,버티포트,vertiport_0476,공원,37.419688,127.131555,dashboard.html:VERTIPORTS,0.344,True
+vertiport,버티포트,vertiport_0477,연꽃 어린이공원,37.415302,127.137378,dashboard.html:VERTIPORTS,0.344,True
+vertiport,버티포트,vertiport_0478,매화1단지 놀이터,37.415864,127.135675,dashboard.html:VERTIPORTS,0.344,True
+vertiport,버티포트,vertiport_0479,공원,37.417647,127.13637,dashboard.html:VERTIPORTS,0.344,True
+vertiport,버티포트,vertiport_0480,공원,37.418273,127.133213,dashboard.html:VERTIPORTS,0.342,True
+vertiport,버티포트,vertiport_0481,공원,37.392247,127.125043,dashboard.html:VERTIPORTS,0.342,True
+vertiport,버티포트,vertiport_0482,공원,37.419064,127.136476,dashboard.html:VERTIPORTS,0.341,True
+vertiport,버티포트,vertiport_0483,방아다리어린이공원,37.397758,127.1258,dashboard.html:VERTIPORTS,0.34,True
+vertiport,버티포트,vertiport_0484,공원,37.361609,127.120891,dashboard.html:VERTIPORTS,0.34,True
+vertiport,버티포트,vertiport_0485,정든어린이공원,37.361575,127.116512,dashboard.html:VERTIPORTS,0.339,True
+vertiport,버티포트,vertiport_0486,누엣길어린이공원,37.389833,127.125608,dashboard.html:VERTIPORTS,0.338,True
+vertiport,버티포트,vertiport_0487,공원,37.389846,127.126633,dashboard.html:VERTIPORTS,0.337,True
+vertiport,버티포트,vertiport_0488,동부코오롱아파트 놀이터,37.390796,127.125738,dashboard.html:VERTIPORTS,0.337,True
+vertiport,버티포트,vertiport_0489,공원,37.363764,127.118477,dashboard.html:VERTIPORTS,0.337,True
+vertiport,버티포트,vertiport_0490,종달새어린이공원,37.406467,127.123274,dashboard.html:VERTIPORTS,0.337,True
+vertiport,버티포트,vertiport_0491,공원,37.388753,127.097115,dashboard.html:VERTIPORTS,0.336,True
+vertiport,버티포트,vertiport_0492,너른들 어린이공원,37.390152,127.099166,dashboard.html:VERTIPORTS,0.336,True
+vertiport,버티포트,vertiport_0493,공원,37.407928,127.12701,dashboard.html:VERTIPORTS,0.335,True
+vertiport,버티포트,vertiport_0494,공원,37.40731,127.126983,dashboard.html:VERTIPORTS,0.335,True
+vertiport,버티포트,vertiport_0495,과수원어린이공원,37.402404,127.125956,dashboard.html:VERTIPORTS,0.334,True
+vertiport,버티포트,vertiport_0496,봄볕 어린이공원,37.398314,127.097351,dashboard.html:VERTIPORTS,0.334,True
+vertiport,버티포트,vertiport_0497,미르어린이공원,37.394958,127.09915,dashboard.html:VERTIPORTS,0.333,True
+vertiport,버티포트,vertiport_0498,낙생어린이공원,37.38687,127.100237,dashboard.html:VERTIPORTS,0.333,True
+vertiport,버티포트,vertiport_0499,능골공원,37.370341,127.11661,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0500,공원,37.367761,127.115613,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0501,4단지내 놀이터,37.36777,127.117918,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0502,공원,37.367847,127.116485,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0503,공원,37.390906,127.096383,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0504,한솔 어린이 공원,37.366639,127.116925,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0505,공원,37.368742,127.116555,dashboard.html:VERTIPORTS,0.331,True
+vertiport,버티포트,vertiport_0506,양영 놀이터,37.373703,127.138938,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0507,양영어린이공원,37.373389,127.13931,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0508,철쭉 어린이공원,37.366306,127.122309,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0509,공원,37.364019,127.116954,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0510,공원,37.364906,127.118329,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0511,수련어린이공원,37.372431,127.140574,dashboard.html:VERTIPORTS,0.33,True
+vertiport,버티포트,vertiport_0512,계원예술고등학교,37.359011,127.116015,dashboard.html:VERTIPORTS,0.329,True
+vertiport,버티포트,vertiport_0513,안말어린이공원,37.372638,127.143128,dashboard.html:VERTIPORTS,0.329,True
+vertiport,버티포트,vertiport_0514,점골어린이공원,37.377305,127.140354,dashboard.html:VERTIPORTS,0.326,True
+vertiport,버티포트,vertiport_0515,황송공원,37.444578,127.174312,dashboard.html:VERTIPORTS,0.324,True
+vertiport,버티포트,vertiport_0516,이매길어린이공원,37.393153,127.121933,dashboard.html:VERTIPORTS,0.319,True
+vertiport,버티포트,vertiport_0517,아름어린이공원,37.402527,127.122969,dashboard.html:VERTIPORTS,0.318,True
+vertiport,버티포트,vertiport_0518,수내 어린이 공원,37.364661,127.128237,dashboard.html:VERTIPORTS,0.318,True
+vertiport,버티포트,vertiport_0519,놀이터,37.405183,127.119754,dashboard.html:VERTIPORTS,0.317,True
+vertiport,버티포트,vertiport_0520,중앙공원,37.376881,127.124193,dashboard.html:VERTIPORTS,0.316,True
+vertiport,버티포트,vertiport_0521,매송어린이공원,37.397618,127.122954,dashboard.html:VERTIPORTS,0.316,True
+vertiport,버티포트,vertiport_0522,공원,37.372195,127.121557,dashboard.html:VERTIPORTS,0.316,True
+vertiport,버티포트,vertiport_0523,내정어린이공원,37.372043,127.121429,dashboard.html:VERTIPORTS,0.316,True
+vertiport,버티포트,vertiport_0524,성남신기초등학교,37.3667,127.110499,dashboard.html:VERTIPORTS,0.314,True
+vertiport,버티포트,vertiport_0525,숭신여고,37.449646,127.170283,dashboard.html:VERTIPORTS,0.313,True
+vertiport,버티포트,vertiport_0526,아람고등학교,37.413804,127.138101,dashboard.html:VERTIPORTS,0.313,True
+vertiport,버티포트,vertiport_0527,태원고등학교,37.403338,127.129641,dashboard.html:VERTIPORTS,0.311,True
+vertiport,버티포트,vertiport_0528,중탑초등학교,37.413651,127.139469,dashboard.html:VERTIPORTS,0.311,True
+vertiport,버티포트,vertiport_0529,자혜공원,37.451356,127.171115,dashboard.html:VERTIPORTS,0.31,True
+vertiport,버티포트,vertiport_0530,정자중학교,37.365546,127.110514,dashboard.html:VERTIPORTS,0.31,True
+vertiport,버티포트,vertiport_0531,9호관 쪽문,37.460205,127.130794,dashboard.html:VERTIPORTS,0.308,True
+vertiport,버티포트,vertiport_0532,5호관 후문,37.460419,127.130809,dashboard.html:VERTIPORTS,0.308,True
+vertiport,버티포트,vertiport_0533,한솔고등학교,37.366637,127.115728,dashboard.html:VERTIPORTS,0.308,True
+vertiport,버티포트,vertiport_0534,공원,37.457451,127.150246,dashboard.html:VERTIPORTS,0.308,True
+vertiport,버티포트,vertiport_0535,복정초등학교,37.462255,127.129539,dashboard.html:VERTIPORTS,0.308,True
+vertiport,버티포트,vertiport_0536,백현초등학교,37.371921,127.111354,dashboard.html:VERTIPORTS,0.307,True
+vertiport,버티포트,vertiport_0537,서울국제학교,37.466208,127.129051,dashboard.html:VERTIPORTS,0.306,True
+vertiport,버티포트,vertiport_0538,복정고등학교,37.461315,127.137311,dashboard.html:VERTIPORTS,0.306,True
+vertiport,버티포트,vertiport_0539,야탑중학교,37.416279,127.131567,dashboard.html:VERTIPORTS,0.306,True
+vertiport,버티포트,vertiport_0540,학교,37.416145,127.131508,dashboard.html:VERTIPORTS,0.306,True
+vertiport,버티포트,vertiport_0541,성남여수초등학교,37.419363,127.133197,dashboard.html:VERTIPORTS,0.304,True
+vertiport,버티포트,vertiport_0542,안말초등학교,37.392876,127.125645,dashboard.html:VERTIPORTS,0.302,True
+vertiport,버티포트,vertiport_0543,학교,37.361657,127.119984,dashboard.html:VERTIPORTS,0.3,True
+vertiport,버티포트,vertiport_0544,이매중학교,37.401554,127.126088,dashboard.html:VERTIPORTS,0.299,True
+vertiport,버티포트,vertiport_0545,하탑초등학교,37.407162,127.126146,dashboard.html:VERTIPORTS,0.299,True
+vertiport,버티포트,vertiport_0546,탄천초등학교,37.361598,127.115654,dashboard.html:VERTIPORTS,0.299,True
+vertiport,버티포트,vertiport_0547,이매초등학교,37.396706,127.126076,dashboard.html:VERTIPORTS,0.296,True
+vertiport,버티포트,vertiport_0548,학교,37.392119,127.130773,dashboard.html:VERTIPORTS,0.294,True
+vertiport,버티포트,vertiport_0549,낙생고등학교,37.386604,127.101018,dashboard.html:VERTIPORTS,0.293,True
+vertiport,버티포트,vertiport_0550,낙원중학교,37.399058,127.096504,dashboard.html:VERTIPORTS,0.292,True
+vertiport,버티포트,vertiport_0551,돌마초등학교,37.408998,127.130102,dashboard.html:VERTIPORTS,0.292,True
+vertiport,버티포트,vertiport_0552,송림중학교,37.392157,127.131753,dashboard.html:VERTIPORTS,0.291,True
+vertiport,버티포트,vertiport_0553,하탑중학교,37.40877,127.137363,dashboard.html:VERTIPORTS,0.291,True
+vertiport,버티포트,vertiport_0554,낙생초등학교,37.394097,127.099048,dashboard.html:VERTIPORTS,0.29,True
+vertiport,버티포트,vertiport_0555,양영초등학교,37.374472,127.139388,dashboard.html:VERTIPORTS,0.29,True
+vertiport,버티포트,vertiport_0556,양영중학교,37.37644,127.136029,dashboard.html:VERTIPORTS,0.29,True
+vertiport,버티포트,vertiport_0557,성남장안초등학교,37.37229,127.144063,dashboard.html:VERTIPORTS,0.289,True
+vertiport,버티포트,vertiport_0558,장안중학교,37.371278,127.146646,dashboard.html:VERTIPORTS,0.288,True
+vertiport,버티포트,vertiport_0559,양영디지털고등학교,37.37357,127.140519,dashboard.html:VERTIPORTS,0.287,True
+vertiport,버티포트,vertiport_0560,한솔초등학교,37.366648,127.118003,dashboard.html:VERTIPORTS,0.287,True
+vertiport,버티포트,vertiport_0561,문원중학교,37.460704,127.15734,dashboard.html:VERTIPORTS,0.281,True
+vertiport,버티포트,vertiport_0562,학교,37.447058,127.172197,dashboard.html:VERTIPORTS,0.281,True
+vertiport,버티포트,vertiport_0563,학교,37.446584,127.169846,dashboard.html:VERTIPORTS,0.281,True
+vertiport,버티포트,vertiport_0564,학교,37.44684,127.171073,dashboard.html:VERTIPORTS,0.281,True
+vertiport,버티포트,vertiport_0565,이매고등학교,37.392382,127.12143,dashboard.html:VERTIPORTS,0.281,True
+vertiport,버티포트,vertiport_0566,성남매송초등학교,37.401637,127.122879,dashboard.html:VERTIPORTS,0.278,True
+vertiport,버티포트,vertiport_0567,매송중학교,37.396783,127.122839,dashboard.html:VERTIPORTS,0.276,True
+vertiport,버티포트,vertiport_0568,학교,37.372879,127.122044,dashboard.html:VERTIPORTS,0.276,True
+vertiport,버티포트,vertiport_0569,학교,37.457375,127.151705,dashboard.html:VERTIPORTS,0.268,True
+vertiport,버티포트,vertiport_0570,창성중학교,37.460282,127.15324,dashboard.html:VERTIPORTS,0.268,True

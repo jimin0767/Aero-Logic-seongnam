@@ -1,0 +1,14 @@
+﻿html_const,kind,item_count
+GRID,array,1947
+HUBS_0,array,4
+FACS,array,172
+COV,array,172
+DONG,array,50
+HOURLY,array,10
+RADAR,array,6
+MODE,array,9
+SERVICE0,array,4
+ROUTES0,array,20
+KPI0,object,5
+VERTIPORTS,array,570
+ESG,object,8

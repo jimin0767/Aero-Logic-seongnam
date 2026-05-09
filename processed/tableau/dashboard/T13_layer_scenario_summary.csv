@@ -1,0 +1,257 @@
+﻿scenario_key,layer_key,demand_key,layer_label,demand_label,airspace_selected,obstacle_selected,noise_selected,robot_selected,weather_selected,b2b_selected,b2c_selected,ddi_selected,feasible_cells,hotspot_cells,selected_hubs,covered_hotspots,uncovered_hotspots,coverage_pct,avg_score_all_cells,demand_threshold
+A0O0N0R0W0__B0C0D0,A0O0N0R0W0,B0C0D0,선택 없음,선택 없음,False,False,False,False,False,False,False,False,0,0,0,0,0,0.0,0.0,0.0
+A0O0N0R0W0__B0C0D1,A0O0N0R0W0,B0C0D1,선택 없음,상권활력지수,False,False,False,False,False,False,False,True,0,0,0,0,0,0.0,0.0,0.095296
+A0O0N0R0W0__B0C1D0,A0O0N0R0W0,B0C1D0,선택 없음,소비력지수,False,False,False,False,False,False,True,False,0,0,0,0,0,0.0,0.0,0.4622
+A0O0N0R0W0__B0C1D1,A0O0N0R0W0,B0C1D1,선택 없음,소비력지수 + 상권활력지수,False,False,False,False,False,False,True,True,0,0,0,0,0,0.0,0.0,0.274148
+A0O0N0R0W0__B1C0D0,A0O0N0R0W0,B1C0D0,선택 없음,기업수요지수,False,False,False,False,False,True,False,False,0,0,0,0,0,0.0,0.0,0.2314
+A0O0N0R0W0__B1C0D1,A0O0N0R0W0,B1C0D1,선택 없음,기업수요지수 + 상권활력지수,False,False,False,False,False,True,False,True,0,0,0,0,0,0.0,0.0,0.178068
+A0O0N0R0W0__B1C1D0,A0O0N0R0W0,B1C1D0,선택 없음,기업수요지수 + 소비력지수,False,False,False,False,False,True,True,False,0,0,0,0,0,0.0,0.0,0.3872
+A0O0N0R0W0__B1C1D1,A0O0N0R0W0,B1C1D1,선택 없음,기업수요지수 + 소비력지수 + 상권활력지수,False,False,False,False,False,True,True,True,0,0,0,0,0,0.0,0.0,0.292951
+A0O0N0R0W1__B0C0D0,A0O0N0R0W1,B0C0D0,기상,선택 없음,False,False,False,False,True,False,False,False,1947,1947,10,122,1825,6.27,0.8,0.0
+A0O0N0R0W1__B0C0D1,A0O0N0R0W1,B0C0D1,기상,상권활력지수,False,False,False,False,True,False,False,True,1947,1456,10,115,1341,7.9,0.8,0.095296
+A0O0N0R0W1__B0C1D0,A0O0N0R0W1,B0C1D0,기상,소비력지수,False,False,False,False,True,False,True,False,1947,1480,10,111,1369,7.5,0.8,0.4622
+A0O0N0R0W1__B0C1D1,A0O0N0R0W1,B0C1D1,기상,소비력지수 + 상권활력지수,False,False,False,False,True,False,True,True,1947,1462,10,114,1348,7.8,0.8,0.274148
+A0O0N0R0W1__B1C0D0,A0O0N0R0W1,B1C0D0,기상,기업수요지수,False,False,False,False,True,True,False,False,1947,1421,10,110,1311,7.74,0.8,0.2314
+A0O0N0R0W1__B1C0D1,A0O0N0R0W1,B1C0D1,기상,기업수요지수 + 상권활력지수,False,False,False,False,True,True,False,True,1947,1514,10,115,1399,7.6,0.8,0.178068
+A0O0N0R0W1__B1C1D0,A0O0N0R0W1,B1C1D0,기상,기업수요지수 + 소비력지수,False,False,False,False,True,True,True,False,1947,1448,10,112,1336,7.73,0.8,0.3872
+A0O0N0R0W1__B1C1D1,A0O0N0R0W1,B1C1D1,기상,기업수요지수 + 소비력지수 + 상권활력지수,False,False,False,False,True,True,True,True,1947,1401,10,112,1289,7.99,0.8,0.292951
+A0O0N0R1W0__B0C0D0,A0O0N0R1W0,B0C0D0,로봇 접근성(Ra),선택 없음,False,False,False,True,False,False,False,False,1770,1770,10,121,1649,6.84,0.473118,0.0
+A0O0N0R1W0__B0C0D1,A0O0N0R1W0,B0C0D1,로봇 접근성(Ra),상권활력지수,False,False,False,True,False,False,False,True,1770,1336,10,114,1222,8.53,0.473118,0.095296
+A0O0N0R1W0__B0C1D0,A0O0N0R1W0,B0C1D0,로봇 접근성(Ra),소비력지수,False,False,False,True,False,False,True,False,1770,1318,10,111,1207,8.42,0.473118,0.4622
+A0O0N0R1W0__B0C1D1,A0O0N0R1W0,B0C1D1,로봇 접근성(Ra),소비력지수 + 상권활력지수,False,False,False,True,False,False,True,True,1770,1319,10,114,1205,8.64,0.473118,0.274148
+A0O0N0R1W0__B1C0D0,A0O0N0R1W0,B1C0D0,로봇 접근성(Ra),기업수요지수,False,False,False,True,False,True,False,False,1770,1258,10,108,1150,8.59,0.473118,0.2314
+A0O0N0R1W0__B1C0D1,A0O0N0R1W0,B1C0D1,로봇 접근성(Ra),기업수요지수 + 상권활력지수,False,False,False,True,False,True,False,True,1770,1362,10,114,1248,8.37,0.473118,0.178068
+A0O0N0R1W0__B1C1D0,A0O0N0R1W0,B1C1D0,로봇 접근성(Ra),기업수요지수 + 소비력지수,False,False,False,True,False,True,True,False,1770,1288,10,111,1177,8.62,0.473118,0.3872
+A0O0N0R1W0__B1C1D1,A0O0N0R1W0,B1C1D1,로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,False,False,False,True,False,True,True,True,1770,1261,10,111,1150,8.8,0.473118,0.292951
+A0O0N0R1W1__B0C0D0,A0O0N0R1W1,B0C0D0,로봇 접근성(Ra) + 기상,선택 없음,False,False,False,True,True,False,False,False,1770,1770,10,121,1649,6.84,0.378494,0.0
+A0O0N0R1W1__B0C0D1,A0O0N0R1W1,B0C0D1,로봇 접근성(Ra) + 기상,상권활력지수,False,False,False,True,True,False,False,True,1770,1336,10,114,1222,8.53,0.378494,0.095296
+A0O0N0R1W1__B0C1D0,A0O0N0R1W1,B0C1D0,로봇 접근성(Ra) + 기상,소비력지수,False,False,False,True,True,False,True,False,1770,1318,10,111,1207,8.42,0.378494,0.4622
+A0O0N0R1W1__B0C1D1,A0O0N0R1W1,B0C1D1,로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,False,False,False,True,True,False,True,True,1770,1319,10,114,1205,8.64,0.378494,0.274148
+A0O0N0R1W1__B1C0D0,A0O0N0R1W1,B1C0D0,로봇 접근성(Ra) + 기상,기업수요지수,False,False,False,True,True,True,False,False,1770,1258,10,108,1150,8.59,0.378494,0.2314
+A0O0N0R1W1__B1C0D1,A0O0N0R1W1,B1C0D1,로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,False,False,False,True,True,True,False,True,1770,1362,10,114,1248,8.37,0.378494,0.178068
+A0O0N0R1W1__B1C1D0,A0O0N0R1W1,B1C1D0,로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,False,False,False,True,True,True,True,False,1770,1288,10,111,1177,8.62,0.378494,0.3872
+A0O0N0R1W1__B1C1D1,A0O0N0R1W1,B1C1D1,로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,False,False,True,True,True,True,True,1770,1261,10,111,1150,8.8,0.378494,0.292951
+A0O0N1R0W0__B0C0D0,A0O0N1R0W0,B0C0D0,소음 민감,선택 없음,False,False,True,False,False,False,False,False,1947,1947,10,122,1825,6.27,0.902067,0.0
+A0O0N1R0W0__B0C0D1,A0O0N1R0W0,B0C0D1,소음 민감,상권활력지수,False,False,True,False,False,False,False,True,1947,1456,10,115,1341,7.9,0.902067,0.095296
+A0O0N1R0W0__B0C1D0,A0O0N1R0W0,B0C1D0,소음 민감,소비력지수,False,False,True,False,False,False,True,False,1947,1480,10,111,1369,7.5,0.902067,0.4622
+A0O0N1R0W0__B0C1D1,A0O0N1R0W0,B0C1D1,소음 민감,소비력지수 + 상권활력지수,False,False,True,False,False,False,True,True,1947,1462,10,114,1348,7.8,0.902067,0.274148
+A0O0N1R0W0__B1C0D0,A0O0N1R0W0,B1C0D0,소음 민감,기업수요지수,False,False,True,False,False,True,False,False,1947,1421,10,110,1311,7.74,0.902067,0.2314
+A0O0N1R0W0__B1C0D1,A0O0N1R0W0,B1C0D1,소음 민감,기업수요지수 + 상권활력지수,False,False,True,False,False,True,False,True,1947,1514,10,115,1399,7.6,0.902067,0.178068
+A0O0N1R0W0__B1C1D0,A0O0N1R0W0,B1C1D0,소음 민감,기업수요지수 + 소비력지수,False,False,True,False,False,True,True,False,1947,1448,10,112,1336,7.73,0.902067,0.3872
+A0O0N1R0W0__B1C1D1,A0O0N1R0W0,B1C1D1,소음 민감,기업수요지수 + 소비력지수 + 상권활력지수,False,False,True,False,False,True,True,True,1947,1401,10,112,1289,7.99,0.902067,0.292951
+A0O0N1R0W1__B0C0D0,A0O0N1R0W1,B0C0D0,소음 민감 + 기상,선택 없음,False,False,True,False,True,False,False,False,1947,1947,10,122,1825,6.27,0.721653,0.0
+A0O0N1R0W1__B0C0D1,A0O0N1R0W1,B0C0D1,소음 민감 + 기상,상권활력지수,False,False,True,False,True,False,False,True,1947,1456,10,115,1341,7.9,0.721653,0.095296
+A0O0N1R0W1__B0C1D0,A0O0N1R0W1,B0C1D0,소음 민감 + 기상,소비력지수,False,False,True,False,True,False,True,False,1947,1480,10,111,1369,7.5,0.721653,0.4622
+A0O0N1R0W1__B0C1D1,A0O0N1R0W1,B0C1D1,소음 민감 + 기상,소비력지수 + 상권활력지수,False,False,True,False,True,False,True,True,1947,1462,10,114,1348,7.8,0.721653,0.274148
+A0O0N1R0W1__B1C0D0,A0O0N1R0W1,B1C0D0,소음 민감 + 기상,기업수요지수,False,False,True,False,True,True,False,False,1947,1421,10,110,1311,7.74,0.721653,0.2314
+A0O0N1R0W1__B1C0D1,A0O0N1R0W1,B1C0D1,소음 민감 + 기상,기업수요지수 + 상권활력지수,False,False,True,False,True,True,False,True,1947,1514,10,115,1399,7.6,0.721653,0.178068
+A0O0N1R0W1__B1C1D0,A0O0N1R0W1,B1C1D0,소음 민감 + 기상,기업수요지수 + 소비력지수,False,False,True,False,True,True,True,False,1947,1448,10,112,1336,7.73,0.721653,0.3872
+A0O0N1R0W1__B1C1D1,A0O0N1R0W1,B1C1D1,소음 민감 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,False,True,False,True,True,True,True,1947,1401,10,112,1289,7.99,0.721653,0.292951
+A0O0N1R1W0__B0C0D0,A0O0N1R1W0,B0C0D0,소음 민감 + 로봇 접근성(Ra),선택 없음,False,False,True,True,False,False,False,False,1770,1770,10,121,1649,6.84,0.421326,0.0
+A0O0N1R1W0__B0C0D1,A0O0N1R1W0,B0C0D1,소음 민감 + 로봇 접근성(Ra),상권활력지수,False,False,True,True,False,False,False,True,1770,1336,10,114,1222,8.53,0.421326,0.095296
+A0O0N1R1W0__B0C1D0,A0O0N1R1W0,B0C1D0,소음 민감 + 로봇 접근성(Ra),소비력지수,False,False,True,True,False,False,True,False,1770,1318,10,111,1207,8.42,0.421326,0.4622
+A0O0N1R1W0__B0C1D1,A0O0N1R1W0,B0C1D1,소음 민감 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,False,False,True,True,False,False,True,True,1770,1319,10,114,1205,8.64,0.421326,0.274148
+A0O0N1R1W0__B1C0D0,A0O0N1R1W0,B1C0D0,소음 민감 + 로봇 접근성(Ra),기업수요지수,False,False,True,True,False,True,False,False,1770,1258,10,108,1150,8.59,0.421326,0.2314
+A0O0N1R1W0__B1C0D1,A0O0N1R1W0,B1C0D1,소음 민감 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,False,False,True,True,False,True,False,True,1770,1362,10,114,1248,8.37,0.421326,0.178068
+A0O0N1R1W0__B1C1D0,A0O0N1R1W0,B1C1D0,소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,False,False,True,True,False,True,True,False,1770,1288,10,111,1177,8.62,0.421326,0.3872
+A0O0N1R1W0__B1C1D1,A0O0N1R1W0,B1C1D1,소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,False,False,True,True,False,True,True,True,1770,1261,10,111,1150,8.8,0.421326,0.292951
+A0O0N1R1W1__B0C0D0,A0O0N1R1W1,B0C0D0,소음 민감 + 로봇 접근성(Ra) + 기상,선택 없음,False,False,True,True,True,False,False,False,1770,1770,10,121,1649,6.84,0.337061,0.0
+A0O0N1R1W1__B0C0D1,A0O0N1R1W1,B0C0D1,소음 민감 + 로봇 접근성(Ra) + 기상,상권활력지수,False,False,True,True,True,False,False,True,1770,1336,10,114,1222,8.53,0.337061,0.095296
+A0O0N1R1W1__B0C1D0,A0O0N1R1W1,B0C1D0,소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수,False,False,True,True,True,False,True,False,1770,1318,10,111,1207,8.42,0.337061,0.4622
+A0O0N1R1W1__B0C1D1,A0O0N1R1W1,B0C1D1,소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,False,False,True,True,True,False,True,True,1770,1319,10,114,1205,8.64,0.337061,0.274148
+A0O0N1R1W1__B1C0D0,A0O0N1R1W1,B1C0D0,소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수,False,False,True,True,True,True,False,False,1770,1258,10,108,1150,8.59,0.337061,0.2314
+A0O0N1R1W1__B1C0D1,A0O0N1R1W1,B1C0D1,소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,False,False,True,True,True,True,False,True,1770,1362,10,114,1248,8.37,0.337061,0.178068
+A0O0N1R1W1__B1C1D0,A0O0N1R1W1,B1C1D0,소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,False,False,True,True,True,True,True,False,1770,1288,10,111,1177,8.62,0.337061,0.3872
+A0O0N1R1W1__B1C1D1,A0O0N1R1W1,B1C1D1,소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,False,True,True,True,True,True,True,1770,1261,10,111,1150,8.8,0.337061,0.292951
+A0O1N0R0W0__B0C0D0,A0O1N0R0W0,B0C0D0,장애물,선택 없음,False,True,False,False,False,False,False,False,1947,1947,10,122,1825,6.27,0.874435,0.0
+A0O1N0R0W0__B0C0D1,A0O1N0R0W0,B0C0D1,장애물,상권활력지수,False,True,False,False,False,False,False,True,1947,1456,10,115,1341,7.9,0.874435,0.095296
+A0O1N0R0W0__B0C1D0,A0O1N0R0W0,B0C1D0,장애물,소비력지수,False,True,False,False,False,False,True,False,1947,1480,10,111,1369,7.5,0.874435,0.4622
+A0O1N0R0W0__B0C1D1,A0O1N0R0W0,B0C1D1,장애물,소비력지수 + 상권활력지수,False,True,False,False,False,False,True,True,1947,1462,10,114,1348,7.8,0.874435,0.274148
+A0O1N0R0W0__B1C0D0,A0O1N0R0W0,B1C0D0,장애물,기업수요지수,False,True,False,False,False,True,False,False,1947,1421,10,110,1311,7.74,0.874435,0.2314
+A0O1N0R0W0__B1C0D1,A0O1N0R0W0,B1C0D1,장애물,기업수요지수 + 상권활력지수,False,True,False,False,False,True,False,True,1947,1514,10,115,1399,7.6,0.874435,0.178068
+A0O1N0R0W0__B1C1D0,A0O1N0R0W0,B1C1D0,장애물,기업수요지수 + 소비력지수,False,True,False,False,False,True,True,False,1947,1448,10,112,1336,7.73,0.874435,0.3872
+A0O1N0R0W0__B1C1D1,A0O1N0R0W0,B1C1D1,장애물,기업수요지수 + 소비력지수 + 상권활력지수,False,True,False,False,False,True,True,True,1947,1401,10,112,1289,7.99,0.874435,0.292951
+A0O1N0R0W1__B0C0D0,A0O1N0R0W1,B0C0D0,장애물 + 기상,선택 없음,False,True,False,False,True,False,False,False,1947,1947,10,122,1825,6.27,0.699548,0.0
+A0O1N0R0W1__B0C0D1,A0O1N0R0W1,B0C0D1,장애물 + 기상,상권활력지수,False,True,False,False,True,False,False,True,1947,1456,10,115,1341,7.9,0.699548,0.095296
+A0O1N0R0W1__B0C1D0,A0O1N0R0W1,B0C1D0,장애물 + 기상,소비력지수,False,True,False,False,True,False,True,False,1947,1480,10,111,1369,7.5,0.699548,0.4622
+A0O1N0R0W1__B0C1D1,A0O1N0R0W1,B0C1D1,장애물 + 기상,소비력지수 + 상권활력지수,False,True,False,False,True,False,True,True,1947,1462,10,114,1348,7.8,0.699548,0.274148
+A0O1N0R0W1__B1C0D0,A0O1N0R0W1,B1C0D0,장애물 + 기상,기업수요지수,False,True,False,False,True,True,False,False,1947,1421,10,110,1311,7.74,0.699548,0.2314
+A0O1N0R0W1__B1C0D1,A0O1N0R0W1,B1C0D1,장애물 + 기상,기업수요지수 + 상권활력지수,False,True,False,False,True,True,False,True,1947,1514,10,115,1399,7.6,0.699548,0.178068
+A0O1N0R0W1__B1C1D0,A0O1N0R0W1,B1C1D0,장애물 + 기상,기업수요지수 + 소비력지수,False,True,False,False,True,True,True,False,1947,1448,10,112,1336,7.73,0.699548,0.3872
+A0O1N0R0W1__B1C1D1,A0O1N0R0W1,B1C1D1,장애물 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,True,False,False,True,True,True,True,1947,1401,10,112,1289,7.99,0.699548,0.292951
+A0O1N0R1W0__B0C0D0,A0O1N0R1W0,B0C0D0,장애물 + 로봇 접근성(Ra),선택 없음,False,True,False,True,False,False,False,False,1770,1770,10,121,1649,6.84,0.404886,0.0
+A0O1N0R1W0__B0C0D1,A0O1N0R1W0,B0C0D1,장애물 + 로봇 접근성(Ra),상권활력지수,False,True,False,True,False,False,False,True,1770,1336,10,114,1222,8.53,0.404886,0.095296
+A0O1N0R1W0__B0C1D0,A0O1N0R1W0,B0C1D0,장애물 + 로봇 접근성(Ra),소비력지수,False,True,False,True,False,False,True,False,1770,1318,10,111,1207,8.42,0.404886,0.4622
+A0O1N0R1W0__B0C1D1,A0O1N0R1W0,B0C1D1,장애물 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,False,True,False,True,False,False,True,True,1770,1319,10,114,1205,8.64,0.404886,0.274148
+A0O1N0R1W0__B1C0D0,A0O1N0R1W0,B1C0D0,장애물 + 로봇 접근성(Ra),기업수요지수,False,True,False,True,False,True,False,False,1770,1258,10,108,1150,8.59,0.404886,0.2314
+A0O1N0R1W0__B1C0D1,A0O1N0R1W0,B1C0D1,장애물 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,False,True,False,True,False,True,False,True,1770,1362,10,114,1248,8.37,0.404886,0.178068
+A0O1N0R1W0__B1C1D0,A0O1N0R1W0,B1C1D0,장애물 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,False,True,False,True,False,True,True,False,1770,1288,10,111,1177,8.62,0.404886,0.3872
+A0O1N0R1W0__B1C1D1,A0O1N0R1W0,B1C1D1,장애물 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,False,True,False,True,False,True,True,True,1770,1261,10,111,1150,8.8,0.404886,0.292951
+A0O1N0R1W1__B0C0D0,A0O1N0R1W1,B0C0D0,장애물 + 로봇 접근성(Ra) + 기상,선택 없음,False,True,False,True,True,False,False,False,1770,1770,10,121,1649,6.84,0.323909,0.0
+A0O1N0R1W1__B0C0D1,A0O1N0R1W1,B0C0D1,장애물 + 로봇 접근성(Ra) + 기상,상권활력지수,False,True,False,True,True,False,False,True,1770,1336,10,114,1222,8.53,0.323909,0.095296
+A0O1N0R1W1__B0C1D0,A0O1N0R1W1,B0C1D0,장애물 + 로봇 접근성(Ra) + 기상,소비력지수,False,True,False,True,True,False,True,False,1770,1318,10,111,1207,8.42,0.323909,0.4622
+A0O1N0R1W1__B0C1D1,A0O1N0R1W1,B0C1D1,장애물 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,False,True,False,True,True,False,True,True,1770,1319,10,114,1205,8.64,0.323909,0.274148
+A0O1N0R1W1__B1C0D0,A0O1N0R1W1,B1C0D0,장애물 + 로봇 접근성(Ra) + 기상,기업수요지수,False,True,False,True,True,True,False,False,1770,1258,10,108,1150,8.59,0.323909,0.2314
+A0O1N0R1W1__B1C0D1,A0O1N0R1W1,B1C0D1,장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,False,True,False,True,True,True,False,True,1770,1362,10,114,1248,8.37,0.323909,0.178068
+A0O1N0R1W1__B1C1D0,A0O1N0R1W1,B1C1D0,장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,False,True,False,True,True,True,True,False,1770,1288,10,111,1177,8.62,0.323909,0.3872
+A0O1N0R1W1__B1C1D1,A0O1N0R1W1,B1C1D1,장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,True,False,True,True,True,True,True,1770,1261,10,111,1150,8.8,0.323909,0.292951
+A0O1N1R0W0__B0C0D0,A0O1N1R0W0,B0C0D0,장애물 + 소음 민감,선택 없음,False,True,True,False,False,False,False,False,1947,1947,10,122,1825,6.27,0.797933,0.0
+A0O1N1R0W0__B0C0D1,A0O1N1R0W0,B0C0D1,장애물 + 소음 민감,상권활력지수,False,True,True,False,False,False,False,True,1947,1456,10,115,1341,7.9,0.797933,0.095296
+A0O1N1R0W0__B0C1D0,A0O1N1R0W0,B0C1D0,장애물 + 소음 민감,소비력지수,False,True,True,False,False,False,True,False,1947,1480,10,111,1369,7.5,0.797933,0.4622
+A0O1N1R0W0__B0C1D1,A0O1N1R0W0,B0C1D1,장애물 + 소음 민감,소비력지수 + 상권활력지수,False,True,True,False,False,False,True,True,1947,1462,10,114,1348,7.8,0.797933,0.274148
+A0O1N1R0W0__B1C0D0,A0O1N1R0W0,B1C0D0,장애물 + 소음 민감,기업수요지수,False,True,True,False,False,True,False,False,1947,1421,10,110,1311,7.74,0.797933,0.2314
+A0O1N1R0W0__B1C0D1,A0O1N1R0W0,B1C0D1,장애물 + 소음 민감,기업수요지수 + 상권활력지수,False,True,True,False,False,True,False,True,1947,1514,10,115,1399,7.6,0.797933,0.178068
+A0O1N1R0W0__B1C1D0,A0O1N1R0W0,B1C1D0,장애물 + 소음 민감,기업수요지수 + 소비력지수,False,True,True,False,False,True,True,False,1947,1448,10,112,1336,7.73,0.797933,0.3872
+A0O1N1R0W0__B1C1D1,A0O1N1R0W0,B1C1D1,장애물 + 소음 민감,기업수요지수 + 소비력지수 + 상권활력지수,False,True,True,False,False,True,True,True,1947,1401,10,112,1289,7.99,0.797933,0.292951
+A0O1N1R0W1__B0C0D0,A0O1N1R0W1,B0C0D0,장애물 + 소음 민감 + 기상,선택 없음,False,True,True,False,True,False,False,False,1947,1947,10,122,1825,6.27,0.638347,0.0
+A0O1N1R0W1__B0C0D1,A0O1N1R0W1,B0C0D1,장애물 + 소음 민감 + 기상,상권활력지수,False,True,True,False,True,False,False,True,1947,1456,10,115,1341,7.9,0.638347,0.095296
+A0O1N1R0W1__B0C1D0,A0O1N1R0W1,B0C1D0,장애물 + 소음 민감 + 기상,소비력지수,False,True,True,False,True,False,True,False,1947,1480,10,111,1369,7.5,0.638347,0.4622
+A0O1N1R0W1__B0C1D1,A0O1N1R0W1,B0C1D1,장애물 + 소음 민감 + 기상,소비력지수 + 상권활력지수,False,True,True,False,True,False,True,True,1947,1462,10,114,1348,7.8,0.638347,0.274148
+A0O1N1R0W1__B1C0D0,A0O1N1R0W1,B1C0D0,장애물 + 소음 민감 + 기상,기업수요지수,False,True,True,False,True,True,False,False,1947,1421,10,110,1311,7.74,0.638347,0.2314
+A0O1N1R0W1__B1C0D1,A0O1N1R0W1,B1C0D1,장애물 + 소음 민감 + 기상,기업수요지수 + 상권활력지수,False,True,True,False,True,True,False,True,1947,1514,10,115,1399,7.6,0.638347,0.178068
+A0O1N1R0W1__B1C1D0,A0O1N1R0W1,B1C1D0,장애물 + 소음 민감 + 기상,기업수요지수 + 소비력지수,False,True,True,False,True,True,True,False,1947,1448,10,112,1336,7.73,0.638347,0.3872
+A0O1N1R0W1__B1C1D1,A0O1N1R0W1,B1C1D1,장애물 + 소음 민감 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,True,True,False,True,True,True,True,1947,1401,10,112,1289,7.99,0.638347,0.292951
+A0O1N1R1W0__B0C0D0,A0O1N1R1W0,B0C0D0,장애물 + 소음 민감 + 로봇 접근성(Ra),선택 없음,False,True,True,True,False,False,False,False,1770,1770,10,121,1649,6.84,0.364628,0.0
+A0O1N1R1W0__B0C0D1,A0O1N1R1W0,B0C0D1,장애물 + 소음 민감 + 로봇 접근성(Ra),상권활력지수,False,True,True,True,False,False,False,True,1770,1336,10,114,1222,8.53,0.364628,0.095296
+A0O1N1R1W0__B0C1D0,A0O1N1R1W0,B0C1D0,장애물 + 소음 민감 + 로봇 접근성(Ra),소비력지수,False,True,True,True,False,False,True,False,1770,1318,10,111,1207,8.42,0.364628,0.4622
+A0O1N1R1W0__B0C1D1,A0O1N1R1W0,B0C1D1,장애물 + 소음 민감 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,False,True,True,True,False,False,True,True,1770,1319,10,114,1205,8.64,0.364628,0.274148
+A0O1N1R1W0__B1C0D0,A0O1N1R1W0,B1C0D0,장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수,False,True,True,True,False,True,False,False,1770,1258,10,108,1150,8.59,0.364628,0.2314
+A0O1N1R1W0__B1C0D1,A0O1N1R1W0,B1C0D1,장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,False,True,True,True,False,True,False,True,1770,1362,10,114,1248,8.37,0.364628,0.178068
+A0O1N1R1W0__B1C1D0,A0O1N1R1W0,B1C1D0,장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,False,True,True,True,False,True,True,False,1770,1288,10,111,1177,8.62,0.364628,0.3872
+A0O1N1R1W0__B1C1D1,A0O1N1R1W0,B1C1D1,장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,False,True,True,True,False,True,True,True,1770,1261,10,111,1150,8.8,0.364628,0.292951
+A0O1N1R1W1__B0C0D0,A0O1N1R1W1,B0C0D0,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,선택 없음,False,True,True,True,True,False,False,False,1770,1770,10,121,1649,6.84,0.291703,0.0
+A0O1N1R1W1__B0C0D1,A0O1N1R1W1,B0C0D1,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,상권활력지수,False,True,True,True,True,False,False,True,1770,1336,10,114,1222,8.53,0.291703,0.095296
+A0O1N1R1W1__B0C1D0,A0O1N1R1W1,B0C1D0,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수,False,True,True,True,True,False,True,False,1770,1318,10,111,1207,8.42,0.291703,0.4622
+A0O1N1R1W1__B0C1D1,A0O1N1R1W1,B0C1D1,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,False,True,True,True,True,False,True,True,1770,1319,10,114,1205,8.64,0.291703,0.274148
+A0O1N1R1W1__B1C0D0,A0O1N1R1W1,B1C0D0,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수,False,True,True,True,True,True,False,False,1770,1258,10,108,1150,8.59,0.291703,0.2314
+A0O1N1R1W1__B1C0D1,A0O1N1R1W1,B1C0D1,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,False,True,True,True,True,True,False,True,1770,1362,10,114,1248,8.37,0.291703,0.178068
+A0O1N1R1W1__B1C1D0,A0O1N1R1W1,B1C1D0,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,False,True,True,True,True,True,True,False,1770,1288,10,111,1177,8.62,0.291703,0.3872
+A0O1N1R1W1__B1C1D1,A0O1N1R1W1,B1C1D1,장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,False,True,True,True,True,True,True,True,1770,1261,10,111,1150,8.8,0.291703,0.292951
+A1O0N0R0W0__B0C0D0,A1O0N0R0W0,B0C0D0,공역 제한,선택 없음,True,False,False,False,False,False,False,False,264,264,5,43,221,16.29,0.135593,0.0
+A1O0N0R0W0__B0C0D1,A1O0N0R0W0,B0C0D1,공역 제한,상권활력지수,True,False,False,False,False,False,False,True,264,248,5,43,205,17.34,0.135593,0.095296
+A1O0N0R0W0__B0C1D0,A1O0N0R0W0,B0C1D0,공역 제한,소비력지수,True,False,False,False,False,False,True,False,264,264,5,43,221,16.29,0.135593,0.4622
+A1O0N0R0W0__B0C1D1,A1O0N0R0W0,B0C1D1,공역 제한,소비력지수 + 상권활력지수,True,False,False,False,False,False,True,True,264,253,5,43,210,17.0,0.135593,0.274148
+A1O0N0R0W0__B1C0D0,A1O0N0R0W0,B1C0D0,공역 제한,기업수요지수,True,False,False,False,False,True,False,False,264,223,4,28,195,12.56,0.135593,0.2314
+A1O0N0R0W0__B1C0D1,A1O0N0R0W0,B1C0D1,공역 제한,기업수요지수 + 상권활력지수,True,False,False,False,False,True,False,True,264,248,5,43,205,17.34,0.135593,0.178068
+A1O0N0R0W0__B1C1D0,A1O0N0R0W0,B1C1D0,공역 제한,기업수요지수 + 소비력지수,True,False,False,False,False,True,True,False,264,253,5,43,210,17.0,0.135593,0.3872
+A1O0N0R0W0__B1C1D1,A1O0N0R0W0,B1C1D1,공역 제한,기업수요지수 + 소비력지수 + 상권활력지수,True,False,False,False,False,True,True,True,264,253,5,43,210,17.0,0.135593,0.292951
+A1O0N0R0W1__B0C0D0,A1O0N0R0W1,B0C0D0,공역 제한 + 기상,선택 없음,True,False,False,False,True,False,False,False,264,264,5,43,221,16.29,0.108475,0.0
+A1O0N0R0W1__B0C0D1,A1O0N0R0W1,B0C0D1,공역 제한 + 기상,상권활력지수,True,False,False,False,True,False,False,True,264,248,5,43,205,17.34,0.108475,0.095296
+A1O0N0R0W1__B0C1D0,A1O0N0R0W1,B0C1D0,공역 제한 + 기상,소비력지수,True,False,False,False,True,False,True,False,264,264,5,43,221,16.29,0.108475,0.4622
+A1O0N0R0W1__B0C1D1,A1O0N0R0W1,B0C1D1,공역 제한 + 기상,소비력지수 + 상권활력지수,True,False,False,False,True,False,True,True,264,253,5,43,210,17.0,0.108475,0.274148
+A1O0N0R0W1__B1C0D0,A1O0N0R0W1,B1C0D0,공역 제한 + 기상,기업수요지수,True,False,False,False,True,True,False,False,264,223,4,28,195,12.56,0.108475,0.2314
+A1O0N0R0W1__B1C0D1,A1O0N0R0W1,B1C0D1,공역 제한 + 기상,기업수요지수 + 상권활력지수,True,False,False,False,True,True,False,True,264,248,5,43,205,17.34,0.108475,0.178068
+A1O0N0R0W1__B1C1D0,A1O0N0R0W1,B1C1D0,공역 제한 + 기상,기업수요지수 + 소비력지수,True,False,False,False,True,True,True,False,264,253,5,43,210,17.0,0.108475,0.3872
+A1O0N0R0W1__B1C1D1,A1O0N0R0W1,B1C1D1,공역 제한 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,False,False,False,True,True,True,True,264,253,5,43,210,17.0,0.108475,0.292951
+A1O0N0R1W0__B0C0D0,A1O0N0R1W0,B0C0D0,공역 제한 + 로봇 접근성(Ra),선택 없음,True,False,False,True,False,False,False,False,226,226,5,43,183,19.03,0.061654,0.0
+A1O0N0R1W0__B0C0D1,A1O0N0R1W0,B0C0D1,공역 제한 + 로봇 접근성(Ra),상권활력지수,True,False,False,True,False,False,False,True,226,211,5,43,168,20.38,0.061654,0.095296
+A1O0N0R1W0__B0C1D0,A1O0N0R1W0,B0C1D0,공역 제한 + 로봇 접근성(Ra),소비력지수,True,False,False,True,False,False,True,False,226,226,5,43,183,19.03,0.061654,0.4622
+A1O0N0R1W0__B0C1D1,A1O0N0R1W0,B0C1D1,공역 제한 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,True,False,False,True,False,False,True,True,226,216,5,43,173,19.91,0.061654,0.274148
+A1O0N0R1W0__B1C0D0,A1O0N0R1W0,B1C0D0,공역 제한 + 로봇 접근성(Ra),기업수요지수,True,False,False,True,False,True,False,False,226,187,4,28,159,14.97,0.061654,0.2314
+A1O0N0R1W0__B1C0D1,A1O0N0R1W0,B1C0D1,공역 제한 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,True,False,False,True,False,True,False,True,226,211,5,43,168,20.38,0.061654,0.178068
+A1O0N0R1W0__B1C1D0,A1O0N0R1W0,B1C1D0,공역 제한 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,True,False,False,True,False,True,True,False,226,216,5,43,173,19.91,0.061654,0.3872
+A1O0N0R1W0__B1C1D1,A1O0N0R1W0,B1C1D1,공역 제한 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,True,False,False,True,False,True,True,True,226,216,5,43,173,19.91,0.061654,0.292951
+A1O0N0R1W1__B0C0D0,A1O0N0R1W1,B0C0D0,공역 제한 + 로봇 접근성(Ra) + 기상,선택 없음,True,False,False,True,True,False,False,False,226,226,5,43,183,19.03,0.049323,0.0
+A1O0N0R1W1__B0C0D1,A1O0N0R1W1,B0C0D1,공역 제한 + 로봇 접근성(Ra) + 기상,상권활력지수,True,False,False,True,True,False,False,True,226,211,5,43,168,20.38,0.049323,0.095296
+A1O0N0R1W1__B0C1D0,A1O0N0R1W1,B0C1D0,공역 제한 + 로봇 접근성(Ra) + 기상,소비력지수,True,False,False,True,True,False,True,False,226,226,5,43,183,19.03,0.049323,0.4622
+A1O0N0R1W1__B0C1D1,A1O0N0R1W1,B0C1D1,공역 제한 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,True,False,False,True,True,False,True,True,226,216,5,43,173,19.91,0.049323,0.274148
+A1O0N0R1W1__B1C0D0,A1O0N0R1W1,B1C0D0,공역 제한 + 로봇 접근성(Ra) + 기상,기업수요지수,True,False,False,True,True,True,False,False,226,187,4,28,159,14.97,0.049323,0.2314
+A1O0N0R1W1__B1C0D1,A1O0N0R1W1,B1C0D1,공역 제한 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,True,False,False,True,True,True,False,True,226,211,5,43,168,20.38,0.049323,0.178068
+A1O0N0R1W1__B1C1D0,A1O0N0R1W1,B1C1D0,공역 제한 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,True,False,False,True,True,True,True,False,226,216,5,43,173,19.91,0.049323,0.3872
+A1O0N0R1W1__B1C1D1,A1O0N0R1W1,B1C1D1,공역 제한 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,False,False,True,True,True,True,True,226,216,5,43,173,19.91,0.049323,0.292951
+A1O0N1R0W0__B0C0D0,A1O0N1R0W0,B0C0D0,공역 제한 + 소음 민감,선택 없음,True,False,True,False,False,False,False,False,264,264,5,43,221,16.29,0.126697,0.0
+A1O0N1R0W0__B0C0D1,A1O0N1R0W0,B0C0D1,공역 제한 + 소음 민감,상권활력지수,True,False,True,False,False,False,False,True,264,248,5,43,205,17.34,0.126697,0.095296
+A1O0N1R0W0__B0C1D0,A1O0N1R0W0,B0C1D0,공역 제한 + 소음 민감,소비력지수,True,False,True,False,False,False,True,False,264,264,5,43,221,16.29,0.126697,0.4622
+A1O0N1R0W0__B0C1D1,A1O0N1R0W0,B0C1D1,공역 제한 + 소음 민감,소비력지수 + 상권활력지수,True,False,True,False,False,False,True,True,264,253,5,43,210,17.0,0.126697,0.274148
+A1O0N1R0W0__B1C0D0,A1O0N1R0W0,B1C0D0,공역 제한 + 소음 민감,기업수요지수,True,False,True,False,False,True,False,False,264,223,4,28,195,12.56,0.126697,0.2314
+A1O0N1R0W0__B1C0D1,A1O0N1R0W0,B1C0D1,공역 제한 + 소음 민감,기업수요지수 + 상권활력지수,True,False,True,False,False,True,False,True,264,248,5,43,205,17.34,0.126697,0.178068
+A1O0N1R0W0__B1C1D0,A1O0N1R0W0,B1C1D0,공역 제한 + 소음 민감,기업수요지수 + 소비력지수,True,False,True,False,False,True,True,False,264,253,5,43,210,17.0,0.126697,0.3872
+A1O0N1R0W0__B1C1D1,A1O0N1R0W0,B1C1D1,공역 제한 + 소음 민감,기업수요지수 + 소비력지수 + 상권활력지수,True,False,True,False,False,True,True,True,264,253,5,43,210,17.0,0.126697,0.292951
+A1O0N1R0W1__B0C0D0,A1O0N1R0W1,B0C0D0,공역 제한 + 소음 민감 + 기상,선택 없음,True,False,True,False,True,False,False,False,264,264,5,43,221,16.29,0.101358,0.0
+A1O0N1R0W1__B0C0D1,A1O0N1R0W1,B0C0D1,공역 제한 + 소음 민감 + 기상,상권활력지수,True,False,True,False,True,False,False,True,264,248,5,43,205,17.34,0.101358,0.095296
+A1O0N1R0W1__B0C1D0,A1O0N1R0W1,B0C1D0,공역 제한 + 소음 민감 + 기상,소비력지수,True,False,True,False,True,False,True,False,264,264,5,43,221,16.29,0.101358,0.4622
+A1O0N1R0W1__B0C1D1,A1O0N1R0W1,B0C1D1,공역 제한 + 소음 민감 + 기상,소비력지수 + 상권활력지수,True,False,True,False,True,False,True,True,264,253,5,43,210,17.0,0.101358,0.274148
+A1O0N1R0W1__B1C0D0,A1O0N1R0W1,B1C0D0,공역 제한 + 소음 민감 + 기상,기업수요지수,True,False,True,False,True,True,False,False,264,223,4,28,195,12.56,0.101358,0.2314
+A1O0N1R0W1__B1C0D1,A1O0N1R0W1,B1C0D1,공역 제한 + 소음 민감 + 기상,기업수요지수 + 상권활력지수,True,False,True,False,True,True,False,True,264,248,5,43,205,17.34,0.101358,0.178068
+A1O0N1R0W1__B1C1D0,A1O0N1R0W1,B1C1D0,공역 제한 + 소음 민감 + 기상,기업수요지수 + 소비력지수,True,False,True,False,True,True,True,False,264,253,5,43,210,17.0,0.101358,0.3872
+A1O0N1R0W1__B1C1D1,A1O0N1R0W1,B1C1D1,공역 제한 + 소음 민감 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,False,True,False,True,True,True,True,264,253,5,43,210,17.0,0.101358,0.292951
+A1O0N1R1W0__B0C0D0,A1O0N1R1W0,B0C0D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra),선택 없음,True,False,True,True,False,False,False,False,226,226,5,43,183,19.03,0.056853,0.0
+A1O0N1R1W0__B0C0D1,A1O0N1R1W0,B0C0D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra),상권활력지수,True,False,True,True,False,False,False,True,226,211,5,43,168,20.38,0.056853,0.095296
+A1O0N1R1W0__B0C1D0,A1O0N1R1W0,B0C1D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra),소비력지수,True,False,True,True,False,False,True,False,226,226,5,43,183,19.03,0.056853,0.4622
+A1O0N1R1W0__B0C1D1,A1O0N1R1W0,B0C1D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,True,False,True,True,False,False,True,True,226,216,5,43,173,19.91,0.056853,0.274148
+A1O0N1R1W0__B1C0D0,A1O0N1R1W0,B1C0D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra),기업수요지수,True,False,True,True,False,True,False,False,226,187,4,28,159,14.97,0.056853,0.2314
+A1O0N1R1W0__B1C0D1,A1O0N1R1W0,B1C0D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,True,False,True,True,False,True,False,True,226,211,5,43,168,20.38,0.056853,0.178068
+A1O0N1R1W0__B1C1D0,A1O0N1R1W0,B1C1D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,True,False,True,True,False,True,True,False,226,216,5,43,173,19.91,0.056853,0.3872
+A1O0N1R1W0__B1C1D1,A1O0N1R1W0,B1C1D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,True,False,True,True,False,True,True,True,226,216,5,43,173,19.91,0.056853,0.292951
+A1O0N1R1W1__B0C0D0,A1O0N1R1W1,B0C0D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,선택 없음,True,False,True,True,True,False,False,False,226,226,5,43,183,19.03,0.045483,0.0
+A1O0N1R1W1__B0C0D1,A1O0N1R1W1,B0C0D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,상권활력지수,True,False,True,True,True,False,False,True,226,211,5,43,168,20.38,0.045483,0.095296
+A1O0N1R1W1__B0C1D0,A1O0N1R1W1,B0C1D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수,True,False,True,True,True,False,True,False,226,226,5,43,183,19.03,0.045483,0.4622
+A1O0N1R1W1__B0C1D1,A1O0N1R1W1,B0C1D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,True,False,True,True,True,False,True,True,226,216,5,43,173,19.91,0.045483,0.274148
+A1O0N1R1W1__B1C0D0,A1O0N1R1W1,B1C0D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수,True,False,True,True,True,True,False,False,226,187,4,28,159,14.97,0.045483,0.2314
+A1O0N1R1W1__B1C0D1,A1O0N1R1W1,B1C0D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,True,False,True,True,True,True,False,True,226,211,5,43,168,20.38,0.045483,0.178068
+A1O0N1R1W1__B1C1D0,A1O0N1R1W1,B1C1D0,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,True,False,True,True,True,True,True,False,226,216,5,43,173,19.91,0.045483,0.3872
+A1O0N1R1W1__B1C1D1,A1O0N1R1W1,B1C1D1,공역 제한 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,False,True,True,True,True,True,True,226,216,5,43,173,19.91,0.045483,0.292951
+A1O1N0R0W0__B0C0D0,A1O1N0R0W0,B0C0D0,공역 제한 + 장애물,선택 없음,True,True,False,False,False,False,False,False,264,264,5,43,221,16.29,0.118426,0.0
+A1O1N0R0W0__B0C0D1,A1O1N0R0W0,B0C0D1,공역 제한 + 장애물,상권활력지수,True,True,False,False,False,False,False,True,264,248,5,43,205,17.34,0.118426,0.095296
+A1O1N0R0W0__B0C1D0,A1O1N0R0W0,B0C1D0,공역 제한 + 장애물,소비력지수,True,True,False,False,False,False,True,False,264,264,5,43,221,16.29,0.118426,0.4622
+A1O1N0R0W0__B0C1D1,A1O1N0R0W0,B0C1D1,공역 제한 + 장애물,소비력지수 + 상권활력지수,True,True,False,False,False,False,True,True,264,253,5,43,210,17.0,0.118426,0.274148
+A1O1N0R0W0__B1C0D0,A1O1N0R0W0,B1C0D0,공역 제한 + 장애물,기업수요지수,True,True,False,False,False,True,False,False,264,223,4,28,195,12.56,0.118426,0.2314
+A1O1N0R0W0__B1C0D1,A1O1N0R0W0,B1C0D1,공역 제한 + 장애물,기업수요지수 + 상권활력지수,True,True,False,False,False,True,False,True,264,248,5,43,205,17.34,0.118426,0.178068
+A1O1N0R0W0__B1C1D0,A1O1N0R0W0,B1C1D0,공역 제한 + 장애물,기업수요지수 + 소비력지수,True,True,False,False,False,True,True,False,264,253,5,43,210,17.0,0.118426,0.3872
+A1O1N0R0W0__B1C1D1,A1O1N0R0W0,B1C1D1,공역 제한 + 장애물,기업수요지수 + 소비력지수 + 상권활력지수,True,True,False,False,False,True,True,True,264,253,5,43,210,17.0,0.118426,0.292951
+A1O1N0R0W1__B0C0D0,A1O1N0R0W1,B0C0D0,공역 제한 + 장애물 + 기상,선택 없음,True,True,False,False,True,False,False,False,264,264,5,43,221,16.29,0.094741,0.0
+A1O1N0R0W1__B0C0D1,A1O1N0R0W1,B0C0D1,공역 제한 + 장애물 + 기상,상권활력지수,True,True,False,False,True,False,False,True,264,248,5,43,205,17.34,0.094741,0.095296
+A1O1N0R0W1__B0C1D0,A1O1N0R0W1,B0C1D0,공역 제한 + 장애물 + 기상,소비력지수,True,True,False,False,True,False,True,False,264,264,5,43,221,16.29,0.094741,0.4622
+A1O1N0R0W1__B0C1D1,A1O1N0R0W1,B0C1D1,공역 제한 + 장애물 + 기상,소비력지수 + 상권활력지수,True,True,False,False,True,False,True,True,264,253,5,43,210,17.0,0.094741,0.274148
+A1O1N0R0W1__B1C0D0,A1O1N0R0W1,B1C0D0,공역 제한 + 장애물 + 기상,기업수요지수,True,True,False,False,True,True,False,False,264,223,4,28,195,12.56,0.094741,0.2314
+A1O1N0R0W1__B1C0D1,A1O1N0R0W1,B1C0D1,공역 제한 + 장애물 + 기상,기업수요지수 + 상권활력지수,True,True,False,False,True,True,False,True,264,248,5,43,205,17.34,0.094741,0.178068
+A1O1N0R0W1__B1C1D0,A1O1N0R0W1,B1C1D0,공역 제한 + 장애물 + 기상,기업수요지수 + 소비력지수,True,True,False,False,True,True,True,False,264,253,5,43,210,17.0,0.094741,0.3872
+A1O1N0R0W1__B1C1D1,A1O1N0R0W1,B1C1D1,공역 제한 + 장애물 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,True,False,False,True,True,True,True,264,253,5,43,210,17.0,0.094741,0.292951
+A1O1N0R1W0__B0C0D0,A1O1N0R1W0,B0C0D0,공역 제한 + 장애물 + 로봇 접근성(Ra),선택 없음,True,True,False,True,False,False,False,False,226,226,5,43,183,19.03,0.051802,0.0
+A1O1N0R1W0__B0C0D1,A1O1N0R1W0,B0C0D1,공역 제한 + 장애물 + 로봇 접근성(Ra),상권활력지수,True,True,False,True,False,False,False,True,226,211,5,43,168,20.38,0.051802,0.095296
+A1O1N0R1W0__B0C1D0,A1O1N0R1W0,B0C1D0,공역 제한 + 장애물 + 로봇 접근성(Ra),소비력지수,True,True,False,True,False,False,True,False,226,226,5,43,183,19.03,0.051802,0.4622
+A1O1N0R1W0__B0C1D1,A1O1N0R1W0,B0C1D1,공역 제한 + 장애물 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,True,True,False,True,False,False,True,True,226,216,5,43,173,19.91,0.051802,0.274148
+A1O1N0R1W0__B1C0D0,A1O1N0R1W0,B1C0D0,공역 제한 + 장애물 + 로봇 접근성(Ra),기업수요지수,True,True,False,True,False,True,False,False,226,187,4,28,159,14.97,0.051802,0.2314
+A1O1N0R1W0__B1C0D1,A1O1N0R1W0,B1C0D1,공역 제한 + 장애물 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,True,True,False,True,False,True,False,True,226,211,5,43,168,20.38,0.051802,0.178068
+A1O1N0R1W0__B1C1D0,A1O1N0R1W0,B1C1D0,공역 제한 + 장애물 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,True,True,False,True,False,True,True,False,226,216,5,43,173,19.91,0.051802,0.3872
+A1O1N0R1W0__B1C1D1,A1O1N0R1W0,B1C1D1,공역 제한 + 장애물 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,True,True,False,True,False,True,True,True,226,216,5,43,173,19.91,0.051802,0.292951
+A1O1N0R1W1__B0C0D0,A1O1N0R1W1,B0C0D0,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,선택 없음,True,True,False,True,True,False,False,False,226,226,5,43,183,19.03,0.041441,0.0
+A1O1N0R1W1__B0C0D1,A1O1N0R1W1,B0C0D1,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,상권활력지수,True,True,False,True,True,False,False,True,226,211,5,43,168,20.38,0.041441,0.095296
+A1O1N0R1W1__B0C1D0,A1O1N0R1W1,B0C1D0,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,소비력지수,True,True,False,True,True,False,True,False,226,226,5,43,183,19.03,0.041441,0.4622
+A1O1N0R1W1__B0C1D1,A1O1N0R1W1,B0C1D1,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,True,True,False,True,True,False,True,True,226,216,5,43,173,19.91,0.041441,0.274148
+A1O1N0R1W1__B1C0D0,A1O1N0R1W1,B1C0D0,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,기업수요지수,True,True,False,True,True,True,False,False,226,187,4,28,159,14.97,0.041441,0.2314
+A1O1N0R1W1__B1C0D1,A1O1N0R1W1,B1C0D1,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,True,True,False,True,True,True,False,True,226,211,5,43,168,20.38,0.041441,0.178068
+A1O1N0R1W1__B1C1D0,A1O1N0R1W1,B1C1D0,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,True,True,False,True,True,True,True,False,226,216,5,43,173,19.91,0.041441,0.3872
+A1O1N0R1W1__B1C1D1,A1O1N0R1W1,B1C1D1,공역 제한 + 장애물 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,True,False,True,True,True,True,True,226,216,5,43,173,19.91,0.041441,0.292951
+A1O1N1R0W0__B0C0D0,A1O1N1R0W0,B0C0D0,공역 제한 + 장애물 + 소음 민감,선택 없음,True,True,True,False,False,False,False,False,264,264,5,43,221,16.29,0.111478,0.0
+A1O1N1R0W0__B0C0D1,A1O1N1R0W0,B0C0D1,공역 제한 + 장애물 + 소음 민감,상권활력지수,True,True,True,False,False,False,False,True,264,248,5,43,205,17.34,0.111478,0.095296
+A1O1N1R0W0__B0C1D0,A1O1N1R0W0,B0C1D0,공역 제한 + 장애물 + 소음 민감,소비력지수,True,True,True,False,False,False,True,False,264,264,5,43,221,16.29,0.111478,0.4622
+A1O1N1R0W0__B0C1D1,A1O1N1R0W0,B0C1D1,공역 제한 + 장애물 + 소음 민감,소비력지수 + 상권활력지수,True,True,True,False,False,False,True,True,264,253,5,43,210,17.0,0.111478,0.274148
+A1O1N1R0W0__B1C0D0,A1O1N1R0W0,B1C0D0,공역 제한 + 장애물 + 소음 민감,기업수요지수,True,True,True,False,False,True,False,False,264,223,4,28,195,12.56,0.111478,0.2314
+A1O1N1R0W0__B1C0D1,A1O1N1R0W0,B1C0D1,공역 제한 + 장애물 + 소음 민감,기업수요지수 + 상권활력지수,True,True,True,False,False,True,False,True,264,248,5,43,205,17.34,0.111478,0.178068
+A1O1N1R0W0__B1C1D0,A1O1N1R0W0,B1C1D0,공역 제한 + 장애물 + 소음 민감,기업수요지수 + 소비력지수,True,True,True,False,False,True,True,False,264,253,5,43,210,17.0,0.111478,0.3872
+A1O1N1R0W0__B1C1D1,A1O1N1R0W0,B1C1D1,공역 제한 + 장애물 + 소음 민감,기업수요지수 + 소비력지수 + 상권활력지수,True,True,True,False,False,True,True,True,264,253,5,43,210,17.0,0.111478,0.292951
+A1O1N1R0W1__B0C0D0,A1O1N1R0W1,B0C0D0,공역 제한 + 장애물 + 소음 민감 + 기상,선택 없음,True,True,True,False,True,False,False,False,264,264,5,43,221,16.29,0.089182,0.0
+A1O1N1R0W1__B0C0D1,A1O1N1R0W1,B0C0D1,공역 제한 + 장애물 + 소음 민감 + 기상,상권활력지수,True,True,True,False,True,False,False,True,264,248,5,43,205,17.34,0.089182,0.095296
+A1O1N1R0W1__B0C1D0,A1O1N1R0W1,B0C1D0,공역 제한 + 장애물 + 소음 민감 + 기상,소비력지수,True,True,True,False,True,False,True,False,264,264,5,43,221,16.29,0.089182,0.4622
+A1O1N1R0W1__B0C1D1,A1O1N1R0W1,B0C1D1,공역 제한 + 장애물 + 소음 민감 + 기상,소비력지수 + 상권활력지수,True,True,True,False,True,False,True,True,264,253,5,43,210,17.0,0.089182,0.274148
+A1O1N1R0W1__B1C0D0,A1O1N1R0W1,B1C0D0,공역 제한 + 장애물 + 소음 민감 + 기상,기업수요지수,True,True,True,False,True,True,False,False,264,223,4,28,195,12.56,0.089182,0.2314
+A1O1N1R0W1__B1C0D1,A1O1N1R0W1,B1C0D1,공역 제한 + 장애물 + 소음 민감 + 기상,기업수요지수 + 상권활력지수,True,True,True,False,True,True,False,True,264,248,5,43,205,17.34,0.089182,0.178068
+A1O1N1R0W1__B1C1D0,A1O1N1R0W1,B1C1D0,공역 제한 + 장애물 + 소음 민감 + 기상,기업수요지수 + 소비력지수,True,True,True,False,True,True,True,False,264,253,5,43,210,17.0,0.089182,0.3872
+A1O1N1R0W1__B1C1D1,A1O1N1R0W1,B1C1D1,공역 제한 + 장애물 + 소음 민감 + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,True,True,False,True,True,True,True,264,253,5,43,210,17.0,0.089182,0.292951
+A1O1N1R1W0__B0C0D0,A1O1N1R1W0,B0C0D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),선택 없음,True,True,True,True,False,False,False,False,226,226,5,43,183,19.03,0.048143,0.0
+A1O1N1R1W0__B0C0D1,A1O1N1R1W0,B0C0D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),상권활력지수,True,True,True,True,False,False,False,True,226,211,5,43,168,20.38,0.048143,0.095296
+A1O1N1R1W0__B0C1D0,A1O1N1R1W0,B0C1D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),소비력지수,True,True,True,True,False,False,True,False,226,226,5,43,183,19.03,0.048143,0.4622
+A1O1N1R1W0__B0C1D1,A1O1N1R1W0,B0C1D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),소비력지수 + 상권활력지수,True,True,True,True,False,False,True,True,226,216,5,43,173,19.91,0.048143,0.274148
+A1O1N1R1W0__B1C0D0,A1O1N1R1W0,B1C0D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수,True,True,True,True,False,True,False,False,226,187,4,28,159,14.97,0.048143,0.2314
+A1O1N1R1W0__B1C0D1,A1O1N1R1W0,B1C0D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 상권활력지수,True,True,True,True,False,True,False,True,226,211,5,43,168,20.38,0.048143,0.178068
+A1O1N1R1W0__B1C1D0,A1O1N1R1W0,B1C1D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수,True,True,True,True,False,True,True,False,226,216,5,43,173,19.91,0.048143,0.3872
+A1O1N1R1W0__B1C1D1,A1O1N1R1W0,B1C1D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra),기업수요지수 + 소비력지수 + 상권활력지수,True,True,True,True,False,True,True,True,226,216,5,43,173,19.91,0.048143,0.292951
+A1O1N1R1W1__B0C0D0,A1O1N1R1W1,B0C0D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,선택 없음,True,True,True,True,True,False,False,False,226,226,5,43,183,19.03,0.038514,0.0
+A1O1N1R1W1__B0C0D1,A1O1N1R1W1,B0C0D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,상권활력지수,True,True,True,True,True,False,False,True,226,211,5,43,168,20.38,0.038514,0.095296
+A1O1N1R1W1__B0C1D0,A1O1N1R1W1,B0C1D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수,True,True,True,True,True,False,True,False,226,226,5,43,183,19.03,0.038514,0.4622
+A1O1N1R1W1__B0C1D1,A1O1N1R1W1,B0C1D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,소비력지수 + 상권활력지수,True,True,True,True,True,False,True,True,226,216,5,43,173,19.91,0.038514,0.274148
+A1O1N1R1W1__B1C0D0,A1O1N1R1W1,B1C0D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수,True,True,True,True,True,True,False,False,226,187,4,28,159,14.97,0.038514,0.2314
+A1O1N1R1W1__B1C0D1,A1O1N1R1W1,B1C0D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 상권활력지수,True,True,True,True,True,True,False,True,226,211,5,43,168,20.38,0.038514,0.178068
+A1O1N1R1W1__B1C1D0,A1O1N1R1W1,B1C1D0,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수,True,True,True,True,True,True,True,False,226,216,5,43,173,19.91,0.038514,0.3872
+A1O1N1R1W1__B1C1D1,A1O1N1R1W1,B1C1D1,공역 제한 + 장애물 + 소음 민감 + 로봇 접근성(Ra) + 기상,기업수요지수 + 소비력지수 + 상권활력지수,True,True,True,True,True,True,True,True,226,216,5,43,173,19.91,0.038514,0.292951

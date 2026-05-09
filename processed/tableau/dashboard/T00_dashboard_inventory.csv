@@ -1,0 +1,11 @@
+﻿dashboard_area,tableau_sheet,csv_sources,purpose
+Hero/KPI,KPI 카드,"T01_grid_cells.csv, T13_layer_scenario_summary.csv","전체 셀, 적합 셀, 평균 점수, 커버리지"
+Map,H3 적합도 지도,T01_grid_cells.csv 또는 T15_layer_scenario_cell_scores.csv,"lat/lon 중심점 지도, 색상=선택 점수"
+Map,거점/버티포트 오버레이,"T06_hubs.csv, T07_vertiports_dashboard.csv, T07_vertiport_candidates_full.csv, T14_layer_scenario_hubs.csv",선정 거점과 후보지 표시
+Side panel,레이어 조합,Tableau Parameters,공역/장애물/소음/Ra/기상 Boolean 파라미터
+Chart,동별 종합 적합도 Top 15,T02_dong_summary.csv,avg_selected_score_all_layers
+Chart,시간대별 배송 수요,T03_hourly_demand.csv,avg_hour_ratio
+Chart,배송 모드 비교,"T04_mode_comparison_long.csv, T05_mode_radar_long.csv",오토바이 vs 드론+로봇
+Chart,ESG 효율 시나리오,T09_esg_scenarios.csv,E_지수와 기준선 1.0
+Chart,B2B/B2C/로봇 지수 Top 15,T08_demand_indices_long.csv,metric별 index_value
+Chart,기상/복지 추가 분석,"T10_weather.csv, T11_welfare_by_dong.csv","GO/NOGO, 복지시설 밀도"
