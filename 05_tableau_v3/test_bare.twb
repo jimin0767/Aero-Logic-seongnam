@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<workbook source-build='2026.1.0 (20261.26.0401.1148)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking />
+  </document-format-change-manifest>
+  <preferences />
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view><breakdown value='auto' /></view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DF4D0277-330C-487B-8894-4CD11D7B42B1}' />
+    </worksheet>
+  </worksheets>
+</workbook>

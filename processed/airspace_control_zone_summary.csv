@@ -1,0 +1,3 @@
+﻿ctr_label,ctr_class_,ctr_lbl_1,source,source_layer,airspace_type,official_airspace,collected_at,area_m2,area_km2,intersection_ratio_vs_seongnam
+,,SEOUL CTLZ,VWorld WFS,lt_c_aisctrc,관제권,True,2026-05-10T15:52:37.305684,120617811.18769546,120.61781118769545,0.8530433323140096
+,,SEOUL,VWorld WFS,lt_c_aisctrc,관제권,True,2026-05-10T15:52:37.305684,120764393.44871838,120.76439344871838,0.8540800035914095

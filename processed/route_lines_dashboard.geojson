@@ -1,0 +1,2315 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.12048388918946,
+            37.34735297003032
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e02499fffff",
+        "target_dong": "구미1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2418359716264744,
+        "moto_time_min": 14.416666666666666,
+        "time_saving_min": 9.13393993537258,
+        "co2_saving_g": 264.655444595844,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 구미1동 | 드론 1.2분 | 절감 9.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.10788650826936,
+            37.35324275455719
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e024d1fffff",
+        "target_dong": "금곡동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.9400080053874544,
+        "moto_time_min": 13.833333333333334,
+        "time_saving_min": 8.86817268883641,
+        "co2_saving_g": 259.14483188686347,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 금곡동 | 드론 0.9분 | 절감 8.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.11577802623792,
+            37.35366319257715
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e024d3fffff",
+        "target_dong": "금곡동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.4977629508779571,
+        "moto_time_min": 13.933333333333334,
+        "time_saving_min": 9.380102449083443,
+        "co2_saving_g": 283.1709780315629,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 금곡동 | 드론 0.5분 | 절감 9.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.11259240697711,
+            37.34693329456015
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e024d7fffff",
+        "target_dong": "구미1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2886322431670534,
+        "moto_time_min": 14.316666666666666,
+        "time_saving_min": 8.99535060298502,
+        "co2_saving_g": 306.1557228934919,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 구미1동 | 드론 1.3분 | 절감 9.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.1031801232576,
+            37.35955161953489
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e024d9fffff",
+        "target_dong": "금곡동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1974782621972042,
+        "moto_time_min": 7.879829569518941,
+        "time_saving_min": 3.0044355927833,
+        "co2_saving_g": 208.45102849197832,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 금곡동 | 드론 1.2분 | 절감 3.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.11107167684116,
+            37.35997282010733
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e024dbfffff",
+        "target_dong": "정자3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.530034308996466,
+        "moto_time_min": 12.583333333333334,
+        "time_saving_min": 8.075109735783265,
+        "co2_saving_g": 108.0817795110742,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자3동 | 드론 0.5분 | 절감 8.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.08116763963528,
+            37.37805069205754
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e02683fffff",
+        "target_dong": "판교동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.451869130988514,
+        "moto_time_min": 8.704055984402785,
+        "time_saving_min": 3.5424133430004394,
+        "co2_saving_g": 252.7341189768256,
+        "route_explanation": "거점: 운중동공영주차장 → 판교동 | 드론 1.5분 | 절감 3.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.06857007823017,
+            37.38393123801656
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e02689fffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.129425351236904,
+        "moto_time_min": 7.659338138007569,
+        "time_saving_min": 2.860519452600677,
+        "co2_saving_g": 196.60471801656408,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 1.1분 | 절감 2.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.07645927448829,
+            37.3843564124282
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e0268bfffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7343480287090113,
+        "moto_time_min": 14.483333333333333,
+        "time_saving_min": 9.67599528319869,
+        "co2_saving_g": 217.8016913971108,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 0.7분 | 절감 9.7분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.0922414145638,
+            37.38520537596634
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e02691fffff",
+        "target_dong": "판교동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.4168275543914328,
+        "moto_time_min": 8.590521276228243,
+        "time_saving_min": 3.4683085269300795,
+        "co2_saving_g": 246.63425653068865,
+        "route_explanation": "거점: 운중동공영주차장 → 판교동 | 드론 1.4분 | 절감 3.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.08753263276262,
+            37.39151202534271
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e02699fffff",
+        "target_dong": "판교동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8556011781833374,
+        "moto_time_min": 13.05,
+        "time_saving_min": 8.208321066885357,
+        "co2_saving_g": 177.39637525814993,
+        "route_explanation": "거점: 운중동공영주차장 → 판교동 | 드론 0.9분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.08434971993373,
+            37.38478112515867
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e0269dfffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8849047338802701,
+        "moto_time_min": 6.867091337772076,
+        "time_saving_min": 2.3434149974280256,
+        "co2_saving_g": 154.03979155020804,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 0.9분 | 절감 2.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.06386119245072,
+            37.39023559993693
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026c3fffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.244745130601531,
+        "moto_time_min": 14.166666666666666,
+        "time_saving_min": 8.89517016874834,
+        "co2_saving_g": 263.7273522573678,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 1.2분 | 절감 8.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.07493160014046,
+            37.39739230253543
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026d1fffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7693077183149374,
+        "moto_time_min": 6.492557007340397,
+        "time_saving_min": 2.098954091023913,
+        "co2_saving_g": 133.91724106567273,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 0.8분 | 절감 2.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.0828233644451,
+            37.39781807847479
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026d3fffff",
+        "target_dong": "시흥동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8850163862029946,
+        "moto_time_min": 6.867453091297703,
+        "time_saving_min": 2.3436511162229783,
+        "co2_saving_g": 154.05922742828628,
+        "route_explanation": "거점: 운중동공영주차장 → 시흥동 | 드론 0.9분 | 절감 2.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.07175042311968,
+            37.39066153675447
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026d5fffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.5448767638885839,
+        "moto_time_min": 13.416666666666666,
+        "time_saving_min": 8.847841244683469,
+        "co2_saving_g": 145.6290879583397,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 0.5분 | 절감 8.8분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.07964090322452,
+            37.39108701197028
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026d7fffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.155889334936054,
+        "moto_time_min": 11.483333333333333,
+        "time_saving_min": 7.389835086778882,
+        "co2_saving_g": 28.94982396634287,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 0.2분 | 절감 7.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.07811360959948,
+            37.4041235351584
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026dbfffff",
+        "target_dong": "시흥동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.469948804848266,
+        "moto_time_min": 8.762634127708381,
+        "time_saving_min": 3.5806476645149745,
+        "co2_saving_g": 255.88133820396192,
+        "route_explanation": "거점: 운중동공영주차장 → 시흥동 | 드론 1.5분 | 절감 3.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.0670410855178,
+            37.3969660648321
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e026ddfffff",
+        "target_dong": "운중동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1749648446797616,
+        "moto_time_min": 7.806886096762428,
+        "time_saving_min": 2.9568249306424805,
+        "co2_saving_g": 204.53200533762956,
+        "route_explanation": "거점: 운중동공영주차장 → 운중동 | 드론 1.2분 | 절감 3.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.14616358120144,
+            37.43403435078751
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15209fffff",
+        "target_dong": "성남동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.462752600934604,
+        "moto_time_min": 24.33333333333333,
+        "time_saving_min": 18.28762967539251,
+        "co2_saving_g": 309.1461953803733,
+        "route_explanation": "거점: 태평4동 제1 → 성남동 | 드론 1.5분 | 절감 18.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.14448612654608,
+            37.41425329276519
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15229fffff",
+        "target_dong": "도촌동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.160321186850498,
+        "moto_time_min": 14.483333333333333,
+        "time_saving_min": 9.27383700640942,
+        "co2_saving_g": 253.94025507613955,
+        "route_explanation": "거점: 맛고을 → 도촌동 | 드론 1.2분 | 절감 9.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.14129299820154,
+            37.40751919355961
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e1522dfffff",
+        "target_dong": "야탑3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.9586974808725016,
+        "moto_time_min": 13.233333333333333,
+        "time_saving_min": 8.284072285857302,
+        "co2_saving_g": 208.61085290167745,
+        "route_explanation": "거점: 맛고을 → 야탑3동 | 드론 1.0분 | 절감 8.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.13354605039136,
+            37.43991995453398
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15241fffff",
+        "target_dong": "수진1동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2204107410977985,
+        "moto_time_min": 20.133333333333333,
+        "time_saving_min": 14.55123232887142,
+        "co2_saving_g": 217.99837443694625,
+        "route_explanation": "거점: 태평4동 제1 → 수진1동 | 드론 1.2분 | 절감 14.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.14145178306713,
+            37.44034521578544
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15243fffff",
+        "target_dong": "신흥1동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7829150283095451,
+        "moto_time_min": 16.65,
+        "time_saving_min": 11.675678352178156,
+        "co2_saving_g": 132.39378440549956,
+        "route_explanation": "거점: 태평4동 제1 → 신흥1동 | 드론 0.8분 | 절감 11.7분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.12883372758104,
+            37.44622945842601
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15249fffff",
+        "target_dong": "태평1동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3444123793773044,
+        "moto_time_min": 22.05,
+        "time_saving_min": 16.243674833516543,
+        "co2_saving_g": 266.6918400330766,
+        "route_explanation": "거점: 태평4동 제1 → 태평1동 | 드론 1.3분 | 절감 16.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.1367394967747,
+            37.44665548313307
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1524bfffff",
+        "target_dong": "태평2동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.6435348675150716,
+        "moto_time_min": 17.733333333333334,
+        "time_saving_min": 12.83003360298976,
+        "co2_saving_g": 166.2437677821835,
+        "route_explanation": "거점: 태평4동 제1 → 태평2동 | 드론 0.6분 | 절감 12.8분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.15255478932345,
+            37.4475061399608
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15251fffff",
+        "target_dong": "신흥2동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7586242061005596,
+        "moto_time_min": 19.05,
+        "time_saving_min": 13.964434347389904,
+        "co2_saving_g": 202.84189167188825,
+        "route_explanation": "거점: 태평4동 제1 → 신흥2동 | 드론 0.8분 | 절감 14.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.14935876688132,
+            37.44077001284303
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15255fffff",
+        "target_dong": "중앙동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8480816293040537,
+        "moto_time_min": 18.766666666666666,
+        "time_saving_min": 13.61248520367878,
+        "co2_saving_g": 188.53628578461488,
+        "route_explanation": "거점: 태평4동 제1 → 중앙동 | 드론 0.8분 | 절감 13.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.15726700182977,
+            37.44119434546412
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15257fffff",
+        "target_dong": "중앙동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.344876810380725,
+        "moto_time_min": 20.216666666666665,
+        "time_saving_min": 14.51239920079056,
+        "co2_saving_g": 219.2860869820048,
+        "route_explanation": "거점: 태평4동 제1 → 중앙동 | 드론 1.3분 | 절감 14.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.1478420883633,
+            37.45381733660726
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e15259fffff",
+        "target_dong": "신흥2동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8188193000328493,
+        "moto_time_min": 6.652974532106432,
+        "time_saving_min": 2.203659615514045,
+        "co2_saving_g": 142.53596965321827,
+        "route_explanation": "거점: 태평4동 제1 → 신흥2동 | 드론 0.8분 | 절감 2.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.15575164883666,
+            37.454242731938216
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1525bfffff",
+        "target_dong": "단대동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3071980563803318,
+        "moto_time_min": 25.5,
+        "time_saving_min": 19.53592946535772,
+        "co2_saving_g": 362.265340816013,
+        "route_explanation": "거점: 태평4동 제1 → 단대동 | 드론 1.3분 | 절감 19.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.14464651735686,
+            37.447081043725554
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1525dfffff",
+        "target_dong": "신흥2동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.0578669510217235,
+        "moto_time_min": 11.633333333333333,
+        "time_saving_min": 7.623991283275714,
+        "co2_saving_g": 12.801294028543806,
+        "route_explanation": "거점: 태평4동 제1 → 신흥2동 | 드론 0.1분 | 절감 7.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13187259741149,
+            37.420140523638906
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15261fffff",
+        "target_dong": "도촌동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.9409941831370854,
+        "moto_time_min": 14.2,
+        "time_saving_min": 9.21340907865956,
+        "co2_saving_g": 201.32412215412123,
+        "route_explanation": "거점: 맛고을 → 도촌동 | 드론 0.9분 | 절감 9.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13977571889367,
+            37.42056442267307
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15263fffff",
+        "target_dong": "도촌동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.215005079696451,
+        "moto_time_min": 15.733333333333333,
+        "time_saving_min": 10.402326575960805,
+        "co2_saving_g": 363.3343933263745,
+        "route_explanation": "거점: 맛고을 → 도촌동 | 드론 1.2분 | 절감 10.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.12868120690268,
+            37.41340655748888
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15265fffff",
+        "target_dong": "야탑1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.3361288554250362,
+        "moto_time_min": 12.316666666666666,
+        "time_saving_min": 8.006416383828544,
+        "co2_saving_g": 115.47729403607424,
+        "route_explanation": "거점: 맛고을 → 야탑1동 | 드론 0.3분 | 절감 8.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13658304164883,
+            37.41383015701872
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15267fffff",
+        "target_dong": "야탑3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.4882401142457543,
+        "moto_time_min": 12.333333333333334,
+        "time_saving_min": 7.87854409248805,
+        "co2_saving_g": 106.79195760083915,
+        "route_explanation": "거점: 맛고을 → 야탑3동 | 드론 0.5분 | 절감 7.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.12397072633009,
+            37.419716160900585
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e1526dfffff",
+        "target_dong": "도촌동",
+        "target_gu": "중원구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.13007075976282,
+        "moto_time_min": 14.716666666666669,
+        "time_saving_min": 9.522684589536574,
+        "co2_saving_g": 362.8060140449808,
+        "route_explanation": "거점: 맛고을 → 도촌동 | 드론 1.1분 | 절감 9.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.128528837481,
+            37.38058745867648
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15301fffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8771486775027004,
+        "moto_time_min": 13.5,
+        "time_saving_min": 8.612820073610443,
+        "co2_saving_g": 244.13637777244327,
+        "route_explanation": "거점: 분당구청 부설주차장 → 서현1동 | 드론 0.9분 | 절감 8.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.13642674169368,
+            37.381008633285695
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15303fffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.5499363895967209,
+        "moto_time_min": 12.683333333333334,
+        "time_saving_min": 8.15072962080313,
+        "co2_saving_g": 131.21733581846885,
+        "route_explanation": "거점: 점골 → 서현1동 | 드론 0.5분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.12533988392572,
+            37.37385569144942
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15305fffff",
+        "target_dong": "수내2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1250780581175437,
+        "moto_time_min": 7.645252908300842,
+        "time_saving_min": 2.8513259348341,
+        "co2_saving_g": 195.84796296681145,
+        "route_explanation": "거점: 분당구청 부설주차장 → 수내2동 | 드론 1.1분 | 절감 2.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.13323650303232,
+            37.37427656639261
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15307fffff",
+        "target_dong": "서현2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.6667349817462489,
+        "moto_time_min": 16.033333333333335,
+        "time_saving_min": 11.203172437544907,
+        "co2_saving_g": 465.4495653833288,
+        "route_explanation": "거점: 점골 → 서현2동 | 드론 0.7분 | 절감 11.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.12382068487132,
+            37.38689775513501
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15309fffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.6405659043588874,
+        "moto_time_min": 12.416666666666666,
+        "time_saving_min": 7.813408796989438,
+        "co2_saving_g": 123.82311600846336,
+        "route_explanation": "거점: 분당구청 부설주차장 → 서현1동 | 드론 0.6분 | 절감 7.8분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.13171862537848,
+            37.38731969270269
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e1530bfffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2442059894540196,
+        "moto_time_min": 8.031227405831025,
+        "time_saving_min": 3.103253910051615,
+        "co2_saving_g": 216.58515761420847,
+        "route_explanation": "거점: 분당구청 부설주차장 → 서현1동 | 드론 1.2분 | 절감 3.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.12063218218776,
+            37.380165820856526
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e1530dfffff",
+        "target_dong": "수내2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.3105035510707981,
+        "moto_time_min": 5.006031505469386,
+        "time_saving_min": 1.1286895730520254,
+        "co2_saving_g": 54.05090565264918,
+        "route_explanation": "거점: 분당구청 부설주차장 → 수내2동 | 드론 0.3분 | 절감 1.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.14432589482182,
+            37.381429344442296
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15315fffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.6287070873801198,
+        "moto_time_min": 13.683333333333334,
+        "time_saving_min": 9.020455756420708,
+        "co2_saving_g": 274.2076511650175,
+        "route_explanation": "거점: 점골 → 서현1동 | 드론 0.6분 | 절감 9.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.15222629686134,
+            37.38184959190431
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15317fffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2127648354010785,
+        "moto_time_min": 14.733333333333333,
+        "time_saving_min": 9.460348574918356,
+        "co2_saving_g": 381.87743845657735,
+        "route_explanation": "거점: 점골 → 서현1동 | 드론 1.2분 | 절감 9.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.13961781505046,
+            37.38774116689682
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e1531dfffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1981850198757216,
+        "moto_time_min": 7.882119464397338,
+        "time_saving_min": 3.005930221531746,
+        "co2_saving_g": 208.5740573348662,
+        "route_explanation": "거점: 점골 → 서현1동 | 드론 1.2분 | 절감 3.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.12685852856524,
+            37.36081383356676
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15321fffff",
+        "target_dong": "정자3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.958594539040157,
+        "moto_time_min": 7.1058463064901085,
+        "time_saving_min": 2.4992518628871263,
+        "co2_saving_g": 166.86734438341534,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자3동 | 드론 1.0분 | 절감 2.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.12367079214458,
+            37.354083168036745
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15325fffff",
+        "target_dong": "정자3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7702759675733398,
+        "moto_time_min": 6.4956941349376205,
+        "time_saving_min": 2.1010017138814447,
+        "co2_saving_g": 134.08578905532914,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자3동 | 드론 0.8분 | 절감 2.1분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.13156480598568,
+            37.35450268069446
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15327fffff",
+        "target_dong": "정자3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3858995387201254,
+        "moto_time_min": 8.490314505453206,
+        "time_saving_min": 3.4029029391879337,
+        "co2_saving_g": 241.25046220270585,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자3동 | 드론 1.4분 | 절감 3.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.12215176440505,
+            37.367124391222944
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15329fffff",
+        "target_dong": "정자2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1157571726401412,
+        "moto_time_min": 13.466666666666669,
+        "time_saving_min": 8.356081696943987,
+        "co2_saving_g": 270.337599374557,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자2동 | 드론 1.1분 | 절감 8.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.13004709875868,
+            37.367544966419146
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e1532bfffff",
+        "target_dong": "수내3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3644216298087626,
+        "moto_time_min": 14.766666666666667,
+        "time_saving_min": 9.34864022358229,
+        "co2_saving_g": 346.18014577401595,
+        "route_explanation": "거점: 점골 → 수내3동 | 드론 1.4분 | 절감 9.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.11896447861152,
+            37.36039355819844
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e1532dfffff",
+        "target_dong": "정자3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.3303166798334022,
+        "moto_time_min": 11.766666666666667,
+        "time_saving_min": 7.492652468119378,
+        "co2_saving_g": 65.89134972349855,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자3동 | 드론 0.3분 | 절감 7.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.14584151273668,
+            37.3683847271886
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15331fffff",
+        "target_dong": "분당동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.0820764096284226,
+        "moto_time_min": 13.466666666666669,
+        "time_saving_min": 8.387879469538008,
+        "co2_saving_g": 267.43239539780313,
+        "route_explanation": "거점: 점골 → 분당동 | 드론 1.1분 | 절감 8.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.14113437080906,
+            37.37469697804602
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e15339fffff",
+        "target_dong": "서현2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.269394913081131,
+        "moto_time_min": 11.866666666666667,
+        "time_saving_min": 7.644577581657829,
+        "co2_saving_g": 69.04920682529625,
+        "route_explanation": "거점: 점골 → 서현2동 | 드론 0.3분 | 절감 7.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.14903348725196,
+            37.37511692616778
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e1533bfffff",
+        "target_dong": "서현1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.8264849761081196,
+        "moto_time_min": 6.677811322590308,
+        "time_saving_min": 2.219870744429409,
+        "co2_saving_g": 143.8703722160209,
+        "route_explanation": "거점: 점골 → 서현1동 | 드론 0.8분 | 절감 2.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.139984,
+            37.376945
+          ],
+          [
+            127.13794368153718,
+            37.36796507848828
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000005",
+        "lot_name": "점골",
+        "target_h3": "8830e1533dfffff",
+        "target_dong": "분당동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.01249386208641,
+        "moto_time_min": 14.3,
+        "time_saving_min": 9.240316032261257,
+        "co2_saving_g": 262.2466288961854,
+        "route_explanation": "거점: 점골 → 분당동 | 드론 1.0분 | 절감 9.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.11121531794886,
+            37.3927842919822
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15341fffff",
+        "target_dong": "백현동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.319109407205383,
+        "moto_time_min": 8.273914479345443,
+        "time_saving_min": 3.2616572849719248,
+        "co2_saving_g": 229.62397005927707,
+        "route_explanation": "거점: 분당구청 부설주차장 → 백현동 | 드론 1.3분 | 절감 3.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.11911204519122,
+            37.39320745556343
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15343fffff",
+        "target_dong": "백현동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.1742326270302463,
+        "moto_time_min": 14.1,
+        "time_saving_min": 8.898800996449133,
+        "co2_saving_g": 258.85011483236485,
+        "route_explanation": "거점: 분당구청 부설주차장 → 백현동 | 드론 1.2분 | 절감 8.9분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.10802855136644,
+            37.38605249084659
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15345fffff",
+        "target_dong": "백현동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.0394144221145083,
+        "moto_time_min": 13.25,
+        "time_saving_min": 8.223602869982646,
+        "co2_saving_g": 171.36879713559532,
+        "route_explanation": "거점: 분당구청 부설주차장 → 백현동 | 드론 1.0분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.1159239935328,
+            37.38647535443568
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15347fffff",
+        "target_dong": "백현동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.5045589006523008,
+        "moto_time_min": 12.683333333333334,
+        "time_saving_min": 8.193570190473134,
+        "co2_saving_g": 121.47726308630168,
+        "route_explanation": "거점: 분당구청 부설주차장 → 백현동 | 드론 0.5분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13020019343575,
+            37.40036302352632
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15351fffff",
+        "target_dong": "야탑3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2610165581401669,
+        "moto_time_min": 13.45,
+        "time_saving_min": 8.203208444575775,
+        "co2_saving_g": 300.66665227905645,
+        "route_explanation": "거점: 맛고을 → 야탑3동 | 드론 1.3분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13810070543082,
+            37.40078556034605
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15353fffff",
+        "target_dong": "이매1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.329564966760464,
+        "moto_time_min": 8.307790492303903,
+        "time_saving_min": 3.283768371086881,
+        "co2_saving_g": 231.4440215888278,
+        "route_explanation": "거점: 맛고을 → 이매1동 | 드론 1.3분 | 절감 3.3분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.12549065156836,
+            37.40667305729171
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e15359fffff",
+        "target_dong": "야탑2동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.784965650727176,
+        "moto_time_min": 13.533333333333331,
+        "time_saving_min": 8.731319190574693,
+        "co2_saving_g": 227.1427213347293,
+        "route_explanation": "거점: 맛고을 → 야탑2동 | 드론 0.8분 | 절감 8.7분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.13339119993223,
+            37.407096357235815
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e1535bfffff",
+        "target_dong": "야탑3동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.5257939266788153,
+        "moto_time_min": 12.483333333333333,
+        "time_saving_min": 7.984703751046682,
+        "co2_saving_g": 111.20532753974489,
+        "route_explanation": "거점: 맛고을 → 야탑3동 | 드론 0.5분 | 절감 8.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.1095503917382,
+            37.37301255266065
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15361fffff",
+        "target_dong": "정자동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.352906275709857,
+        "moto_time_min": 13.583333333333334,
+        "time_saving_min": 8.24233507211292,
+        "co2_saving_g": 210.158468210093,
+        "route_explanation": "거점: 분당구청 부설주차장 → 정자동 | 드론 1.4분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.11744451349315,
+            37.373434353458165
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15363fffff",
+        "target_dong": "수내1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.0282538863729522,
+        "moto_time_min": 7.331542591848365,
+        "time_saving_min": 2.646565243818398,
+        "co2_saving_g": 178.99329527037162,
+        "route_explanation": "거점: 분당구청 부설주차장 → 수내1동 | 드론 1.0분 | 절감 2.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.10636484098728,
+            37.366281852416016
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15365fffff",
+        "target_dong": "정자1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.2811750607976555,
+        "moto_time_min": 14.866666666666667,
+        "time_saving_min": 9.521642026659691,
+        "co2_saving_g": 260.0723237232492,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자1동 | 드론 1.3분 | 절감 9.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.11658,
+            37.358104
+          ],
+          [
+            127.11425767848004,
+            37.36670335314137
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000004",
+        "lot_name": "분당도서관 부설주차장",
+        "target_h3": "8830e15367fffff",
+        "target_dong": "정자동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.975939454227524,
+        "moto_time_min": 7.162043831697178,
+        "time_saving_min": 2.5359323400384586,
+        "co2_saving_g": 169.88666049465627,
+        "route_explanation": "거점: 분당도서관 부설주차장 → 정자동 | 드론 1.0분 | 절감 2.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.10484261837404,
+            37.37932115655159
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e15369fffff",
+        "target_dong": "정자1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.302040985494788,
+        "moto_time_min": 14.3,
+        "time_saving_min": 8.96695661988127,
+        "co2_saving_g": 260.9346393046095,
+        "route_explanation": "거점: 분당구청 부설주차장 → 정자1동 | 드론 1.3분 | 절감 9.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.1189553112,
+            37.382624
+          ],
+          [
+            127.1127367758176,
+            37.379743720067616
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-3-000001",
+        "lot_name": "분당구청 부설주차장",
+        "target_h3": "8830e1536bfffff",
+        "target_dong": "수내1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.6365504534246529,
+        "moto_time_min": 6.062423469095876,
+        "time_saving_min": 1.8182032329840911,
+        "co2_saving_g": 110.80752017989646,
+        "route_explanation": "거점: 분당구청 부설주차장 → 수내1동 | 드론 0.6분 | 절감 1.8분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.14312889893718,
+            37.46012793519896
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1c8b3fffff",
+        "target_dong": "복정동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.4468251105308336,
+        "moto_time_min": 8.6877133581199,
+        "time_saving_min": 3.531746408331104,
+        "co2_saving_g": 251.8560811156549,
+        "route_explanation": "거점: 태평4동 제1 → 복정동 | 드론 1.4분 | 절감 3.5분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.13202672231206,
+            37.4529651526259
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1c8b5fffff",
+        "target_dong": "복정동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.242149368624423,
+        "moto_time_min": 28.766666666666666,
+        "time_saving_min": 22.681378609460594,
+        "co2_saving_g": 444.5513632588872,
+        "route_explanation": "거점: 태평4동 제1 → 복정동 | 드론 1.2분 | 절감 22.7분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.143993,
+            37.447105
+          ],
+          [
+            127.1399337795204,
+            37.45339147675556
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "204-2-000018",
+        "lot_name": "태평4동 제1",
+        "target_h3": "8830e1c8b7fffff",
+        "target_dong": "태평4동",
+        "target_gu": "수정구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.7844308283266089,
+        "moto_time_min": 21.23333333333333,
+        "time_saving_min": 16.001340212659308,
+        "co2_saving_g": 240.1589526051412,
+        "route_explanation": "거점: 태평4동 제1 → 태평4동 | 드론 0.8분 | 절감 16.0분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.0779,
+            37.390875
+          ],
+          [
+            127.09071637842916,
+            37.3982433924085
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000022",
+        "lot_name": "운중동공영주차장",
+        "target_h3": "8830e1c9a5fffff",
+        "target_dong": "판교동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3982960776876043,
+        "moto_time_min": 13.583333333333334,
+        "time_saving_min": 8.199482877794344,
+        "co2_saving_g": 297.3502823685604,
+        "route_explanation": "거점: 운중동공영주차장 → 판교동 | 드론 1.4분 | 절감 8.2분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.12078062231151,
+            37.412982494417925
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e1c9b3fffff",
+        "target_dong": "야탑1동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 0.9847468575244968,
+        "moto_time_min": 13.6,
+        "time_saving_min": 8.605646685039124,
+        "co2_saving_g": 207.7748159919856,
+        "route_explanation": "거점: 맛고을 → 야탑1동 | 드론 1.0분 | 절감 8.6분 | 관제권승인필요 | 로봇인계가능"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            127.131784,
+            37.411659
+          ],
+          [
+            127.1175913531137,
+            37.40624929396947
+          ]
+        ]
+      },
+      "properties": {
+        "lot_id": "206-2-000004",
+        "lot_name": "맛고을",
+        "target_h3": "8830e1c9b7fffff",
+        "target_dong": "삼평동",
+        "target_gu": "분당구",
+        "airspace_approval_required": true,
+        "robot_handoff": true,
+        "drone_time_min": 1.3920506149305951,
+        "moto_time_min": 8.51024399237513,
+        "time_saving_min": 3.415911040291744,
+        "co2_saving_g": 242.32121079404345,
+        "route_explanation": "거점: 맛고을 → 삼평동 | 드론 1.4분 | 절감 3.4분 | 관제권승인필요 | 로봇인계가능"
+      }
+    }
+  ]
+}

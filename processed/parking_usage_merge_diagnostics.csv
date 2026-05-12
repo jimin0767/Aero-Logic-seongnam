@@ -1,0 +1,78 @@
+﻿metric,value
+total_master_candidates,172.0
+total_usage_lots_deduped,204.0
+matched,155.0
+master_unmatched,17.0
+usage_unmatched,49.0
+match_rate_pct,90.1
+
+lot_id,lot_name,lot_name_norm,lot_subtype,capacity_raw,side
+204-1-000008,수상1-2,"수상1,2",노상,7,master_unmatched
+204-1-000010,수상3,수상3,노상,7,master_unmatched
+205-1-000044,중상83,중상83,노상,22,master_unmatched
+205-1-000049,중상66,중상66,노상,8,master_unmatched
+205-1-000059,중상60-63,"중상60,63",노상,14,master_unmatched
+205-2-000030,모란공영,모란,노외,603,master_unmatched
+205-3-000001,성남시청 부설주차장,성남시청부설,부설,1184,master_unmatched
+204-3-000001,수정구청 부설주차장,수정구청부설,부설,156,master_unmatched
+205-3-000002,중원구청 부설주차장,중원구청부설,부설,54,master_unmatched
+206-3-000001,분당구청 부설주차장,분당구청부설,부설,541,master_unmatched
+206-3-000002,도서관사업소,도서관사업소,부설,324,master_unmatched
+206-3-000003,서현도서관 부설주차장,서현도서관부설,부설,180,master_unmatched
+206-3-000004,분당도서관 부설주차장,분당도서관부설,부설,186,master_unmatched
+206-3-000005,판교도서관,판교도서관,부설,95,master_unmatched
+206-3-000006,판교어린이도서관,판교어린이도서관,부설,70,master_unmatched
+206-3-000007,구미도서관,구미도서관,부설,71,master_unmatched
+206-3-000008,수내도서관 부설주차장,수내도서관부설,부설,68,master_unmatched
+
+lot_name_norm,valid_month_count,avg_monthly_entries,side
+남한산성순환로양지동,11,54.27272727272727,usage_unmatched
+남한산성순환로은행동,11,266.45454545454544,usage_unmatched
+모란다목적,35,21349.342857142856,usage_unmatched
+밀리언공원,24,1128.9166666666667,usage_unmatched
+분당동공원마을,23,427.6521739130435,usage_unmatched
+삼평동임시,24,9842.75,usage_unmatched
+서일로마을,11,0.0,usage_unmatched
+성남제1,11,1171.2727272727273,usage_unmatched
+성남제2,11,1592.1818181818182,usage_unmatched
+수정구보건소부설,24,9200.0,usage_unmatched
+수정보건소부설,11,4053.6363636363635,usage_unmatched
+수정커뮤니티,12,18032.833333333332,usage_unmatched
+수진역환승,11,0.0,usage_unmatched
+신흥2동,24,0.0,usage_unmatched
+야탑동제1,24,0.0,usage_unmatched
+야탑역제1환승,11,7159.545454545455,usage_unmatched
+야탑역제2환승,11,7983.0,usage_unmatched
+운중동934,24,11788.458333333334,usage_unmatched
+운중동제2,11,4666.909090909091,usage_unmatched
+율동공원A,24,25173.833333333332,usage_unmatched
+율동공원B,24,48233.583333333336,usage_unmatched
+율동공원부설A,11,1812.1818181818182,usage_unmatched
+율동공원부설B,11,3347.181818181818,usage_unmatched
+제1공단근린공원,12,5450.666666666667,usage_unmatched
+중상18,23,991.695652173913,usage_unmatched
+중상22,23,994.2173913043479,usage_unmatched
+중상23,12,1472.4166666666667,usage_unmatched
+중상51,23,778.2608695652174,usage_unmatched
+"중상52,53",12,844.0833333333334,usage_unmatched
+중상70,23,720.3478260869565,usage_unmatched
+"중상70,7",23,925.4782608695652,usage_unmatched
+중상86,23,610.3913043478261,usage_unmatched
+중상87,12,485.4166666666667,usage_unmatched
+중앙1,35,3073.2,usage_unmatched
+중앙10,35,1628.4,usage_unmatched
+"중앙10,1",35,1181.2285714285715,usage_unmatched
+중앙11,35,2214.885714285714,usage_unmatched
+중앙2,35,3340.3714285714286,usage_unmatched
+중앙3,35,1744.6571428571428,usage_unmatched
+중앙4,35,1717.8857142857144,usage_unmatched
+중앙5,35,1055.8,usage_unmatched
+중앙6,35,1756.142857142857,usage_unmatched
+중앙7,35,2647.8571428571427,usage_unmatched
+중앙9,35,1025.0857142857142,usage_unmatched
+중앙공원A부설,11,307.8181818181818,usage_unmatched
+중앙공원B부설,11,781.1818181818181,usage_unmatched
+중앙동제3,35,0.08571428571428572,usage_unmatched
+중앙동제5,24,0.0,usage_unmatched
+중원어린이도서관부설,35,654.5142857142857,usage_unmatched
+하대원임시,12,3262.1666666666665,usage_unmatched

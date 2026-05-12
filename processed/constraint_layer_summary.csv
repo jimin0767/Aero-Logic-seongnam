@@ -1,0 +1,8 @@
+﻿score_column,mean,std,min,max,n_null
+score_airspace,0.133,0.3397,0.0,1.0,0
+score_obstacle,0.8429,0.2681,0.0,0.9688,0
+score_noise_proxy,0.851,0.2294,0.0,1.0,0
+score_terrain,0.7255,0.2026,0.2,1.0,0
+score_robot,0.3317,0.1899,0.0,0.8773,0
+score_weather,0.9441,0.0,0.9441,0.9441,0
+constraint_score,0.7319,0.0729,0.4442,0.9397,0
