@@ -1,0 +1,22 @@
+{
+  "weather_source": "kma_hourly_observed_1year",
+  "station_id": 119,
+  "station_name": "수원(119)",
+  "observation_count": 8760,
+  "weather_period_start": "2025-01-01",
+  "weather_period_end": "2025-12-31",
+  "chunk_count": 12,
+  "chunk_success_count": 12,
+  "chunk_fail_count": 0,
+  "wind_fail_threshold_ms": 10.0,
+  "rain_fail_threshold_mmh": 5.0,
+  "visibility_fail_note": "observed (2129 records, threshold < 1.0 km)",
+  "P_wind_fail": 0.0,
+  "P_rain_fail": 0.00742,
+  "P_visibility_fail": 0.048849,
+  "P_drone_weather_available": 0.944093,
+  "weather_risk": 0.055907,
+  "score_weather": 0.944093,
+  "rain_negative_value_rule": "values < -1 treated as 0 (KMA sentinel for no-rainfall)",
+  "notes": "score_weather is station-level (STN=119); all H3 cells receive the same value. Spatial differentiation within Seongnam is provided by Ra and other NB07 layers. NB09 uses score_weather as a continuous soft input, not a binary filter."
+}

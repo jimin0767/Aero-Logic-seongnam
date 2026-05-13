@@ -1,0 +1,4 @@
+﻿delivery_zone,cell_count,mean_drone,mean_robot,mean_svc,mean_Ds,priority_cells
+드론우선,216,0.898,0.217,0.51,0.338,189
+부적합,1688,0.582,0.34,0.414,0.317,0
+하이브리드,43,0.838,0.599,0.559,0.323,33

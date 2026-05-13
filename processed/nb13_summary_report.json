@@ -1,0 +1,47 @@
+{
+  "notebook": "NB13_delivery_impact_comparison",
+  "run_date": "2026-05-11T21:16:52.055407",
+  "n_routes_analyzed": 77,
+  "n_hubs": 6,
+  "P_drone_weather_available": 0.944093,
+  "motorcycle_avg_speed_kmh": 25.0,
+  "kosha_api_success_count": 52,
+  "kosha_api_success_rate_pct": 67.53,
+  "motorcycle_fallback_count": 25,
+  "gg_speed_rows_loaded": 1000,
+  "gg_speed_seongnam_keyword_rows": 26,
+  "traffic_speed_scope": "default_urban_speed_gg_reference_out_of_range_82.0",
+  "pct_routes_drone_faster": 100.0,
+  "pct_routes_robot_full_faster": 2.6,
+  "median_time_saving_min": 8.208,
+  "median_robot_full_time_saving_min": -13.067,
+  "mean_speedup_ratio": 2.544,
+  "total_co2_saving_kg": 16.484,
+  "total_robot_full_co2_saving_kg": 15.592,
+  "pct_zones_in_baedal_cluster": 2.6,
+  "lunch_demand_pct": 33.23,
+  "dinner_demand_pct": 33.68,
+  "warnings": [
+    "Some routes used fallback motorcycle ETA because KOSHA did not return a usable time.",
+    "Full robot ground-leg sensitivity is slower than motorcycle for some routes; use direct-drone scenario as primary NB13 impact."
+  ],
+  "notes": [
+    "KOSHA API provides official safe delivery-time guidance, not observed platform trip logs.",
+    "Primary scenario is approval-required direct drone service; full robot ground leg is sensitivity.",
+    "관제권 is treated as approval/review in the primary scenario, not hard exclusion."
+  ],
+  "outputs": {
+    "route_comparison": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_route_comparison.csv",
+    "route_comparison_stable": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_delivery_impact_routes.csv",
+    "hub_summary": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_hub_summary.csv",
+    "hub_summary_stable": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_delivery_impact_by_hub.csv",
+    "hourly_breakdown": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_hourly_breakdown.csv",
+    "hourly_breakdown_stable": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_delivery_impact_by_hour.csv",
+    "district_summary": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_district_summary.csv",
+    "summary_csv": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_delivery_impact_summary.csv",
+    "kosha_cache": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_kosha_cache.csv",
+    "gg_speed_ref": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_traffic_speed_reference.csv",
+    "map": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_delivery_impact_map.html",
+    "chart": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb13_comparison_chart.png"
+  }
+}

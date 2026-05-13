@@ -1,0 +1,36 @@
+# ── Raw source data (too large, not versioned) ────────────────────────────
+00_data/
+00_data.zip
+
+# ── Very large binary in processed/ (84 MB, exceeds GitHub 50 MB recommendation) ──
+processed/seongnam_buildings.gpkg
+
+# ── Python ────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Jupyter ───────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# ── Logs & temp ───────────────────────────────────────────────────────────
+*.log
+hyperd.log
+
+# ── Claude local config ───────────────────────────────────────────────────
+.claude/
+
+# ── OS ────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini

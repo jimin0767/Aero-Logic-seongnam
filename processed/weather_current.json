@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-05-10T11:33:20.417802",
+  "base_date": "20260510",
+  "base_time": "1100",
+  "nx": 62,
+  "ny": 123,
+  "location": "성남시 분당구",
+  "go_nogo": "GO",
+  "note": "does not affect 1-year score_weather",
+  "wind_speed": 0.7,
+  "rain_1h": 0.0,
+  "pty": 0,
+  "temperature": 21.9,
+  "humidity": 30.0,
+  "reasons": []
+}

@@ -1,0 +1,30 @@
+{
+  "notebook": "NB14_esg_efficiency_index",
+  "run_date": "2026-05-11T21:17:04.486355",
+  "n_routes": 77,
+  "n_hubs": 6,
+  "demand_join_coverage": "77/77",
+  "esg_index_mean": 0.378,
+  "esg_index_min": 0.065,
+  "esg_index_max": 0.7915,
+  "pct_direct_drone_faster": 100.0,
+  "pct_robot_full_faster": 2.6,
+  "base_scenario": {
+    "adoption_rate_pct": 10.0,
+    "drone_annual_orders": 18060784,
+    "time_saved_hrs": 2501181.0,
+    "co2_saved_ton": 4069.573,
+    "moto_km_reduced": 30864704.7
+  },
+  "primary_scenario": "direct_drone_weather_adjusted",
+  "sensitivity_scenario": "robot_full_leg",
+  "narrative": "NB13 proved route-level improvement. NB14 scales that improvement into ESG impact using real card-delivery demand volume and transparent adoption scenarios.",
+  "outputs": {
+    "route_impact": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_route_impact.csv",
+    "hub_summary": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_hub_summary.csv",
+    "scenario_summary": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_scenario_summary.csv",
+    "efficiency_index": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_efficiency_index.csv",
+    "chart": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_chart.png",
+    "map": "C:\\Users\\jimin\\Desktop\\1_BITAmin_16기\\1_Seongnam_reset\\processed\\nb14_esg_hub_map.html"
+  }
+}

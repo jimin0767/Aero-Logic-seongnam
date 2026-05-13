@@ -1,0 +1,2853 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_49e64dd2c587950ea3348df7990a947e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <div style="position:fixed;bottom:30px;left:30px;z-index:1000;
+                background:white;padding:10px;border-radius:8px;
+                border:1px solid #ccc;font-size:12px;line-height:1.9">
+    <b>후보지 등급</b><br>
+    <span style="color:#1A5276;font-size:16px">&#9679;</span> A등급<br>
+    <span style="color:#2ECC71;font-size:16px">&#9679;</span> B등급<br>
+    <span style="color:#F39C12;font-size:16px">&#9679;</span> C등급<br>
+    <span style="color:#95A5A6;font-size:16px">&#9679;</span> D등급<br>
+    <br><b>배송 구역 (배경)</b><br>
+    <span style="color:#27AE60">&#9632;</span> 하이브리드
+    <span style="color:#2980B9">&#9632;</span> 드론우선<br>
+    <span style="color:#E67E22">&#9632;</span> 로봇우선
+    <span style="color:#F1C40F">&#9632;</span> 보완검토
+    </div>
+    
+    
+            <div class="folium-map" id="map_49e64dd2c587950ea3348df7990a947e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_49e64dd2c587950ea3348df7990a947e = L.map(
+                "map_49e64dd2c587950ea3348df7990a947e",
+                {
+                    center: [37.43297374261755, 127.1433993214737],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_16f31e837e46786615658dc33f4f9048 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_16f31e837e46786615658dc33f4f9048.addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            var circle_marker_43012f3402153ded933a84eb45e59b24 = L.circleMarker(
+                [37.379279, 127.11885599999998],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_43012f3402153ded933a84eb45e59b24.bindTooltip(
+                `<div>
+                     <b>#1 수내역환승</b><br>수내1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.693<br>주요: 0.693 | 보수: 0.693<br>수요: 0.693 | 제약: 0.765 | 주차: 0.836<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_baec78161f30c211e8878fe64ef94c49 = L.circleMarker(
+                [37.38262400000001, 127.1189553112],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_baec78161f30c211e8878fe64ef94c49.bindTooltip(
+                `<div>
+                     <b>#2 분당구청 부설주차장</b><br>수내1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.693<br>주요: 0.693 | 보수: 0.693<br>수요: 0.703 | 제약: 0.897 | 주차: 0.690<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4dd6e052aeb1025afc6d894602538189 = L.circleMarker(
+                [37.38545299999999, 127.111993],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.833333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4dd6e052aeb1025afc6d894602538189.bindTooltip(
+                `<div>
+                     <b>#3 백현동카페거리공영주차장</b><br>백현동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.620<br>주요: 0.620 | 보수: 0.620<br>수요: 0.714 | 제약: 0.830 | 주차: 0.619<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_26c18128715a9f6acbe6cc06a5caa9c5 = L.circleMarker(
+                [37.37109300000001, 127.11221000000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_26c18128715a9f6acbe6cc06a5caa9c5.bindTooltip(
+                `<div>
+                     <b>#4 정자동공영주차장</b><br>정자동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.602<br>주요: 0.602 | 보수: 0.602<br>수요: 0.689 | 제약: 0.846 | 주차: 0.571<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_71bbd850606ed1dc517b0a3f5d1266b8 = L.circleMarker(
+                [37.365753, 127.10732900000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.933333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_71bbd850606ed1dc517b0a3f5d1266b8.bindTooltip(
+                `<div>
+                     <b>#5 정자역환승</b><br>정자1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.598<br>주요: 0.598 | 보수: 0.598<br>수요: 0.544 | 제약: 0.884 | 주차: 0.571<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9320194efa4329e5fc3999a83bca5cd1 = L.circleMarker(
+                [37.393623999999996, 127.11074800000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9320194efa4329e5fc3999a83bca5cd1.bindTooltip(
+                `<div>
+                     <b>#6 판교공영</b><br>백현동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.597<br>주요: 0.597 | 보수: 0.597<br>수요: 0.541 | 제약: 0.702 | 주차: 0.897<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_aa6dfb0dd5c64a6cbcb8d85330c7f992 = L.circleMarker(
+                [37.38426100000001, 127.12372100000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_aa6dfb0dd5c64a6cbcb8d85330c7f992.bindTooltip(
+                `<div>
+                     <b>#7 서현 환승</b><br>서현1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.585<br>주요: 0.585 | 보수: 0.585<br>수요: 0.595 | 제약: 0.743 | 주차: 0.734<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d8de2d9a70c2a8bea8d20782acf80eae = L.circleMarker(
+                [37.42890899999999, 127.12011899999999],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d8de2d9a70c2a8bea8d20782acf80eae.bindTooltip(
+                `<div>
+                     <b>#8 성남동 대형</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.585<br>주요: 0.585 | 보수: 0.585<br>수요: 0.367 | 제약: 0.888 | 주차: 0.884<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_6362374a417364c9bdcabf92643db7fc = L.circleMarker(
+                [37.420178, 127.12628000000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_6362374a417364c9bdcabf92643db7fc.bindTooltip(
+                `<div>
+                     <b>#9 성남시청 부설주차장</b><br>도촌동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.582<br>주요: 0.582 | 보수: 0.582<br>수요: 0.505 | 제약: 0.874 | 주차: 0.745<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_491a186df19787684529aeb015c807c0 = L.circleMarker(
+                [37.44179956, 127.136976],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.2, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_491a186df19787684529aeb015c807c0.bindTooltip(
+                `<div>
+                     <b>#10 신흥 제7</b><br>수진1동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.563<br>주요: 0.563 | 보수: 0.563<br>수요: 0.570 | 제약: 0.687 | 주차: 0.723<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_94615699d1688388577fffd34dabe8fb = L.circleMarker(
+                [37.435349, 127.13408600000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_94615699d1688388577fffd34dabe8fb.bindTooltip(
+                `<div>
+                     <b>#11 수진 제2</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.560<br>주요: 0.560 | 보수: 0.560<br>수요: 0.553 | 제약: 0.694 | 주차: 0.716<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7d4d31c2fe5c5455aaa16ed0d26aa7bf = L.circleMarker(
+                [37.39577, 127.11114],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.1, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7d4d31c2fe5c5455aaa16ed0d26aa7bf.bindTooltip(
+                `<div>
+                     <b>#12 판교역환승</b><br>백현동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.558<br>주요: 0.558 | 보수: 0.558<br>수요: 0.567 | 제약: 0.777 | 주차: 0.631<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_0bb47ce6c805cec5630728a611067d57 = L.circleMarker(
+                [37.358104000000004, 127.11658],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.2, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_0bb47ce6c805cec5630728a611067d57.bindTooltip(
+                `<div>
+                     <b>#13 분당도서관 부설주차장</b><br>정자3동 (분당구)<br>등급: <b>A</b> | 구역: 하이브리드<br>순위점수: 0.550<br>주요: 0.550 | 보수: 0.550<br>수요: 0.410 | 제약: 0.764 | 주차: 0.460<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_8a3540c6f147e278ad8697cea67d56e0 = L.circleMarker(
+                [37.411659, 127.13178399999998],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_8a3540c6f147e278ad8697cea67d56e0.bindTooltip(
+                `<div>
+                     <b>#14 맛고을</b><br>야탑1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.545<br>주요: 0.545 | 보수: 0.545<br>수요: 0.520 | 제약: 0.684 | 주차: 0.592<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d6edd438f89ecf5591325cf28a279de5 = L.circleMarker(
+                [37.42891, 127.12015100000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.266666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d6edd438f89ecf5591325cf28a279de5.bindTooltip(
+                `<div>
+                     <b>#15 대원천</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.544<br>주요: 0.544 | 보수: 0.544<br>수요: 0.367 | 제약: 0.888 | 주차: 0.720<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_62995347fa320d8bb6ad865521d189b1 = L.circleMarker(
+                [37.411756, 127.128165],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_62995347fa320d8bb6ad865521d189b1.bindTooltip(
+                `<div>
+                     <b>#16 야탑 제2환승</b><br>야탑1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.542<br>주요: 0.542 | 보수: 0.542<br>수요: 0.539 | 제약: 0.725 | 주차: 0.516<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b6ce61e42be12e444a01a99740acfe41 = L.circleMarker(
+                [37.35921999999999, 127.124509],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b6ce61e42be12e444a01a99740acfe41.bindTooltip(
+                `<div>
+                     <b>#17 정자전원마을</b><br>정자3동 (분당구)<br>등급: <b>A</b> | 구역: 드론우선<br>순위점수: 0.535<br>주요: 0.535 | 보수: 0.535<br>수요: 0.316 | 제약: 0.693 | 주차: 0.661<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_657d142b137dc379c60a4384955adc33 = L.circleMarker(
+                [37.43814700000001, 127.133322],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.433333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_657d142b137dc379c60a4384955adc33.bindTooltip(
+                `<div>
+                     <b>#18 수진 제3</b><br>수진2동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.532<br>주요: 0.532 | 보수: 0.532<br>수요: 0.526 | 제약: 0.691 | 주차: 0.674<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9be80dee6444becaecf1c59d1afd7e2d = L.circleMarker(
+                [37.434879, 127.14482000000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.933333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9be80dee6444becaecf1c59d1afd7e2d.bindTooltip(
+                `<div>
+                     <b>#19 성남동 제1</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.529<br>주요: 0.529 | 보수: 0.529<br>수요: 0.453 | 제약: 0.572 | 주차: 0.856<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4b3bcd6a19959ba8e1dc5c3afd921c77 = L.circleMarker(
+                [37.387525, 127.107668],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4b3bcd6a19959ba8e1dc5c3afd921c77.bindTooltip(
+                `<div>
+                     <b>#20 판교어린이도서관</b><br>백현동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.527<br>주요: 0.527 | 보수: 0.527<br>수요: 0.646 | 제약: 0.781 | 주차: 0.394<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ee3e23e89d9f39e15a5405642ef79c79 = L.circleMarker(
+                [37.436848999999995, 127.133917],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_ee3e23e89d9f39e15a5405642ef79c79.bindTooltip(
+                `<div>
+                     <b>#21 수진 제1</b><br>수진2동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.527<br>주요: 0.527 | 보수: 0.527<br>수요: 0.537 | 제약: 0.691 | 주차: 0.641<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c25ca8272aa8d79b38e42d8b350da49a = L.circleMarker(
+                [37.41206900000001, 127.129173],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_c25ca8272aa8d79b38e42d8b350da49a.bindTooltip(
+                `<div>
+                     <b>#22 야탑 제1환승</b><br>야탑1동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.523<br>주요: 0.523 | 보수: 0.523<br>수요: 0.537 | 제약: 0.654 | 주차: 0.511<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4e94dcc8eb3b9437f878a41ed3d3ac16 = L.circleMarker(
+                [37.43258000000001, 127.142777],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.366666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4e94dcc8eb3b9437f878a41ed3d3ac16.bindTooltip(
+                `<div>
+                     <b>#23 성남동 제2</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.521<br>주요: 0.521 | 보수: 0.521<br>수요: 0.448 | 제약: 0.653 | 주차: 0.749<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c3e6bddfa328173632de34c77e1fe086 = L.circleMarker(
+                [37.45466900000001, 127.12908399999999],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.533333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_c3e6bddfa328173632de34c77e1fe086.bindTooltip(
+                `<div>
+                     <b>#24 복정 제4공영</b><br>복정동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.520<br>주요: 0.520 | 보수: 0.520<br>수요: 0.312 | 제약: 0.874 | 주차: 0.747<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_11ceafef4ea841c4558aa01502dcc910 = L.circleMarker(
+                [37.42805399999999, 127.12778999999999],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_11ceafef4ea841c4558aa01502dcc910.bindTooltip(
+                `<div>
+                     <b>#25 모란제2공영주차장</b><br>성남동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.520<br>주요: 0.520 | 보수: 0.520<br>수요: 0.434 | 제약: 0.775 | 주차: 0.640<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2a430c683cbc29726808bae9e980f392 = L.circleMarker(
+                [37.443391, 127.14235800000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2a430c683cbc29726808bae9e980f392.bindTooltip(
+                `<div>
+                     <b>#26 신흥제9공영주차장</b><br>신흥1동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.517<br>주요: 0.517 | 보수: 0.517<br>수요: 0.583 | 제약: 0.597 | 주차: 0.630<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c131e64215c2e7946106cf15fac78d6e = L.circleMarker(
+                [37.44511399999999, 127.133235],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_c131e64215c2e7946106cf15fac78d6e.bindTooltip(
+                `<div>
+                     <b>#27 태평</b><br>태평3동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.516<br>주요: 0.516 | 보수: 0.516<br>수요: 0.488 | 제약: 0.683 | 주차: 0.676<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f798ee67b2c32c60965f28842423373f = L.circleMarker(
+                [37.419696, 127.13207400000002],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f798ee67b2c32c60965f28842423373f.bindTooltip(
+                `<div>
+                     <b>#28 여수동제2공영주차장</b><br>도촌동 (중원구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.516<br>주요: 0.516 | 보수: 0.516<br>수요: 0.481 | 제약: 0.742 | 주차: 0.644<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_8f33380bb67f23a214e226c3868b8a31 = L.circleMarker(
+                [37.44734699999999, 127.140558],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.433333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_8f33380bb67f23a214e226c3868b8a31.bindTooltip(
+                `<div>
+                     <b>#29 태평4동제3</b><br>태평4동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.513<br>주요: 0.513 | 보수: 0.513<br>수요: 0.515 | 제약: 0.688 | 주차: 0.634<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3441f165f5c7b94742527670208b0706 = L.circleMarker(
+                [37.339711, 127.109411],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3441f165f5c7b94742527670208b0706.bindTooltip(
+                `<div>
+                     <b>#30 오리환승</b><br>구미동 (분당구)<br>등급: <b>A</b> | 구역: 드론우선<br>순위점수: 0.510<br>주요: 0.510 | 보수: 0.510<br>수요: 0.222 | 제약: 0.840 | 주차: 0.522<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_44b798f69840358d9363fc9a7c5930ec = L.circleMarker(
+                [37.376945, 127.139984],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.733333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_44b798f69840358d9363fc9a7c5930ec.bindTooltip(
+                `<div>
+                     <b>#31 점골</b><br>서현2동 (분당구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.509<br>주요: 0.509 | 보수: 0.509<br>수요: 0.485 | 제약: 0.645 | 주차: 0.689<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a5cf78de111b9a1458145e180e469c99 = L.circleMarker(
+                [37.44848100000001, 127.149151],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a5cf78de111b9a1458145e180e469c99.bindTooltip(
+                `<div>
+                     <b>#32 모란공영</b><br>신흥2동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.508<br>주요: 0.508 | 보수: 0.508<br>수요: 0.468 | 제약: 0.559 | 주차: 0.804<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e280652b233b06a2bc9f8f821a531156 = L.circleMarker(
+                [37.44197, 127.14791000000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e280652b233b06a2bc9f8f821a531156.bindTooltip(
+                `<div>
+                     <b>#33 신흥제10공영(기계식)주차장</b><br>신흥3동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.504<br>주요: 0.504 | 보수: 0.504<br>수요: 0.495 | 제약: 0.629 | 주차: 0.653<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4a44fa3de4effe37e3faf1c5515031fc = L.circleMarker(
+                [37.447070000000004, 127.13798000000001],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4a44fa3de4effe37e3faf1c5515031fc.bindTooltip(
+                `<div>
+                     <b>#34 태평2동 제1</b><br>태평2동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.504<br>주요: 0.504 | 보수: 0.504<br>수요: 0.530 | 제약: 0.591 | 주차: 0.660<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2b07160cfa6e34734582a8336a49aa50 = L.circleMarker(
+                [37.445534, 127.147844],
+                {"bubblingMouseEvents": true, "color": "#1A5276", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1A5276", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.033333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2b07160cfa6e34734582a8336a49aa50.bindTooltip(
+                `<div>
+                     <b>#35 희망대제1공영주차장</b><br>신흥3동 (수정구)<br>등급: <b>A</b> | 구역: 부적합<br>순위점수: 0.503<br>주요: 0.503 | 보수: 0.503<br>수요: 0.508 | 제약: 0.521 | 주차: 0.736<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9f54a0eeb7aa1538206c22d28613b2cb = L.circleMarker(
+                [37.350862, 127.10686099999998],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9f54a0eeb7aa1538206c22d28613b2cb.bindTooltip(
+                `<div>
+                     <b>#36 금곡동</b><br>금곡동 (분당구)<br>등급: <b>B</b> | 구역: 드론우선<br>순위점수: 0.502<br>주요: 0.502 | 보수: 0.502<br>수요: 0.409 | 제약: 0.663 | 주차: 0.416<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7b1b5e34a18f30e35c7c76223aca7b83 = L.circleMarker(
+                [37.441092, 127.159092],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7b1b5e34a18f30e35c7c76223aca7b83.bindTooltip(
+                `<div>
+                     <b>#37 해오름</b><br>금광1동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.501<br>주요: 0.501 | 보수: 0.501<br>수요: 0.355 | 제약: 0.588 | 주차: 0.910<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b9ee415f0105a3646ad6f2fb2f77f7c6 = L.circleMarker(
+                [37.42814000000001, 127.131962],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.033333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b9ee415f0105a3646ad6f2fb2f77f7c6.bindTooltip(
+                `<div>
+                     <b>#38 하대원동임시공영주차장</b><br>하대원동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.499<br>주요: 0.499 | 보수: 0.499<br>수요: 0.446 | 제약: 0.722 | 주차: 0.634<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7209eaaf125fcf589688bc3af91448b8 = L.circleMarker(
+                [37.44710500000001, 127.143993],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7209eaaf125fcf589688bc3af91448b8.bindTooltip(
+                `<div>
+                     <b>#39 태평4동 제1</b><br>신흥2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.496<br>주요: 0.496 | 보수: 0.496<br>수요: 0.520 | 제약: 0.578 | 주차: 0.665<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3dd1720b2098a03c891c88404a85e5ac = L.circleMarker(
+                [37.43725299999999, 127.126955],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3dd1720b2098a03c891c88404a85e5ac.bindTooltip(
+                `<div>
+                     <b>#40 수진동 제4</b><br>수진2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.493<br>주요: 0.493 | 보수: 0.493<br>수요: 0.465 | 제약: 0.694 | 주차: 0.604<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f203a1c671bf2cec8839e3548b28f0dd = L.circleMarker(
+                [37.45659199999999, 127.126801],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.333333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f203a1c671bf2cec8839e3548b28f0dd.bindTooltip(
+                `<div>
+                     <b>#41 복정 제5공영</b><br>복정동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.492<br>주요: 0.492 | 보수: 0.492<br>수요: 0.234 | 제약: 0.886 | 주차: 0.735<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d95c76461710032123b7161f31f0b43f = L.circleMarker(
+                [37.448393, 127.14902300000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.033333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d95c76461710032123b7161f31f0b43f.bindTooltip(
+                `<div>
+                     <b>#42 신흥2동제1공영주차장</b><br>신흥2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.492<br>주요: 0.492 | 보수: 0.492<br>수요: 0.474 | 제약: 0.559 | 주차: 0.729<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2b2407f48a4dccc13b7413a35ef1b750 = L.circleMarker(
+                [37.438821, 127.139525],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2b2407f48a4dccc13b7413a35ef1b750.bindTooltip(
+                `<div>
+                     <b>#43 신흥 제1</b><br>신흥1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.487<br>주요: 0.487 | 보수: 0.487<br>수요: 0.581 | 제약: 0.599 | 주차: 0.514<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_46463653258face107e70c1333b4637b = L.circleMarker(
+                [37.439153, 127.12969100000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_46463653258face107e70c1333b4637b.bindTooltip(
+                `<div>
+                     <b>#44 번성</b><br>수진2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.487<br>주요: 0.487 | 보수: 0.487<br>수요: 0.472 | 제약: 0.674 | 주차: 0.590<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_96ca3894ccbb78f4e478460315dc7f0b = L.circleMarker(
+                [37.46166300000001, 127.155973],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.133333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_96ca3894ccbb78f4e478460315dc7f0b.bindTooltip(
+                `<div>
+                     <b>#45 논골공영</b><br>단대동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.487<br>주요: 0.487 | 보수: 0.487<br>수요: 0.368 | 제약: 0.714 | 주차: 0.712<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_35718ccc0b6eafa96079c379d824f390 = L.circleMarker(
+                [37.442288, 127.12666199999998],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_35718ccc0b6eafa96079c379d824f390.bindTooltip(
+                `<div>
+                     <b>#46 아래숯골</b><br>태평1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.486<br>주요: 0.486 | 보수: 0.486<br>수요: 0.398 | 제약: 0.737 | 주차: 0.639<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9e0afb8d5d5033ca1bf0947bc268074b = L.circleMarker(
+                [37.345532, 127.10768900000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9e0afb8d5d5033ca1bf0947bc268074b.bindTooltip(
+                `<div>
+                     <b>#47 구미도서관</b><br>구미1동 (분당구)<br>등급: <b>B</b> | 구역: 드론우선<br>순위점수: 0.486<br>주요: 0.486 | 보수: 0.486<br>수요: 0.312 | 제약: 0.737 | 주차: 0.393<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e62671b6db4716565152b10c380901c9 = L.circleMarker(
+                [37.43667099999999, 127.155099],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e62671b6db4716565152b10c380901c9.bindTooltip(
+                `<div>
+                     <b>#48 대원지하</b><br>상대원2동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.486<br>주요: 0.486 | 보수: 0.486<br>수요: 0.361 | 제약: 0.635 | 주차: 0.723<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a6655ca0e1f1371a4cce20ad3b4b6278 = L.circleMarker(
+                [37.417535, 127.124212],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a6655ca0e1f1371a4cce20ad3b4b6278.bindTooltip(
+                `<div>
+                     <b>#49 여수동제1공영주차장</b><br>도촌동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.484<br>주요: 0.484 | 보수: 0.484<br>수요: 0.515 | 제약: 0.698 | 주차: 0.515<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f8f011b5800f1c466b424b13c0c73daa = L.circleMarker(
+                [37.45064500000001, 127.13269900000002],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.1, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f8f011b5800f1c466b424b13c0c73daa.bindTooltip(
+                `<div>
+                     <b>#50 건우</b><br>복정동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.481<br>주요: 0.481 | 보수: 0.481<br>수요: 0.414 | 제약: 0.645 | 주차: 0.677<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f52592c602041a4f590564b9df9f7302 = L.circleMarker(
+                [37.45065499999999, 127.148052],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f52592c602041a4f590564b9df9f7302.bindTooltip(
+                `<div>
+                     <b>#51 희망대제2공영주차장</b><br>신흥2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.480<br>주요: 0.480 | 보수: 0.480<br>수요: 0.455 | 제약: 0.546 | 주차: 0.724<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9597d525657d71d2e0594c490bda6137 = L.circleMarker(
+                [37.449712, 127.14571599999998],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9597d525657d71d2e0594c490bda6137.bindTooltip(
+                `<div>
+                     <b>#52 수정</b><br>신흥2동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.478<br>주요: 0.478 | 보수: 0.478<br>수요: 0.470 | 제약: 0.576 | 주차: 0.664<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_39637b3af9c26f0a5f87b51e7d7512fd = L.circleMarker(
+                [37.447888999999996, 127.164401],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.333333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_39637b3af9c26f0a5f87b51e7d7512fd.bindTooltip(
+                `<div>
+                     <b>#53 금광2동 제1</b><br>금광2동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.477<br>주요: 0.477 | 보수: 0.477<br>수요: 0.341 | 제약: 0.680 | 주차: 0.737<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f3bfe914ff09e5d86db5815c6c84e23a = L.circleMarker(
+                [37.440643, 127.154865],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.966666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f3bfe914ff09e5d86db5815c6c84e23a.bindTooltip(
+                `<div>
+                     <b>#54 중앙동 제4</b><br>중앙동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.475<br>주요: 0.475 | 보수: 0.475<br>수요: 0.392 | 제약: 0.588 | 주차: 0.756<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_46e53e8c5c6916a316961360e84d1b0c = L.circleMarker(
+                [37.39087500000001, 127.0779],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.833333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_46e53e8c5c6916a316961360e84d1b0c.bindTooltip(
+                `<div>
+                     <b>#55 운중동공영주차장</b><br>운중동 (분당구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.475<br>주요: 0.475 | 보수: 0.475<br>수요: 0.375 | 제약: 0.728 | 주차: 0.643<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_5c742ee5e8f7bf713a52ad1569a72ea0 = L.circleMarker(
+                [37.461738, 127.127224],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.466666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_5c742ee5e8f7bf713a52ad1569a72ea0.bindTooltip(
+                `<div>
+                     <b>#56 복정 제3공영</b><br>복정동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.474<br>주요: 0.474 | 보수: 0.474<br>수요: 0.180 | 제약: 0.879 | 주차: 0.744<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a0b897c553bca654a91b90e075aedb85 = L.circleMarker(
+                [37.383542000000006, 127.13244000000002],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a0b897c553bca654a91b90e075aedb85.bindTooltip(
+                `<div>
+                     <b>#57 서현도서관 부설주차장</b><br>서현1동 (분당구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.472<br>주요: 0.472 | 보수: 0.472<br>수요: 0.477 | 제약: 0.696 | 주차: 0.490<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_550a2ff980cf845a9f5f12d03d77a4b9 = L.circleMarker(
+                [37.389048, 127.09859100000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.466666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_550a2ff980cf845a9f5f12d03d77a4b9.bindTooltip(
+                `<div>
+                     <b>#58 판교동임시공영주차장</b><br>판교동 (분당구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.470<br>주요: 0.470 | 보수: 0.470<br>수요: 0.411 | 제약: 0.671 | 주차: 0.629<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_6210d7f3e14f5bebfb7d22d99bd9b691 = L.circleMarker(
+                [37.451632000000004, 127.15232400000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_6210d7f3e14f5bebfb7d22d99bd9b691.bindTooltip(
+                `<div>
+                     <b>#59 산성동 제1</b><br>산성동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.470<br>주요: 0.470 | 보수: 0.470<br>수요: 0.412 | 제약: 0.636 | 주차: 0.665<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2df6100cca17f39c22f1f257f48fe071 = L.circleMarker(
+                [37.44111000000001, 127.12103],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2df6100cca17f39c22f1f257f48fe071.bindTooltip(
+                `<div>
+                     <b>#60 태평공원공영주차장</b><br>태평1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.468<br>주요: 0.468 | 보수: 0.468<br>수요: 0.325 | 제약: 0.751 | 주차: 0.654<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_56f41f9e67fa36e0d9fd6a3e19d11722 = L.circleMarker(
+                [37.390331999999994, 127.098531],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_56f41f9e67fa36e0d9fd6a3e19d11722.bindTooltip(
+                `<div>
+                     <b>#61 판교제2공영주차장</b><br>판교동 (분당구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.465<br>주요: 0.465 | 보수: 0.465<br>수요: 0.434 | 제약: 0.671 | 주차: 0.573<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_41d78dfd5044b2eb7d3c12f16c008319 = L.circleMarker(
+                [37.43745799999999, 127.13987499999999],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_41d78dfd5044b2eb7d3c12f16c008319.bindTooltip(
+                `<div>
+                     <b>#62 수상9-10</b><br>성남동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.462<br>주요: 0.462 | 보수: 0.462<br>수요: 0.571 | 제약: 0.705 | 주차: 0.291<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_76473dc707096d9640125264b8ed8cbd = L.circleMarker(
+                [37.436697, 127.140624],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_76473dc707096d9640125264b8ed8cbd.bindTooltip(
+                `<div>
+                     <b>#63 중상12</b><br>성남동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.460<br>주요: 0.460 | 보수: 0.460<br>수요: 0.530 | 제약: 0.705 | 주차: 0.338<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f5031e12d85a85b18fa1768740e31d93 = L.circleMarker(
+                [37.430392000000005, 127.137093],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f5031e12d85a85b18fa1768740e31d93.bindTooltip(
+                `<div>
+                     <b>#64 중원구청 부설주차장</b><br>성남동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.457<br>주요: 0.457 | 보수: 0.457<br>수요: 0.467 | 제약: 0.700 | 주차: 0.420<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_fd89c86460be730b4e45e0baabbe16e0 = L.circleMarker(
+                [37.433755, 127.131593],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_fd89c86460be730b4e45e0baabbe16e0.bindTooltip(
+                `<div>
+                     <b>#65 중상3</b><br>성남동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.457<br>주요: 0.457 | 보수: 0.457<br>수요: 0.524 | 제약: 0.719 | 주차: 0.320<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a6da1efb214beec026a9129622501412 = L.circleMarker(
+                [37.40396700000001, 127.13472300000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.8, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a6da1efb214beec026a9129622501412.bindTooltip(
+                `<div>
+                     <b>#66 도서관사업소</b><br>야탑3동 (분당구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.455<br>주요: 0.455 | 보수: 0.455<br>수요: 0.377 | 제약: 0.702 | 주차: 0.570<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2b7e22a57ef10b33b21da292d5669e02 = L.circleMarker(
+                [37.45269299999999, 127.171883],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.733333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2b7e22a57ef10b33b21da292d5669e02.bindTooltip(
+                `<div>
+                     <b>#67 은행동 제5</b><br>은행1동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.455<br>주요: 0.455 | 보수: 0.455<br>수요: 0.297 | 제약: 0.606 | 주차: 0.790<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e08ef3395746a15389f230db9a08f194 = L.circleMarker(
+                [37.449645, 127.15566500000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e08ef3395746a15389f230db9a08f194.bindTooltip(
+                `<div>
+                     <b>#68 희망로</b><br>단대동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.454<br>주요: 0.454 | 보수: 0.454<br>수요: 0.360 | 제약: 0.628 | 주차: 0.675<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_576e8245d230c0e7038e12c6ae3e7e4d = L.circleMarker(
+                [37.435942, 127.138991],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_576e8245d230c0e7038e12c6ae3e7e4d.bindTooltip(
+                `<div>
+                     <b>#69 중상10</b><br>수진1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.454<br>주요: 0.454 | 보수: 0.454<br>수요: 0.538 | 제약: 0.668 | 주차: 0.351<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_6c1ebec0668ccaf14fb18716604aab92 = L.circleMarker(
+                [37.442757, 127.150995],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_6c1ebec0668ccaf14fb18716604aab92.bindTooltip(
+                `<div>
+                     <b>#70 신흥 3동</b><br>중앙동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.453<br>주요: 0.453 | 보수: 0.453<br>수요: 0.455 | 제약: 0.593 | 주차: 0.578<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e148f8540a3a1bb62073bd99294f4869 = L.circleMarker(
+                [37.457055000000004, 127.155486],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e148f8540a3a1bb62073bd99294f4869.bindTooltip(
+                `<div>
+                     <b>#71 단대 공원</b><br>단대동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.452<br>주요: 0.452 | 보수: 0.452<br>수요: 0.346 | 제약: 0.613 | 주차: 0.705<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_71a269ae02d79d21514fad168576a7dd = L.circleMarker(
+                [37.456662, 127.15072],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_71a269ae02d79d21514fad168576a7dd.bindTooltip(
+                `<div>
+                     <b>#72 산성역 환승</b><br>산성동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.452<br>주요: 0.452 | 보수: 0.452<br>수요: 0.357 | 제약: 0.597 | 주차: 0.710<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3c77df73d5fb0e7e4b2d491d0811da31 = L.circleMarker(
+                [37.457606, 127.159098],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3c77df73d5fb0e7e4b2d491d0811da31.bindTooltip(
+                `<div>
+                     <b>#73 양지 제1</b><br>단대동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.452<br>주요: 0.452 | 보수: 0.452<br>수요: 0.315 | 제약: 0.615 | 주차: 0.744<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_327d616ae5d4109119800c74cd03a45d = L.circleMarker(
+                [37.44437400000001, 127.157159],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_327d616ae5d4109119800c74cd03a45d.bindTooltip(
+                `<div>
+                     <b>#74 중앙동 제1</b><br>중앙동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.452<br>주요: 0.452 | 보수: 0.452<br>수요: 0.392 | 제약: 0.591 | 주차: 0.660<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4f1dad509cc24015af2aff147ca7baef = L.circleMarker(
+                [37.43638099999999, 127.140051],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4f1dad509cc24015af2aff147ca7baef.bindTooltip(
+                `<div>
+                     <b>#75 중상11</b><br>수진1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.451<br>주요: 0.451 | 보수: 0.451<br>수요: 0.527 | 제약: 0.668 | 주차: 0.358<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e535235de3dd38ecb95871a9eaa11338 = L.circleMarker(
+                [37.429431, 127.139451],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e535235de3dd38ecb95871a9eaa11338.bindTooltip(
+                `<div>
+                     <b>#76 중상51-53</b><br>성남동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.450<br>주요: 0.450 | 보수: 0.450<br>수요: 0.423 | 제약: 0.753 | 주차: 0.399<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d30941982a171b737d6014d36f6dcf78 = L.circleMarker(
+                [37.43638099999999, 127.138351],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d30941982a171b737d6014d36f6dcf78.bindTooltip(
+                `<div>
+                     <b>#77 수상11</b><br>수진1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.449<br>주요: 0.449 | 보수: 0.449<br>수요: 0.539 | 제약: 0.668 | 주차: 0.331<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_69296b96b2c39b7e8239601d3ddefd40 = L.circleMarker(
+                [37.435885, 127.166118],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.433333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_69296b96b2c39b7e8239601d3ddefd40.bindTooltip(
+                `<div>
+                     <b>#78 상대원 제4</b><br>상대원1동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.448<br>주요: 0.448 | 보수: 0.448<br>수요: 0.261 | 제약: 0.587 | 주차: 0.776<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_6268a9ac4ef2c7f7f443053505136658 = L.circleMarker(
+                [37.44014000000001, 127.15680300000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.133333333333334, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_6268a9ac4ef2c7f7f443053505136658.bindTooltip(
+                `<div>
+                     <b>#79 중앙동 제2</b><br>중앙동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.447<br>주요: 0.447 | 보수: 0.447<br>수요: 0.365 | 제약: 0.582 | 주차: 0.691<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_0ad655af8032c4aa359fffdcf30fb824 = L.circleMarker(
+                [37.451234, 127.13858000000002],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_0ad655af8032c4aa359fffdcf30fb824.bindTooltip(
+                `<div>
+                     <b>#80 태평4동</b><br>태평4동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.447<br>주요: 0.447 | 보수: 0.447<br>수요: 0.417 | 제약: 0.566 | 주차: 0.630<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_cc083a73926f3ce6f3486c0bef327458 = L.circleMarker(
+                [37.44718, 127.12921600000001],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_cc083a73926f3ce6f3486c0bef327458.bindTooltip(
+                `<div>
+                     <b>#81 태평동 제1</b><br>태평1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.446<br>주요: 0.446 | 보수: 0.446<br>수요: 0.397 | 제약: 0.572 | 주차: 0.647<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_80e487babbf64917b803f3636e855f02 = L.circleMarker(
+                [37.434576, 127.13583300000002],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_80e487babbf64917b803f3636e855f02.bindTooltip(
+                `<div>
+                     <b>#82 중상6-7</b><br>수진1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.446<br>주요: 0.446 | 보수: 0.446<br>수요: 0.498 | 제약: 0.664 | 주차: 0.382<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e5f8b453c790638a2ba2013cb2548604 = L.circleMarker(
+                [37.434935, 127.137276],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e5f8b453c790638a2ba2013cb2548604.bindTooltip(
+                `<div>
+                     <b>#83 중상8-9</b><br>수진1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.445<br>주요: 0.445 | 보수: 0.445<br>수요: 0.483 | 제약: 0.664 | 주차: 0.396<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ebd067809d6a7e8c3734593d2aa33861 = L.circleMarker(
+                [37.439195, 127.148499],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_ebd067809d6a7e8c3734593d2aa33861.bindTooltip(
+                `<div>
+                     <b>#84 중앙동제6</b><br>중앙동 (중원구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.444<br>주요: 0.444 | 보수: 0.444<br>수요: 0.466 | 제약: 0.471 | 주차: 0.649<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_68ad4a979e5c4bcc1adeb82e61606eb8 = L.circleMarker(
+                [37.45361700000001, 127.15389000000002],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_68ad4a979e5c4bcc1adeb82e61606eb8.bindTooltip(
+                `<div>
+                     <b>#85 산성동 제2</b><br>산성동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.444<br>주요: 0.444 | 보수: 0.444<br>수요: 0.348 | 제약: 0.589 | 주차: 0.699<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2642054cb15cf4f10381dd4773213262 = L.circleMarker(
+                [37.443630999999996, 127.11943099999999],
+                {"bubblingMouseEvents": true, "color": "#2ECC71", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ECC71", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2642054cb15cf4f10381dd4773213262.bindTooltip(
+                `<div>
+                     <b>#86 태평동 탄천변</b><br>태평1동 (수정구)<br>등급: <b>B</b> | 구역: 부적합<br>순위점수: 0.442<br>주요: 0.442 | 보수: 0.442<br>수요: 0.253 | 제약: 0.761 | 주차: 0.642<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_623d2189d8b3900f5d4f1ca7056dca0d = L.circleMarker(
+                [37.456686, 127.172195],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.666666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_623d2189d8b3900f5d4f1ca7056dca0d.bindTooltip(
+                `<div>
+                     <b>#87 은행2동 제4</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.438<br>주요: 0.438 | 보수: 0.438<br>수요: 0.269 | 제약: 0.603 | 주차: 0.773<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7d4a3cebabff297a0d0ab954d6f78683 = L.circleMarker(
+                [37.45869499999999, 127.158636],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.033333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7d4a3cebabff297a0d0ab954d6f78683.bindTooltip(
+                `<div>
+                     <b>#88 단대 제1</b><br>단대동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.437<br>주요: 0.437 | 보수: 0.437<br>수요: 0.309 | 제약: 0.615 | 주차: 0.693<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_394012bef659240798c1f2326fb98982 = L.circleMarker(
+                [37.457605, 127.159098],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_394012bef659240798c1f2326fb98982.bindTooltip(
+                `<div>
+                     <b>#89 양지제3공영주차장</b><br>단대동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.437<br>주요: 0.437 | 보수: 0.437<br>수요: 0.315 | 제약: 0.615 | 주차: 0.682<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_90a445470aeac8a0a3d217e1b8a9987f = L.circleMarker(
+                [37.450802, 127.164692],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.066666666666666, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_90a445470aeac8a0a3d217e1b8a9987f.bindTooltip(
+                `<div>
+                     <b>#90 은행1</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.436<br>주요: 0.436 | 보수: 0.436<br>수요: 0.330 | 제약: 0.608 | 주차: 0.661<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d68ff5a9e0e987e943ebfa3a2cb4ddb9 = L.circleMarker(
+                [37.446271, 127.16652500000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d68ff5a9e0e987e943ebfa3a2cb4ddb9.bindTooltip(
+                `<div>
+                     <b>#91 금광공영주차장</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.436<br>주요: 0.436 | 보수: 0.436<br>수요: 0.331 | 제약: 0.680 | 주차: 0.586<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_860519635e6fda11513bac618b034d6a = L.circleMarker(
+                [37.42951099999999, 127.12549099999998],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_860519635e6fda11513bac618b034d6a.bindTooltip(
+                `<div>
+                     <b>#92 모란5</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.434<br>주요: 0.434 | 보수: 0.434<br>수요: 0.423 | 제약: 0.823 | 주차: 0.264<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_295c393921590a0a430c7ee4ecf56ec3 = L.circleMarker(
+                [37.450717, 127.16813100000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_295c393921590a0a430c7ee4ecf56ec3.bindTooltip(
+                `<div>
+                     <b>#93 자혜</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.433<br>주요: 0.433 | 보수: 0.433<br>수요: 0.315 | 제약: 0.580 | 주차: 0.696<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3ab4d8a3a99ea7ae1312f25bb6bf6315 = L.circleMarker(
+                [37.429731000000004, 127.125431],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3ab4d8a3a99ea7ae1312f25bb6bf6315.bindTooltip(
+                `<div>
+                     <b>#94 모란2</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.432<br>주요: 0.432 | 보수: 0.432<br>수요: 0.419 | 제약: 0.791 | 주차: 0.296<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e60829b1bb104372f616da1bfccfd128 = L.circleMarker(
+                [37.43693699999999, 127.13878500000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e60829b1bb104372f616da1bfccfd128.bindTooltip(
+                `<div>
+                     <b>#95 수상11-1</b><br>수진1동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.432<br>주요: 0.432 | 보수: 0.432<br>수요: 0.535 | 제약: 0.668 | 주차: 0.269<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_bc0fbb662450f44c013d3edbcc337569 = L.circleMarker(
+                [37.440713, 127.148265],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_bc0fbb662450f44c013d3edbcc337569.bindTooltip(
+                `<div>
+                     <b>#96 중상13</b><br>중앙동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.430<br>주요: 0.430 | 보수: 0.430<br>수요: 0.502 | 제약: 0.644 | 주차: 0.367<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9022d363db4c5dfe8ab7af3c67a31bae = L.circleMarker(
+                [37.366648, 127.12851000000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9022d363db4c5dfe8ab7af3c67a31bae.bindTooltip(
+                `<div>
+                     <b>#97 수내제2공영</b><br>수내3동 (분당구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.429<br>주요: 0.429 | 보수: 0.429<br>수요: 0.294 | 제약: 0.687 | 주차: 0.614<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_f64777e19c8fa23403b7e7bafcc4f5b8 = L.circleMarker(
+                [37.450764, 127.14592800000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_f64777e19c8fa23403b7e7bafcc4f5b8.bindTooltip(
+                `<div>
+                     <b>#98 수정구청 부설주차장</b><br>신흥2동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.429<br>주요: 0.429 | 보수: 0.429<br>수요: 0.463 | 제약: 0.576 | 주차: 0.477<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_5e08d443d0f1a7f4606e4cd32decaf83 = L.circleMarker(
+                [37.44102900000001, 127.148962],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_5e08d443d0f1a7f4606e4cd32decaf83.bindTooltip(
+                `<div>
+                     <b>#99 중상14</b><br>중앙동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.429<br>주요: 0.429 | 보수: 0.429<br>수요: 0.497 | 제약: 0.644 | 주차: 0.369<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c017fba18d521997186f36c2866aef35 = L.circleMarker(
+                [37.433587, 127.13100500000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_c017fba18d521997186f36c2866aef35.bindTooltip(
+                `<div>
+                     <b>#100 중상1</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.428<br>주요: 0.428 | 보수: 0.428<br>수요: 0.502 | 제약: 0.719 | 주차: 0.237<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_da2d8cfc43bc9ce684e531816fd37937 = L.circleMarker(
+                [37.433809000000004, 127.132067],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_da2d8cfc43bc9ce684e531816fd37937.bindTooltip(
+                `<div>
+                     <b>#101 중상2</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.426<br>주요: 0.426 | 보수: 0.426<br>수요: 0.511 | 제약: 0.694 | 주차: 0.238<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_342a3d2641b2bed43f4a8f375fcca193 = L.circleMarker(
+                [37.438909, 127.168461],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.8, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_342a3d2641b2bed43f4a8f375fcca193.bindTooltip(
+                `<div>
+                     <b>#102 상대원 제1</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.425<br>주요: 0.425 | 보수: 0.425<br>수요: 0.263 | 제약: 0.546 | 주차: 0.724<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9584c9a959f165f7e8ef7b8ddca91386 = L.circleMarker(
+                [37.428685, 127.134309],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9584c9a959f165f7e8ef7b8ddca91386.bindTooltip(
+                `<div>
+                     <b>#103 중상68-69</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.425<br>주요: 0.425 | 보수: 0.425<br>수요: 0.481 | 제약: 0.674 | 주차: 0.299<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_60b31ceb2f284a4586caa50d115c71a7 = L.circleMarker(
+                [37.42846900000001, 127.14315699999999],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_60b31ceb2f284a4586caa50d115c71a7.bindTooltip(
+                `<div>
+                     <b>#104 중상50</b><br>하대원동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.424<br>주요: 0.424 | 보수: 0.424<br>수요: 0.373 | 제약: 0.800 | 주차: 0.359<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_04267e393ba64c3a5916c3ad5168d0ab = L.circleMarker(
+                [37.463756, 127.12786500000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_04267e393ba64c3a5916c3ad5168d0ab.bindTooltip(
+                `<div>
+                     <b>#105 복정 제6공영</b><br>복정동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.424<br>주요: 0.424 | 보수: 0.424<br>수요: 0.193 | 제약: 0.791 | 주차: 0.616<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_247a54ae6495778439fcd93f2ec8e80a = L.circleMarker(
+                [37.45539999999999, 127.16085699999998],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_247a54ae6495778439fcd93f2ec8e80a.bindTooltip(
+                `<div>
+                     <b>#106 양지 제2</b><br>양지동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.422<br>주요: 0.422 | 보수: 0.422<br>수요: 0.271 | 제약: 0.655 | 주차: 0.655<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_38abbd0a72a2f4ecce568707ed7e8319 = L.circleMarker(
+                [37.428262, 127.10387500000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_38abbd0a72a2f4ecce568707ed7e8319.bindTooltip(
+                `<div>
+                     <b>#107 고등동공영주차장</b><br>고등동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.422<br>주요: 0.422 | 보수: 0.422<br>수요: 0.206 | 제약: 0.748 | 주차: 0.650<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a1addad939dceb7a46ce093dc0c868f2 = L.circleMarker(
+                [37.453195, 127.169027],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a1addad939dceb7a46ce093dc0c868f2.bindTooltip(
+                `<div>
+                     <b>#108 은행1동 제2</b><br>은행1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.422<br>주요: 0.422 | 보수: 0.422<br>수요: 0.307 | 제약: 0.579 | 주차: 0.673<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_06a0e6e08ba861c6a01743551ffcc1c4 = L.circleMarker(
+                [37.44085700000001, 127.16482299999998],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_06a0e6e08ba861c6a01743551ffcc1c4.bindTooltip(
+                `<div>
+                     <b>#109 상대원 3동</b><br>상대원3동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.422<br>주요: 0.422 | 보수: 0.422<br>수요: 0.315 | 제약: 0.639 | 주차: 0.585<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b88bd527508f63adb076413f0d0144bb = L.circleMarker(
+                [37.46791499999999, 127.12713000000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b88bd527508f63adb076413f0d0144bb.bindTooltip(
+                `<div>
+                     <b>#110 복정제1공영주차장</b><br>복정동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.420<br>주요: 0.420 | 보수: 0.420<br>수요: 0.187 | 제약: 0.822 | 주차: 0.576<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d6a3ec650060737304beb838a1b4f0aa = L.circleMarker(
+                [37.429531, 127.125711],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d6a3ec650060737304beb838a1b4f0aa.bindTooltip(
+                `<div>
+                     <b>#111 모란4</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.419<br>주요: 0.419 | 보수: 0.419<br>수요: 0.421 | 제약: 0.775 | 주차: 0.257<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_efb8377d26074a6ec80540584d01131b = L.circleMarker(
+                [37.429041, 127.133821],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_efb8377d26074a6ec80540584d01131b.bindTooltip(
+                `<div>
+                     <b>#112 중상65</b><br>하대원동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.418<br>주요: 0.418 | 보수: 0.418<br>수요: 0.477 | 제약: 0.722 | 주차: 0.269<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_46dbc3c21a0cd85e574874be8f5addfc = L.circleMarker(
+                [37.45048599999999, 127.15994300000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.466666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_46dbc3c21a0cd85e574874be8f5addfc.bindTooltip(
+                `<div>
+                     <b>#113 금광2동 제2</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.417<br>주요: 0.417 | 보수: 0.417<br>수요: 0.328 | 제약: 0.606 | 주차: 0.589<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_97e111cfd3078a3e37e632913a78d585 = L.circleMarker(
+                [37.44148500000001, 127.15024200000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_97e111cfd3078a3e37e632913a78d585.bindTooltip(
+                `<div>
+                     <b>#114 중상16</b><br>중앙동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.414<br>주요: 0.414 | 보수: 0.414<br>수요: 0.489 | 제약: 0.644 | 주차: 0.320<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_05a7bdbb8c9737fdd0497a2fdeae83fb = L.circleMarker(
+                [37.45906, 127.10581],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_05a7bdbb8c9737fdd0497a2fdeae83fb.bindTooltip(
+                `<div>
+                     <b>#115 신촌동공영주차장</b><br>신촌동 (수정구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.412<br>주요: 0.412 | 보수: 0.412<br>수요: 0.106 | 제약: 0.813 | 주차: 0.686<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_0f5908703735f9a01d6d3b249ba3eee8 = L.circleMarker(
+                [37.42911900000001, 127.13269200000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_0f5908703735f9a01d6d3b249ba3eee8.bindTooltip(
+                `<div>
+                     <b>#116 중상66</b><br>하대원동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.411<br>주요: 0.411 | 보수: 0.411<br>수요: 0.454 | 제약: 0.722 | 주차: 0.273<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9a5378e8b03d4e35062262a0d148e7a5 = L.circleMarker(
+                [37.392331, 127.07801800000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9a5378e8b03d4e35062262a0d148e7a5.bindTooltip(
+                `<div>
+                     <b>#117 운중동974공영주차장</b><br>운중동 (분당구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.411<br>주요: 0.411 | 보수: 0.411<br>수요: 0.352 | 제약: 0.713 | 주차: 0.437<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7931ab2faede817c7315ee95df64a344 = L.circleMarker(
+                [37.366796, 127.12796199999998],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7931ab2faede817c7315ee95df64a344.bindTooltip(
+                `<div>
+                     <b>#118 수내동</b><br>수내3동 (분당구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.410<br>주요: 0.410 | 보수: 0.410<br>수요: 0.282 | 제약: 0.687 | 주차: 0.554<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b1e193f0fff1f2cef8e90c935c07402b = L.circleMarker(
+                [37.391898, 127.09087100000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b1e193f0fff1f2cef8e90c935c07402b.bindTooltip(
+                `<div>
+                     <b>#119 판교도서관</b><br>판교동 (분당구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.409<br>주요: 0.409 | 보수: 0.409<br>수요: 0.335 | 제약: 0.755 | 주차: 0.406<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_027a851ee03f19edb5f0b6e99045a16b = L.circleMarker(
+                [37.454915, 127.163172],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.566666666666666, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_027a851ee03f19edb5f0b6e99045a16b.bindTooltip(
+                `<div>
+                     <b>#120 은행2동 제3</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.408<br>주요: 0.408 | 보수: 0.408<br>수요: 0.288 | 제약: 0.491 | 주차: 0.737<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_edc51323fab2d495cc7c03545353f0a7 = L.circleMarker(
+                [37.44306, 127.16950600000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_edc51323fab2d495cc7c03545353f0a7.bindTooltip(
+                `<div>
+                     <b>#121 금광1동 제1</b><br>금광1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.407<br>주요: 0.407 | 보수: 0.407<br>수요: 0.320 | 제약: 0.477 | 주차: 0.693<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a4bde98cb18abcf96ca3656c9febe401 = L.circleMarker(
+                [37.428870999999994, 127.13202100000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a4bde98cb18abcf96ca3656c9febe401.bindTooltip(
+                `<div>
+                     <b>#122 중상67</b><br>하대원동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.403<br>주요: 0.403 | 보수: 0.403<br>수요: 0.475 | 제약: 0.722 | 주차: 0.210<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b1e1d0b93cffacc7b94fb88d5745ac0d = L.circleMarker(
+                [37.456610000000005, 127.16983000000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.466666666666667, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b1e1d0b93cffacc7b94fb88d5745ac0d.bindTooltip(
+                `<div>
+                     <b>#123 은행동 제9</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.403<br>주요: 0.403 | 보수: 0.403<br>수요: 0.291 | 제약: 0.515 | 주차: 0.689<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_dc3c76bc2689bda005a434528cf5f33d = L.circleMarker(
+                [37.457578, 127.165818],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.366666666666666, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_dc3c76bc2689bda005a434528cf5f33d.bindTooltip(
+                `<div>
+                     <b>#124 은행동 제10</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.401<br>주요: 0.401 | 보수: 0.401<br>수요: 0.288 | 제약: 0.517 | 주차: 0.683<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ab0dffa156a11ad1c3f3e8ee438d2a33 = L.circleMarker(
+                [37.42993100000001, 127.12663100000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_ab0dffa156a11ad1c3f3e8ee438d2a33.bindTooltip(
+                `<div>
+                     <b>#125 모란1</b><br>성남동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.400<br>주요: 0.400 | 보수: 0.400<br>수요: 0.424 | 제약: 0.775 | 주차: 0.178<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a2eb5408818014ac49b1b2cf7ae25374 = L.circleMarker(
+                [37.44166400000001, 127.148493],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a2eb5408818014ac49b1b2cf7ae25374.bindTooltip(
+                `<div>
+                     <b>#126 수상7</b><br>중앙동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.400<br>주요: 0.400 | 보수: 0.400<br>수요: 0.484 | 제약: 0.644 | 주차: 0.273<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_0608d238edfcead0e92a1d2461a37048 = L.circleMarker(
+                [37.444641, 127.17688099999998],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_0608d238edfcead0e92a1d2461a37048.bindTooltip(
+                `<div>
+                     <b>#127 중상79하</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.398<br>주요: 0.398 | 보수: 0.398<br>수요: 0.248 | 제약: 0.749 | 주차: 0.434<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_42cd914f2419a703182a7819626532c5 = L.circleMarker(
+                [37.43486200000001, 127.17117300000001],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_42cd914f2419a703182a7819626532c5.bindTooltip(
+                `<div>
+                     <b>#128 중상33</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.398<br>주요: 0.398 | 보수: 0.398<br>수요: 0.227 | 제약: 0.793 | 주차: 0.417<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_57346221ffe4ba3a4d3fbaad76d5fe93 = L.circleMarker(
+                [37.454545, 127.164979],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_57346221ffe4ba3a4d3fbaad76d5fe93.bindTooltip(
+                `<div>
+                     <b>#129 은행동 제7</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.398<br>주요: 0.398 | 보수: 0.398<br>수요: 0.305 | 제약: 0.491 | 주차: 0.672<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_68debf8427e075db3bbb40f243110e50 = L.circleMarker(
+                [37.453847, 127.16382500000002],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_68debf8427e075db3bbb40f243110e50.bindTooltip(
+                `<div>
+                     <b>#130 은행동 제6</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.394<br>주요: 0.394 | 보수: 0.394<br>수요: 0.298 | 제약: 0.491 | 주차: 0.668<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_1df31a7caab37598f7ac07b25d9f887c = L.circleMarker(
+                [37.438968, 127.172547],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.0, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_1df31a7caab37598f7ac07b25d9f887c.bindTooltip(
+                `<div>
+                     <b>#131 중상32-75</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.392<br>주요: 0.392 | 보수: 0.392<br>수요: 0.257 | 제약: 0.609 | 주차: 0.537<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4c2838f10d039a26febd501d81ee0f7a = L.circleMarker(
+                [37.456667, 127.165178],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.733333333333333, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4c2838f10d039a26febd501d81ee0f7a.bindTooltip(
+                `<div>
+                     <b>#132 은행동 제8</b><br>은행2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.392<br>주요: 0.392 | 보수: 0.392<br>수요: 0.257 | 제약: 0.526 | 주차: 0.681<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2b246b83cd387d6055e551806fbaa6f5 = L.circleMarker(
+                [37.429251, 127.147527],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2b246b83cd387d6055e551806fbaa6f5.bindTooltip(
+                `<div>
+                     <b>#133 중상48-49</b><br>하대원동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.391<br>주요: 0.391 | 보수: 0.391<br>수요: 0.375 | 제약: 0.664 | 주차: 0.358<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9c4c708297aebf6d44f1e3cefc1f379a = L.circleMarker(
+                [37.445721000000006, 127.157813],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9c4c708297aebf6d44f1e3cefc1f379a.bindTooltip(
+                `<div>
+                     <b>#134 중상24</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.389<br>주요: 0.389 | 보수: 0.389<br>수요: 0.374 | 제약: 0.711 | 주차: 0.306<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_440ddd3a6105c68790a1347fc009ecd7 = L.circleMarker(
+                [37.446330999999994, 127.157831],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_440ddd3a6105c68790a1347fc009ecd7.bindTooltip(
+                `<div>
+                     <b>#135 중상25-26</b><br>금광2동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.385<br>주요: 0.385 | 보수: 0.385<br>수요: 0.363 | 제약: 0.711 | 주차: 0.307<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9904676db173e45510338a1be513aadf = L.circleMarker(
+                [37.433131, 127.164079],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9904676db173e45510338a1be513aadf.bindTooltip(
+                `<div>
+                     <b>#136 중상36</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.383<br>주요: 0.383 | 보수: 0.383<br>수요: 0.251 | 제약: 0.745 | 주차: 0.373<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a9f4eb1709fa273a7208156848a1e916 = L.circleMarker(
+                [37.43191100000001, 127.169711],
+                {"bubblingMouseEvents": true, "color": "#F39C12", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#F39C12", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a9f4eb1709fa273a7208156848a1e916.bindTooltip(
+                `<div>
+                     <b>#137 중상40</b><br>상대원1동 (중원구)<br>등급: <b>C</b> | 구역: 부적합<br>순위점수: 0.382<br>주요: 0.382 | 보수: 0.382<br>수요: 0.214 | 제약: 0.804 | 주차: 0.362<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_b8d59c1f39e0ece32147051ede19951b = L.circleMarker(
+                [37.443322, 127.154405],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_b8d59c1f39e0ece32147051ede19951b.bindTooltip(
+                `<div>
+                     <b>#138 중상21</b><br>중앙동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.379<br>주요: 0.379 | 보수: 0.379<br>수요: 0.432 | 제약: 0.641 | 주차: 0.267<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e8af4c237b234f2df029baba0eb718cb = L.circleMarker(
+                [37.445576, 127.16354900000002],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e8af4c237b234f2df029baba0eb718cb.bindTooltip(
+                `<div>
+                     <b>#139 중상86-87</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.379<br>주요: 0.379 | 보수: 0.379<br>수요: 0.336 | 제약: 0.691 | 주차: 0.340<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_8e64ca6c5ff69a1e371bcb16a793c626 = L.circleMarker(
+                [37.44866, 127.15902200000001],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_8e64ca6c5ff69a1e371bcb16a793c626.bindTooltip(
+                `<div>
+                     <b>#140 중상27</b><br>단대동 (수정구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.379<br>주요: 0.379 | 보수: 0.379<br>수요: 0.355 | 제약: 0.684 | 주차: 0.328<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3318556a56503db011fbc281d2faf83a = L.circleMarker(
+                [37.447459, 127.157645],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3318556a56503db011fbc281d2faf83a.bindTooltip(
+                `<div>
+                     <b>#141 수상5</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.377<br>주요: 0.377 | 보수: 0.377<br>수요: 0.362 | 제약: 0.711 | 주차: 0.277<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_e2750f383ddea82d243abde7855a14df = L.circleMarker(
+                [37.3681424276, 127.13074766079998],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_e2750f383ddea82d243abde7855a14df.bindTooltip(
+                `<div>
+                     <b>#142 수내도서관 부설주차장</b><br>수내3동 (분당구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.376<br>주요: 0.376 | 보수: 0.376<br>수요: 0.283 | 제약: 0.676 | 주차: 0.428<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_511b0b630e99f8a1c3e82380b787db4c = L.circleMarker(
+                [37.433205, 127.16806],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_511b0b630e99f8a1c3e82380b787db4c.bindTooltip(
+                `<div>
+                     <b>#143 중상34-35</b><br>상대원1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.372<br>주요: 0.372 | 보수: 0.372<br>수요: 0.217 | 제약: 0.729 | 주차: 0.394<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3489ab2598e8b35fc1e5a77cd3499afd = L.circleMarker(
+                [37.443110999999995, 127.15374099999998],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3489ab2598e8b35fc1e5a77cd3499afd.bindTooltip(
+                `<div>
+                     <b>#144 중상19-20</b><br>중앙동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.372<br>주요: 0.372 | 보수: 0.372<br>수요: 0.434 | 제약: 0.641 | 주차: 0.232<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a0fe6491a26ee7343afa79c26bb84573 = L.circleMarker(
+                [37.431318, 127.169267],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a0fe6491a26ee7343afa79c26bb84573.bindTooltip(
+                `<div>
+                     <b>#145 중상41</b><br>상대원1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.370<br>주요: 0.370 | 보수: 0.370<br>수요: 0.210 | 제약: 0.804 | 주차: 0.318<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a6b1262601bf96fff6c202e35e108b9f = L.circleMarker(
+                [37.429838, 127.149781],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a6b1262601bf96fff6c202e35e108b9f.bindTooltip(
+                `<div>
+                     <b>#146 중상47-1</b><br>하대원동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.367<br>주요: 0.367 | 보수: 0.367<br>수요: 0.354 | 제약: 0.664 | 주차: 0.292<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_856c43605802edf04d0c98b77f54d734 = L.circleMarker(
+                [37.428811, 127.148061],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_856c43605802edf04d0c98b77f54d734.bindTooltip(
+                `<div>
+                     <b>#147 중상57-58</b><br>하대원동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.365<br>주요: 0.365 | 보수: 0.365<br>수요: 0.345 | 제약: 0.664 | 주차: 0.297<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2883133290bbc5e3717bd538ab87e2fd = L.circleMarker(
+                [37.44376700000001, 127.15534999999998],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2883133290bbc5e3717bd538ab87e2fd.bindTooltip(
+                `<div>
+                     <b>#148 중상22-23</b><br>중앙동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.364<br>주요: 0.364 | 보수: 0.364<br>수요: 0.390 | 제약: 0.641 | 주차: 0.264<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_78d5a3b4de6f9ce7e1d19120ded89368 = L.circleMarker(
+                [37.432881, 127.162491],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_78d5a3b4de6f9ce7e1d19120ded89368.bindTooltip(
+                `<div>
+                     <b>#149 중상38-39</b><br>상대원1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.364<br>주요: 0.364 | 보수: 0.364<br>수요: 0.251 | 제약: 0.677 | 주차: 0.365<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_96140733462f603501b492e4d9642b71 = L.circleMarker(
+                [37.446375, 127.16474],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_96140733462f603501b492e4d9642b71.bindTooltip(
+                `<div>
+                     <b>#150 중상88</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.363<br>주요: 0.363 | 보수: 0.363<br>수요: 0.350 | 제약: 0.680 | 주차: 0.269<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_67675e22611a60516eae33dbbe964125 = L.circleMarker(
+                [37.450477, 127.15899400000002],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_67675e22611a60516eae33dbbe964125.bindTooltip(
+                `<div>
+                     <b>#151 수상3</b><br>단대동 (수정구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.363<br>주요: 0.363 | 보수: 0.363<br>수요: 0.348 | 제약: 0.684 | 주차: 0.273<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ac6523278af840817d0234ea17835d54 = L.circleMarker(
+                [37.449054, 127.158354],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_ac6523278af840817d0234ea17835d54.bindTooltip(
+                `<div>
+                     <b>#152 수상4</b><br>단대동 (수정구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.363<br>주요: 0.363 | 보수: 0.363<br>수요: 0.356 | 제약: 0.684 | 주차: 0.260<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_ec7e4fc30cbae787be03b4ff8a937d71 = L.circleMarker(
+                [37.453351, 127.15914500000001],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_ec7e4fc30cbae787be03b4ff8a937d71.bindTooltip(
+                `<div>
+                     <b>#153 수상1-2</b><br>단대동 (수정구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.360<br>주요: 0.360 | 보수: 0.360<br>수요: 0.312 | 제약: 0.725 | 주차: 0.273<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_9fe40904a02604ea496b1d5eeb956dae = L.circleMarker(
+                [37.431276, 127.17063200000001],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_9fe40904a02604ea496b1d5eeb956dae.bindTooltip(
+                `<div>
+                     <b>#154 중상41-1</b><br>상대원1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.354<br>주요: 0.354 | 보수: 0.354<br>수요: 0.203 | 제약: 0.804 | 주차: 0.266<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_43faa4a548149b899484d64ef8e41483 = L.circleMarker(
+                [37.443671, 127.17222100000001],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.5, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_43faa4a548149b899484d64ef8e41483.bindTooltip(
+                `<div>
+                     <b>#155 중상79상-중</b><br>금광1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.350<br>주요: 0.350 | 보수: 0.350<br>수요: 0.300 | 제약: 0.477 | 주차: 0.495<br>프록시구역: - | 공역검토: False<br>위험: 이상 없음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_3e8325f1f0f7ddd717e6d1ccabc3cc58 = L.circleMarker(
+                [37.445631, 127.16262100000002],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_3e8325f1f0f7ddd717e6d1ccabc3cc58.bindTooltip(
+                `<div>
+                     <b>#156 중상89</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.347<br>주요: 0.347 | 보수: 0.347<br>수요: 0.336 | 제약: 0.691 | 주차: 0.212<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_1d73ab8192b262b4731087fcd5c13782 = L.circleMarker(
+                [37.444074, 127.178536],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_1d73ab8192b262b4731087fcd5c13782.bindTooltip(
+                `<div>
+                     <b>#157 중상83</b><br>상대원1동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.341<br>주요: 0.341 | 보수: 0.341<br>수요: 0.234 | 제약: 0.693 | 주차: 0.280<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_4d312d31338fdae52115bb072df69d38 = L.circleMarker(
+                [37.462437, 127.168351],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_4d312d31338fdae52115bb072df69d38.bindTooltip(
+                `<div>
+                     <b>#158 산성대로589</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.339<br>주요: 0.339 | 보수: 0.339<br>수요: 0.256 | 제약: 0.692 | 주차: 0.304<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_319b1c4b6a9bcc758fc66d0405675007 = L.circleMarker(
+                [37.43101, 127.154592],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_319b1c4b6a9bcc758fc66d0405675007.bindTooltip(
+                `<div>
+                     <b>#159 중상44-46</b><br>하대원동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.337<br>주요: 0.337 | 보수: 0.337<br>수요: 0.284 | 제약: 0.527 | 주차: 0.409<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_2e9c751a8fe07707b3fc5db8b0bc61b8 = L.circleMarker(
+                [37.453387000000006, 127.16023],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_2e9c751a8fe07707b3fc5db8b0bc61b8.bindTooltip(
+                `<div>
+                     <b>#160 수상20</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.333<br>주요: 0.333 | 보수: 0.333<br>수요: 0.301 | 제약: 0.589 | 주차: 0.307<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a60f8cecf2cbe1c00e641e5046217edb = L.circleMarker(
+                [37.46174400000001, 127.168526],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a60f8cecf2cbe1c00e641e5046217edb.bindTooltip(
+                `<div>
+                     <b>#161 중상70-71</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.321<br>주요: 0.321 | 보수: 0.321<br>수요: 0.272 | 제약: 0.692 | 주차: 0.212<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_8a12b53eab3ee1831c0a3374177f81f5 = L.circleMarker(
+                [37.453062, 127.16091600000001],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_8a12b53eab3ee1831c0a3374177f81f5.bindTooltip(
+                `<div>
+                     <b>#162 중상31</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.316<br>주요: 0.316 | 보수: 0.316<br>수요: 0.285 | 제약: 0.589 | 주차: 0.259<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_a97f992cf801e33b406906abbe0ea3cc = L.circleMarker(
+                [37.454260999999995, 127.16029100000002],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_a97f992cf801e33b406906abbe0ea3cc.bindTooltip(
+                `<div>
+                     <b>#163 수상2</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.312<br>주요: 0.312 | 보수: 0.312<br>수요: 0.280 | 제약: 0.589 | 주차: 0.254<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d10d4089bbce4ab2f9f50ddf4bf881f0 = L.circleMarker(
+                [37.43244100000001, 127.15739100000002],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d10d4089bbce4ab2f9f50ddf4bf881f0.bindTooltip(
+                `<div>
+                     <b>#164 중상43</b><br>하대원동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.311<br>주요: 0.311 | 보수: 0.311<br>수요: 0.280 | 제약: 0.476 | 주차: 0.359<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_62d6e3f3e3ce0993b6abb051adfcd4a2 = L.circleMarker(
+                [37.46079100000001, 127.167258],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_62d6e3f3e3ce0993b6abb051adfcd4a2.bindTooltip(
+                `<div>
+                     <b>#165 중상70-7-8</b><br>양지동 (수정구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.299<br>주요: 0.299 | 보수: 0.299<br>수요: 0.272 | 제약: 0.714 | 주차: 0.101<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_13f8f9f91838ab8acd6a50a55498f470 = L.circleMarker(
+                [37.43133100000001, 127.15728099999998],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_13f8f9f91838ab8acd6a50a55498f470.bindTooltip(
+                `<div>
+                     <b>#166 중상60-63</b><br>하대원동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.284<br>주요: 0.284 | 보수: 0.284<br>수요: 0.263 | 제약: 0.476 | 주차: 0.276<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d4135b17991d2a7aff020e417d834032 = L.circleMarker(
+                [37.453387000000006, 127.16023],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d4135b17991d2a7aff020e417d834032.bindTooltip(
+                `<div>
+                     <b>#167 수상1</b><br>금광2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.283<br>주요: 0.283 | 보수: 0.283<br>수요: 0.301 | 제약: 0.589 | 주차: 0.107<br>프록시구역: - | 공역검토: False<br>위험: 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_7e7788cea9d700b9bf306da93b6a7344 = L.circleMarker(
+                [37.45571600000001, 127.16269],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_7e7788cea9d700b9bf306da93b6a7344.bindTooltip(
+                `<div>
+                     <b>#168 중상70-2</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.267<br>주요: 0.267 | 보수: 0.267<br>수요: 0.263 | 제약: 0.491 | 주차: 0.210<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_c3de97213de010058cb2057a4e6702c8 = L.circleMarker(
+                [37.459434, 127.16589],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_c3de97213de010058cb2057a4e6702c8.bindTooltip(
+                `<div>
+                     <b>#169 중상70-6</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.267<br>주요: 0.267 | 보수: 0.267<br>수요: 0.256 | 제약: 0.517 | 주차: 0.193<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_d3776c143e8925c2f899e73438b29243 = L.circleMarker(
+                [37.455309, 127.162341],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_d3776c143e8925c2f899e73438b29243.bindTooltip(
+                `<div>
+                     <b>#170 중상70-1</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.264<br>주요: 0.264 | 보수: 0.264<br>수요: 0.255 | 제약: 0.491 | 주차: 0.209<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+    
+            var circle_marker_1a4f537b0f9b21d74ca629fbb916b678 = L.circleMarker(
+                [37.45871399999999, 127.165251],
+                {"bubblingMouseEvents": true, "color": "#95A5A6", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95A5A6", "fillOpacity": 0.85, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 1.5}
+            ).addTo(map_49e64dd2c587950ea3348df7990a947e);
+        
+    
+            circle_marker_1a4f537b0f9b21d74ca629fbb916b678.bindTooltip(
+                `<div>
+                     <b>#171 중상70-4-5</b><br>은행2동 (중원구)<br>등급: <b>D</b> | 구역: 부적합<br>순위점수: 0.249<br>주요: 0.249 | 보수: 0.249<br>수요: 0.272 | 제약: 0.517 | 주차: 0.099<br>프록시구역: - | 공역검토: False<br>위험: 수요권역 낮음 | 주차 후보 점수 낮음
+                 </div>`,
+                {
+  "sticky": false,
+}
+            );
+        
+</script>
+</html>

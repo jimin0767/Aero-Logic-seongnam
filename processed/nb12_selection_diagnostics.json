@@ -1,0 +1,54 @@
+{
+  "nb11_route_pair_count": 9793,
+  "candidate_h3_coverage_count": 9793,
+  "nb11_counts_match": true,
+  "eligible_candidate_count": 171,
+  "k_recommended": 6,
+  "k_scenarios": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "selected_lot_ids": [
+    "206-2-000020",
+    "204-2-000034",
+    "206-2-000003",
+    "206-2-000007",
+    "206-2-000005",
+    "206-2-000022"
+  ],
+  "selected_lot_names": [
+    "백현동카페거리공영주차장",
+    "신흥제9공영주차장",
+    "야탑 제2환승",
+    "정자역환승",
+    "점골",
+    "운중동공영주차장"
+  ],
+  "assigned_target_count": 354,
+  "assigned_Ds_sum": 147.2182,
+  "strict_feasible_assigned": 0,
+  "airspace_approval_assigned": 354,
+  "robot_handoff_assigned": 352,
+  "hubs_zero_strict_assigned": [
+    "206-2-000020",
+    "204-2-000034",
+    "206-2-000003",
+    "206-2-000007",
+    "206-2-000005",
+    "206-2-000022"
+  ],
+  "scenario_Ds_sums": {
+    "3": 81.3147322260925,
+    "4": 105.0268304431853,
+    "5": 127.83126688464111,
+    "6": 147.21817521425913,
+    "7": 166.32040312055727,
+    "8": 185.06766347887014
+  },
+  "primary_scenario": "approval_required",
+  "note": "관제권 treated as flag only in primary scenario. Strict scenario for sensitivity."
+}
